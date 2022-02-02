@@ -1,0 +1,4 @@
+#ifndef LABA_5B_ALGORITHM_H
+#define LABA_5B_ALGORITHM_H
+
+#endif //LABA_5B_ALGORITHM_H

@@ -5,6 +5,8 @@
 #include "malloc.h"
 #include "stdio.h"
 #include "stdlib.h"
+#include "stdbool.h"
+#include "assert.h"
 
 typedef struct vector {
     int *data; // указатель на элементы вектора
@@ -26,5 +28,32 @@ void shrinkToFit(vector *v);
 
 // освобождает память, выделенную вектору
 void deleteVector(vector *v);
+
+// проверят пуст ли вектор
+bool isEmpty(vector *v);
+
+// проверят полон ли вектор
+bool isFull(vector *v);
+
+// добавляет элемент x в конец вектора v
+void pushBack(vector *v, int x);
+
+void test_pushBack_emptyVector();
+
+void test_pushBack_fullVector();
+
+// удаляет последний элемент из вектора
+void popBack(vector *v);
+
+void test_popBack_notEmptyVector();
+
+// возвращает указатель на index-ый элемент вектора
+int* atVector(vector *v, size_t index);
+
+// возвращает указатель на последний элемент вектора.
+int* back(vector *v);
+
+// возвращает указатель на нулевой элемент вектора.
+int* front(vector *v);
 
 #endif //LABA_5B_VECTOR_H

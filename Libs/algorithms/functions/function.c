@@ -27,7 +27,7 @@ void insert_(int *const a, size_t *const n, const size_t pos,
         size_t lowBound = (pos == 0) ? SIZE_MAX : pos;
 
         (*n)++;
-        for (size_t i = *n; i != lowBound; i - -)
+        for (size_t i = *n; i != lowBound; i--)
             a[i] = a[i - 1];
         a[pos] = value;
     } else {
@@ -39,12 +39,12 @@ void insert_(int *const a, size_t *const n, const size_t pos,
 void deleteByPosSaveOrder_(int *a, size_t *n, const size_t pos) {
     for (size_t i = pos; i < *n - 1; i++)
         a[i] = a[i + 1];
-    (*n) - -;
+    (*n)--;
 }
 
 void deleteByPosUnsaveOrder_(int *a, size_t *n, size_t pos) {
     a[pos] = a[*n - 1];
-    (*n) - -;
+    (*n)--;
 }
 
 size_t linearSearch_(const int *a, const size_t n, int x) {

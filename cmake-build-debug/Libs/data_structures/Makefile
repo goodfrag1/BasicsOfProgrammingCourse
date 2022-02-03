@@ -115,6 +115,44 @@ depend:
 	cd /d C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+Libs/data_structures/CMakeFiles/data_structures.dir/rule:
+	cd /d C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Libs/data_structures/CMakeFiles/data_structures.dir/rule
+.PHONY : Libs/data_structures/CMakeFiles/data_structures.dir/rule
+
+# Convenience name for target.
+data_structures: Libs/data_structures/CMakeFiles/data_structures.dir/rule
+.PHONY : data_structures
+
+# fast build rule for target.
+data_structures/fast:
+	cd /d C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug && $(MAKE) $(MAKESILENT) -f Libs\data_structures\CMakeFiles\data_structures.dir\build.make Libs/data_structures/CMakeFiles/data_structures.dir/build
+.PHONY : data_structures/fast
+
+vector/vector.obj: vector/vector.c.obj
+.PHONY : vector/vector.obj
+
+# target to build an object file
+vector/vector.c.obj:
+	cd /d C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug && $(MAKE) $(MAKESILENT) -f Libs\data_structures\CMakeFiles\data_structures.dir\build.make Libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj
+.PHONY : vector/vector.c.obj
+
+vector/vector.i: vector/vector.c.i
+.PHONY : vector/vector.i
+
+# target to preprocess a source file
+vector/vector.c.i:
+	cd /d C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug && $(MAKE) $(MAKESILENT) -f Libs\data_structures\CMakeFiles\data_structures.dir\build.make Libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.i
+.PHONY : vector/vector.c.i
+
+vector/vector.s: vector/vector.c.s
+.PHONY : vector/vector.s
+
+# target to generate assembly for a file
+vector/vector.c.s:
+	cd /d C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug && $(MAKE) $(MAKESILENT) -f Libs\data_structures\CMakeFiles\data_structures.dir\build.make Libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.s
+.PHONY : vector/vector.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -123,6 +161,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... data_structures
+	@echo ... vector/vector.obj
+	@echo ... vector/vector.i
+	@echo ... vector/vector.s
 .PHONY : help
 
 

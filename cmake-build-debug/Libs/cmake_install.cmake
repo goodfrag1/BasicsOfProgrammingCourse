@@ -42,3 +42,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/Libs/algorithms/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/Libs/data_structures/cmake_install.cmake")
+endif()
+

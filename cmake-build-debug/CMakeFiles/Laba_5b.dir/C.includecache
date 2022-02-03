@@ -6,7 +6,25 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/algorithms/functions/function.h
+stddef.h
+-
+
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/vector.h
+stddef.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/stddef.h
+malloc.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/malloc.h
+stdio.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/stdio.h
+stdlib.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/stdlib.h
+
 C:/Users/User-GDFG/CLionProjects/Laba_5b/main.c
 stdio.h
 -
+Libs/algorithms/functions/function.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/algorithms/functions/function.h
+Libs/data_structures/vector/vector.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/vector.h
 

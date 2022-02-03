@@ -141,6 +141,19 @@ algorithms/fast:
 	$(MAKE) $(MAKESILENT) -f Libs\algorithms\CMakeFiles\algorithms.dir\build.make Libs/algorithms/CMakeFiles/algorithms.dir/build
 .PHONY : algorithms/fast
 
+#=============================================================================
+# Target rules for targets named data_structures
+
+# Build rule for target.
+data_structures: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 data_structures
+.PHONY : data_structures
+
+# fast build rule for target.
+data_structures/fast:
+	$(MAKE) $(MAKESILENT) -f Libs\data_structures\CMakeFiles\data_structures.dir\build.make Libs/data_structures/CMakeFiles/data_structures.dir/build
+.PHONY : data_structures/fast
+
 Libs/algorithms/algorithm.obj: Libs/algorithms/algorithm.c.obj
 .PHONY : Libs/algorithms/algorithm.obj
 
@@ -189,6 +202,30 @@ Libs/algorithms/functions/function.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/algorithms/functions/function.c.s
 .PHONY : Libs/algorithms/functions/function.c.s
 
+Libs/data_structures/vector/vector.obj: Libs/data_structures/vector/vector.c.obj
+.PHONY : Libs/data_structures/vector/vector.obj
+
+# target to build an object file
+Libs/data_structures/vector/vector.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/data_structures/vector/vector.c.obj
+.PHONY : Libs/data_structures/vector/vector.c.obj
+
+Libs/data_structures/vector/vector.i: Libs/data_structures/vector/vector.c.i
+.PHONY : Libs/data_structures/vector/vector.i
+
+# target to preprocess a source file
+Libs/data_structures/vector/vector.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/data_structures/vector/vector.c.i
+.PHONY : Libs/data_structures/vector/vector.c.i
+
+Libs/data_structures/vector/vector.s: Libs/data_structures/vector/vector.c.s
+.PHONY : Libs/data_structures/vector/vector.s
+
+# target to generate assembly for a file
+Libs/data_structures/vector/vector.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/data_structures/vector/vector.c.s
+.PHONY : Libs/data_structures/vector/vector.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -223,12 +260,16 @@ help:
 	@echo ... rebuild_cache
 	@echo ... Laba_5b
 	@echo ... algorithms
+	@echo ... data_structures
 	@echo ... Libs/algorithms/algorithm.obj
 	@echo ... Libs/algorithms/algorithm.i
 	@echo ... Libs/algorithms/algorithm.s
 	@echo ... Libs/algorithms/functions/function.obj
 	@echo ... Libs/algorithms/functions/function.i
 	@echo ... Libs/algorithms/functions/function.s
+	@echo ... Libs/data_structures/vector/vector.obj
+	@echo ... Libs/data_structures/vector/vector.i
+	@echo ... Libs/data_structures/vector/vector.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

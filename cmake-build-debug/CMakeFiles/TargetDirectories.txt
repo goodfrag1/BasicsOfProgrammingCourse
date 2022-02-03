@@ -6,3 +6,6 @@ C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/Libs/CMakeFiles/rebui
 C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/Libs/algorithms/CMakeFiles/algorithms.dir
 C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/Libs/algorithms/CMakeFiles/edit_cache.dir
 C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/Libs/algorithms/CMakeFiles/rebuild_cache.dir
+C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/Libs/data_structures/CMakeFiles/data_structures.dir
+C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/Libs/data_structures/CMakeFiles/edit_cache.dir
+C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/Libs/data_structures/CMakeFiles/rebuild_cache.dir

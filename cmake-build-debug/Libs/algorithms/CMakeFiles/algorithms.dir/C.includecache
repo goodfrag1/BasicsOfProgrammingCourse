@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/algorithms/functions/function.c
+stdio.h
+-
+limits.h
+-
+assert.h
+-
+function.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/algorithms/functions/function.h
+
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/algorithms/functions/function.h
+stddef.h
+-
+

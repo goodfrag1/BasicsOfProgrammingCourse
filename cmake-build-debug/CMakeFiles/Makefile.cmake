@@ -30,6 +30,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../CMakeLists.txt"
   "../Libs/CMakeLists.txt"
   "../Libs/algorithms/CMakeLists.txt"
+  "../Libs/data_structures/CMakeLists.txt"
   "CMakeFiles/3.20.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.20.2/CMakeRCCompiler.cmake"
   "CMakeFiles/3.20.2/CMakeSystem.cmake"
@@ -46,10 +47,12 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "Libs/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Libs/algorithms/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Libs/data_structures/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Laba_5b.dir/DependInfo.cmake"
   "Libs/algorithms/CMakeFiles/algorithms.dir/DependInfo.cmake"
+  "Libs/data_structures/CMakeFiles/data_structures.dir/DependInfo.cmake"
   )

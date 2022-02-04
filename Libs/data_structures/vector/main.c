@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include "Libs/algorithms/functions/function.h"
-#include "Libs/data_structures/vector/vector.h"
+#include "vector.h"
 
 void test() {
     test_pushBack_emptyVector();

@@ -202,6 +202,30 @@ Libs/algorithms/functions/function.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/algorithms/functions/function.c.s
 .PHONY : Libs/algorithms/functions/function.c.s
 
+Libs/data_structures/vector/main.obj: Libs/data_structures/vector/main.c.obj
+.PHONY : Libs/data_structures/vector/main.obj
+
+# target to build an object file
+Libs/data_structures/vector/main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/data_structures/vector/main.c.obj
+.PHONY : Libs/data_structures/vector/main.c.obj
+
+Libs/data_structures/vector/main.i: Libs/data_structures/vector/main.c.i
+.PHONY : Libs/data_structures/vector/main.i
+
+# target to preprocess a source file
+Libs/data_structures/vector/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/data_structures/vector/main.c.i
+.PHONY : Libs/data_structures/vector/main.c.i
+
+Libs/data_structures/vector/main.s: Libs/data_structures/vector/main.c.s
+.PHONY : Libs/data_structures/vector/main.s
+
+# target to generate assembly for a file
+Libs/data_structures/vector/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/data_structures/vector/main.c.s
+.PHONY : Libs/data_structures/vector/main.c.s
+
 Libs/data_structures/vector/vector.obj: Libs/data_structures/vector/vector.c.obj
 .PHONY : Libs/data_structures/vector/vector.obj
 
@@ -226,29 +250,29 @@ Libs/data_structures/vector/vector.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/data_structures/vector/vector.c.s
 .PHONY : Libs/data_structures/vector/vector.c.s
 
-main.obj: main.c.obj
-.PHONY : main.obj
+Libs/data_structures/vector/vectorVoid.obj: Libs/data_structures/vector/vectorVoid.c.obj
+.PHONY : Libs/data_structures/vector/vectorVoid.obj
 
 # target to build an object file
-main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/main.c.obj
-.PHONY : main.c.obj
+Libs/data_structures/vector/vectorVoid.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/data_structures/vector/vectorVoid.c.obj
+.PHONY : Libs/data_structures/vector/vectorVoid.c.obj
 
-main.i: main.c.i
-.PHONY : main.i
+Libs/data_structures/vector/vectorVoid.i: Libs/data_structures/vector/vectorVoid.c.i
+.PHONY : Libs/data_structures/vector/vectorVoid.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/main.c.i
-.PHONY : main.c.i
+Libs/data_structures/vector/vectorVoid.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/data_structures/vector/vectorVoid.c.i
+.PHONY : Libs/data_structures/vector/vectorVoid.c.i
 
-main.s: main.c.s
-.PHONY : main.s
+Libs/data_structures/vector/vectorVoid.s: Libs/data_structures/vector/vectorVoid.c.s
+.PHONY : Libs/data_structures/vector/vectorVoid.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/main.c.s
-.PHONY : main.c.s
+Libs/data_structures/vector/vectorVoid.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/data_structures/vector/vectorVoid.c.s
+.PHONY : Libs/data_structures/vector/vectorVoid.c.s
 
 # Help Target
 help:
@@ -267,12 +291,15 @@ help:
 	@echo ... Libs/algorithms/functions/function.obj
 	@echo ... Libs/algorithms/functions/function.i
 	@echo ... Libs/algorithms/functions/function.s
+	@echo ... Libs/data_structures/vector/main.obj
+	@echo ... Libs/data_structures/vector/main.i
+	@echo ... Libs/data_structures/vector/main.s
 	@echo ... Libs/data_structures/vector/vector.obj
 	@echo ... Libs/data_structures/vector/vector.i
 	@echo ... Libs/data_structures/vector/vector.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... Libs/data_structures/vector/vectorVoid.obj
+	@echo ... Libs/data_structures/vector/vectorVoid.i
+	@echo ... Libs/data_structures/vector/vectorVoid.s
 .PHONY : help
 
 

@@ -160,6 +160,9 @@
 		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/algorithms/functions/function.h">
 			<Option target="Laba_5b"/>
 		</Unit>
+		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/main.c">
+			<Option target="Laba_5b"/>
+		</Unit>
 		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/vector.c">
 			<Option target="Laba_5b"/>
 			<Option target="data_structures"/>
@@ -167,7 +170,11 @@
 		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/vector.h">
 			<Option target="Laba_5b"/>
 		</Unit>
-		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/main.c">
+		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/vectorVoid.c">
+			<Option target="Laba_5b"/>
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/vectorVoid.h">
 			<Option target="Laba_5b"/>
 		</Unit>
 		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/CMakeLists.txt">

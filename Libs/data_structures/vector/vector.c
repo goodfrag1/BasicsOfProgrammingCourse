@@ -66,6 +66,7 @@ void test_pushBack_emptyVector() {
     pushBack(&v, 1);
 
     assert(v.size == 1);
+    deleteVector(&v);
 }
 
 void test_pushBack_fullVector() {
@@ -77,6 +78,7 @@ void test_pushBack_fullVector() {
 
     assert(v.capacity == 4);
     assert(v.size == 3);
+    deleteVector(&v);
 }
 
 void popBack(vector *v) {
@@ -96,5 +98,59 @@ void test_popBack_notEmptyVector() {
     popBack(&v);
     assert (v.size == 0);
     assert (v.capacity == 1);
+    deleteVector(&v);
 }
 
+int *atVector(vector *v, size_t index) {
+    if (index <= v->size)
+        return &v->data[index];
+    else {
+        fprintf(stderr, "\"IndexError: a[%ud] is not exists\"", index);
+        exit(1);
+    }
+}
+
+void test_atVector_notEmptyVector() {
+    vector v = createVector(2);
+    v.data[0] = 1;
+    v.size++;
+
+    assert(atVector(&v, 0) == &v.data[0]);
+    deleteVector(&v);
+}
+
+void test_atVector_requestToLastElement() {
+    vector v = createVector(2);
+    v.data[0] = 1;
+    v.data[1] = 2;
+    v.size = 2;
+
+    assert(atVector(&v, 1) == &v.data[1]);
+    deleteVector(&v);
+}
+
+int *back(vector *v) {
+    return &v->data[v->size - 1];
+}
+
+void test_back_oneElementInVector() {
+    vector v = createVector(2);
+    v.data[0] = 1;
+    v.size++;
+
+    assert(back(&v) == &v.data[0]);
+    deleteVector(&v);
+}
+
+int *front(vector *v) {
+    return &v->data[0];
+}
+
+void test_front_oneElementInVector() {
+    vector v = createVector(2);
+    v.data[0] = 1;
+    v.size++;
+
+    assert(front(&v) == &v.data[0]);
+    deleteVector(&v);
+}

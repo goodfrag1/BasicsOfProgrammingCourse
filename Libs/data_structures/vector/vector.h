@@ -50,10 +50,18 @@ void test_popBack_notEmptyVector();
 // возвращает указатель на index-ый элемент вектора
 int* atVector(vector *v, size_t index);
 
+void test_atVector_notEmptyVector();
+
+void test_atVector_requestToLastElement();
+
 // возвращает указатель на последний элемент вектора.
 int* back(vector *v);
 
+void test_back_oneElementInVector();
+
 // возвращает указатель на нулевой элемент вектора.
 int* front(vector *v);
+
+void test_front_oneElementInVector();
 
 #endif //LABA_5B_VECTOR_H

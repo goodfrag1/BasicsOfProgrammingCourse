@@ -13,8 +13,7 @@ void test() {
 }
 
 int main() {
-    vector v = createVector(4);
-    reserve(&v, 4);
+
     test();
 
     return 0;

@@ -112,8 +112,8 @@ int *atVector(vector *v, size_t index) {
 
 void test_atVector_notEmptyVector() {
     vector v = createVector(2);
-    v.data[0] = 1;
     v.size++;
+    v.data[0] = 1;
 
     assert(atVector(&v, 0) == &v.data[0]);
     deleteVector(&v);
@@ -121,9 +121,9 @@ void test_atVector_notEmptyVector() {
 
 void test_atVector_requestToLastElement() {
     vector v = createVector(2);
+    v.size = 2;
     v.data[0] = 1;
     v.data[1] = 2;
-    v.size = 2;
 
     assert(atVector(&v, 1) == &v.data[1]);
     deleteVector(&v);
@@ -135,8 +135,8 @@ int *back(vector *v) {
 
 void test_back_oneElementInVector() {
     vector v = createVector(2);
-    v.data[0] = 1;
     v.size++;
+    v.data[0] = 1;
 
     assert(back(&v) == &v.data[0]);
     deleteVector(&v);
@@ -148,8 +148,8 @@ int *front(vector *v) {
 
 void test_front_oneElementInVector() {
     vector v = createVector(2);
-    v.data[0] = 1;
     v.size++;
+    v.data[0] = 1;
 
     assert(front(&v) == &v.data[0]);
     deleteVector(&v);

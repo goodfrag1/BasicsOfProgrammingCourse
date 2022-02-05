@@ -78,29 +78,29 @@ Libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.s: cmake_for
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/data_structures.dir/vector/vector.c.s"
 	cd /d C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\Libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\data_structures\vector\vector.c -o CMakeFiles\data_structures.dir\vector\vector.c.s
 
-Libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.obj: Libs/data_structures/CMakeFiles/data_structures.dir/flags.make
-Libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.obj: ../Libs/data_structures/vector/vectorVoid.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object Libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.obj"
-	cd /d C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\Libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\data_structures.dir\vector\vectorVoid.c.obj -c C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\data_structures\vector\vectorVoid.c
+Libs/data_structures/CMakeFiles/data_structures.dir/vectorVoid/vectorVoid.c.obj: Libs/data_structures/CMakeFiles/data_structures.dir/flags.make
+Libs/data_structures/CMakeFiles/data_structures.dir/vectorVoid/vectorVoid.c.obj: ../Libs/data_structures/vectorVoid/vectorVoid.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object Libs/data_structures/CMakeFiles/data_structures.dir/vectorVoid/vectorVoid.c.obj"
+	cd /d C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\Libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\data_structures.dir\vectorVoid\vectorVoid.c.obj -c C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\data_structures\vectorVoid\vectorVoid.c
 
-Libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/data_structures.dir/vector/vectorVoid.c.i"
-	cd /d C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\Libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\data_structures\vector\vectorVoid.c > CMakeFiles\data_structures.dir\vector\vectorVoid.c.i
+Libs/data_structures/CMakeFiles/data_structures.dir/vectorVoid/vectorVoid.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/data_structures.dir/vectorVoid/vectorVoid.c.i"
+	cd /d C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\Libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\data_structures\vectorVoid\vectorVoid.c > CMakeFiles\data_structures.dir\vectorVoid\vectorVoid.c.i
 
-Libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/data_structures.dir/vector/vectorVoid.c.s"
-	cd /d C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\Libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\data_structures\vector\vectorVoid.c -o CMakeFiles\data_structures.dir\vector\vectorVoid.c.s
+Libs/data_structures/CMakeFiles/data_structures.dir/vectorVoid/vectorVoid.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/data_structures.dir/vectorVoid/vectorVoid.c.s"
+	cd /d C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\Libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\data_structures\vectorVoid\vectorVoid.c -o CMakeFiles\data_structures.dir\vectorVoid\vectorVoid.c.s
 
 # Object files for target data_structures
 data_structures_OBJECTS = \
 "CMakeFiles/data_structures.dir/vector/vector.c.obj" \
-"CMakeFiles/data_structures.dir/vector/vectorVoid.c.obj"
+"CMakeFiles/data_structures.dir/vectorVoid/vectorVoid.c.obj"
 
 # External object files for target data_structures
 data_structures_EXTERNAL_OBJECTS =
 
 Libs/data_structures/libdata_structures.a: Libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj
-Libs/data_structures/libdata_structures.a: Libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.obj
+Libs/data_structures/libdata_structures.a: Libs/data_structures/CMakeFiles/data_structures.dir/vectorVoid/vectorVoid.c.obj
 Libs/data_structures/libdata_structures.a: Libs/data_structures/CMakeFiles/data_structures.dir/build.make
 Libs/data_structures/libdata_structures.a: Libs/data_structures/CMakeFiles/data_structures.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libdata_structures.a"

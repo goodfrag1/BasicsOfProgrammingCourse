@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "vector.h"
+#include "../vector/vector.h"
 #include "vectorVoid.h"
 
 void test() {

@@ -153,29 +153,29 @@ vector/vector.c.s:
 	cd /d C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug && $(MAKE) $(MAKESILENT) -f Libs\data_structures\CMakeFiles\data_structures.dir\build.make Libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.s
 .PHONY : vector/vector.c.s
 
-vector/vectorVoid.obj: vector/vectorVoid.c.obj
-.PHONY : vector/vectorVoid.obj
+vectorVoid/vectorVoid.obj: vectorVoid/vectorVoid.c.obj
+.PHONY : vectorVoid/vectorVoid.obj
 
 # target to build an object file
-vector/vectorVoid.c.obj:
-	cd /d C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug && $(MAKE) $(MAKESILENT) -f Libs\data_structures\CMakeFiles\data_structures.dir\build.make Libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.obj
-.PHONY : vector/vectorVoid.c.obj
+vectorVoid/vectorVoid.c.obj:
+	cd /d C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug && $(MAKE) $(MAKESILENT) -f Libs\data_structures\CMakeFiles\data_structures.dir\build.make Libs/data_structures/CMakeFiles/data_structures.dir/vectorVoid/vectorVoid.c.obj
+.PHONY : vectorVoid/vectorVoid.c.obj
 
-vector/vectorVoid.i: vector/vectorVoid.c.i
-.PHONY : vector/vectorVoid.i
+vectorVoid/vectorVoid.i: vectorVoid/vectorVoid.c.i
+.PHONY : vectorVoid/vectorVoid.i
 
 # target to preprocess a source file
-vector/vectorVoid.c.i:
-	cd /d C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug && $(MAKE) $(MAKESILENT) -f Libs\data_structures\CMakeFiles\data_structures.dir\build.make Libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.i
-.PHONY : vector/vectorVoid.c.i
+vectorVoid/vectorVoid.c.i:
+	cd /d C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug && $(MAKE) $(MAKESILENT) -f Libs\data_structures\CMakeFiles\data_structures.dir\build.make Libs/data_structures/CMakeFiles/data_structures.dir/vectorVoid/vectorVoid.c.i
+.PHONY : vectorVoid/vectorVoid.c.i
 
-vector/vectorVoid.s: vector/vectorVoid.c.s
-.PHONY : vector/vectorVoid.s
+vectorVoid/vectorVoid.s: vectorVoid/vectorVoid.c.s
+.PHONY : vectorVoid/vectorVoid.s
 
 # target to generate assembly for a file
-vector/vectorVoid.c.s:
-	cd /d C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug && $(MAKE) $(MAKESILENT) -f Libs\data_structures\CMakeFiles\data_structures.dir\build.make Libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.s
-.PHONY : vector/vectorVoid.c.s
+vectorVoid/vectorVoid.c.s:
+	cd /d C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug && $(MAKE) $(MAKESILENT) -f Libs\data_structures\CMakeFiles\data_structures.dir\build.make Libs/data_structures/CMakeFiles/data_structures.dir/vectorVoid/vectorVoid.c.s
+.PHONY : vectorVoid/vectorVoid.c.s
 
 # Help Target
 help:
@@ -189,9 +189,9 @@ help:
 	@echo ... vector/vector.obj
 	@echo ... vector/vector.i
 	@echo ... vector/vector.s
-	@echo ... vector/vectorVoid.obj
-	@echo ... vector/vectorVoid.i
-	@echo ... vector/vectorVoid.s
+	@echo ... vectorVoid/vectorVoid.obj
+	@echo ... vectorVoid/vectorVoid.i
+	@echo ... vectorVoid/vectorVoid.s
 .PHONY : help
 
 

@@ -7,10 +7,13 @@ CMakeFiles/Laba_5b.dir/Libs/algorithms/algorithm.c.obj: \
 CMakeFiles/Laba_5b.dir/Libs/algorithms/functions/function.c.obj: \
  ../Libs/algorithms/functions/function.c \
  ../Libs/algorithms/functions/function.h
+CMakeFiles/Laba_5b.dir/Libs/data_structures/vector/main.c.obj: \
+ ../Libs/data_structures/vector/main.c \
+ ../Libs/data_structures/vector/vector.h \
+ ../Libs/data_structures/vector/vectorVoid.h
 CMakeFiles/Laba_5b.dir/Libs/data_structures/vector/vector.c.obj: \
  ../Libs/data_structures/vector/vector.c \
  ../Libs/data_structures/vector/vector.h
-CMakeFiles/Laba_5b.dir/main.c.obj: \
- ../Libs/algorithms/functions/function.h \
- ../Libs/data_structures/vector/vector.h \
- ../main.c
+CMakeFiles/Laba_5b.dir/Libs/data_structures/vector/vectorVoid.c.obj: \
+ ../Libs/data_structures/vector/vectorVoid.c \
+ ../Libs/data_structures/vector/vectorVoid.h

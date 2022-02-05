@@ -6,9 +6,13 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/vector.c
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/main.c
+stdio.h
+-
 vector.h
 C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/vector.h
+vectorVoid.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/vectorVoid.h
 
 C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/vector.h
 stddef.h
@@ -23,4 +27,22 @@ stdbool.h
 C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/stdbool.h
 assert.h
 C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/assert.h
+
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/vectorVoid.h
+limits.h
+-
+stddef.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/stddef.h
+malloc.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/malloc.h
+stdio.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/stdio.h
+stdlib.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/stdlib.h
+stdbool.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/stdbool.h
+assert.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/assert.h
+memory.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/memory.h
 

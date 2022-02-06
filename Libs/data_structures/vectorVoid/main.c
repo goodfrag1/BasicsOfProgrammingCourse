@@ -40,6 +40,7 @@ int main() {
 
         printf("%f ", x);
     }
+    test();
 
     return 0;
 }

@@ -6,13 +6,11 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/vectorVoid.c
-vectorVoid.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/vectorVoid.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/vector.c
+vector.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/vector.h
 
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/vectorVoid.h
-limits.h
--
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/vector.h
 stddef.h
 C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/stddef.h
 malloc.h
@@ -25,6 +23,26 @@ stdbool.h
 C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/stdbool.h
 assert.h
 C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/assert.h
+
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vectorVoid/vectorVoid.c
+vectorVoid.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vectorVoid/vectorVoid.h
+
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vectorVoid/vectorVoid.h
+limits.h
+-
+stddef.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vectorVoid/stddef.h
+malloc.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vectorVoid/malloc.h
+stdio.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vectorVoid/stdio.h
+stdlib.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vectorVoid/stdlib.h
+stdbool.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vectorVoid/stdbool.h
+assert.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vectorVoid/assert.h
 memory.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/memory.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vectorVoid/memory.h
 

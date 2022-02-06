@@ -62,7 +62,7 @@ void test_clear_notEmptyVector() {
 }
 
 void shrinkToFit(vector *v) {
-    v->capacity = v->size;
+    reserve(v, v->size);
 }
 
 void test_shrinkToFit_fullVector() {
@@ -139,7 +139,9 @@ void test_pushBack_emptyVector() {
     vector v = createVector(0);
     pushBack(&v, 1);
 
+    assert(v.data[0] == 1);
     assert(v.size == 1);
+    assert(v.capacity == 1);
     deleteVector(&v);
 }
 
@@ -150,8 +152,9 @@ void test_pushBack_fullVector() {
     v.data[1] = 2;
     pushBack(&v, 3);
 
-    assert(v.capacity == 4);
+    assert(v.data[2] == 3);
     assert(v.size == 3);
+    assert(v.capacity == 4);
     deleteVector(&v);
 }
 
@@ -186,8 +189,7 @@ int *atVector(vector *v, size_t index) {
 
 void test_atVector_notEmptyVector() {
     vector v = createVector(2);
-    v.size++;
-    v.data[0] = 1;
+    pushBack(&v, 1);
 
     assert(atVector(&v, 0) == &v.data[0]);
     deleteVector(&v);

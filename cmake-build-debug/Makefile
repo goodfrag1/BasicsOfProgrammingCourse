@@ -202,6 +202,30 @@ Libs/algorithms/functions/function.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/algorithms/functions/function.c.s
 .PHONY : Libs/algorithms/functions/function.c.s
 
+Libs/data_structures/matrix/matrix.obj: Libs/data_structures/matrix/matrix.c.obj
+.PHONY : Libs/data_structures/matrix/matrix.obj
+
+# target to build an object file
+Libs/data_structures/matrix/matrix.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/data_structures/matrix/matrix.c.obj
+.PHONY : Libs/data_structures/matrix/matrix.c.obj
+
+Libs/data_structures/matrix/matrix.i: Libs/data_structures/matrix/matrix.c.i
+.PHONY : Libs/data_structures/matrix/matrix.i
+
+# target to preprocess a source file
+Libs/data_structures/matrix/matrix.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/data_structures/matrix/matrix.c.i
+.PHONY : Libs/data_structures/matrix/matrix.c.i
+
+Libs/data_structures/matrix/matrix.s: Libs/data_structures/matrix/matrix.c.s
+.PHONY : Libs/data_structures/matrix/matrix.s
+
+# target to generate assembly for a file
+Libs/data_structures/matrix/matrix.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/data_structures/matrix/matrix.c.s
+.PHONY : Libs/data_structures/matrix/matrix.c.s
+
 Libs/data_structures/vector/vector.obj: Libs/data_structures/vector/vector.c.obj
 .PHONY : Libs/data_structures/vector/vector.obj
 
@@ -225,30 +249,6 @@ Libs/data_structures/vector/vector.s: Libs/data_structures/vector/vector.c.s
 Libs/data_structures/vector/vector.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/data_structures/vector/vector.c.s
 .PHONY : Libs/data_structures/vector/vector.c.s
-
-Libs/data_structures/vectorVoid/main.obj: Libs/data_structures/vectorVoid/main.c.obj
-.PHONY : Libs/data_structures/vectorVoid/main.obj
-
-# target to build an object file
-Libs/data_structures/vectorVoid/main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/data_structures/vectorVoid/main.c.obj
-.PHONY : Libs/data_structures/vectorVoid/main.c.obj
-
-Libs/data_structures/vectorVoid/main.i: Libs/data_structures/vectorVoid/main.c.i
-.PHONY : Libs/data_structures/vectorVoid/main.i
-
-# target to preprocess a source file
-Libs/data_structures/vectorVoid/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/data_structures/vectorVoid/main.c.i
-.PHONY : Libs/data_structures/vectorVoid/main.c.i
-
-Libs/data_structures/vectorVoid/main.s: Libs/data_structures/vectorVoid/main.c.s
-.PHONY : Libs/data_structures/vectorVoid/main.s
-
-# target to generate assembly for a file
-Libs/data_structures/vectorVoid/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/data_structures/vectorVoid/main.c.s
-.PHONY : Libs/data_structures/vectorVoid/main.c.s
 
 Libs/data_structures/vectorVoid/vectorVoid.obj: Libs/data_structures/vectorVoid/vectorVoid.c.obj
 .PHONY : Libs/data_structures/vectorVoid/vectorVoid.obj
@@ -274,6 +274,30 @@ Libs/data_structures/vectorVoid/vectorVoid.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/data_structures/vectorVoid/vectorVoid.c.s
 .PHONY : Libs/data_structures/vectorVoid/vectorVoid.c.s
 
+main.obj: main.c.obj
+.PHONY : main.obj
+
+# target to build an object file
+main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/main.c.obj
+.PHONY : main.c.obj
+
+main.i: main.c.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/main.c.i
+.PHONY : main.c.i
+
+main.s: main.c.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/main.c.s
+.PHONY : main.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -291,15 +315,18 @@ help:
 	@echo ... Libs/algorithms/functions/function.obj
 	@echo ... Libs/algorithms/functions/function.i
 	@echo ... Libs/algorithms/functions/function.s
+	@echo ... Libs/data_structures/matrix/matrix.obj
+	@echo ... Libs/data_structures/matrix/matrix.i
+	@echo ... Libs/data_structures/matrix/matrix.s
 	@echo ... Libs/data_structures/vector/vector.obj
 	@echo ... Libs/data_structures/vector/vector.i
 	@echo ... Libs/data_structures/vector/vector.s
-	@echo ... Libs/data_structures/vectorVoid/main.obj
-	@echo ... Libs/data_structures/vectorVoid/main.i
-	@echo ... Libs/data_structures/vectorVoid/main.s
 	@echo ... Libs/data_structures/vectorVoid/vectorVoid.obj
 	@echo ... Libs/data_structures/vectorVoid/vectorVoid.i
 	@echo ... Libs/data_structures/vectorVoid/vectorVoid.s
+	@echo ... main.obj
+	@echo ... main.i
+	@echo ... main.s
 .PHONY : help
 
 

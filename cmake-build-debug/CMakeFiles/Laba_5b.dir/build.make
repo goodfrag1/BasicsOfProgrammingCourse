@@ -65,18 +65,18 @@ include CMakeFiles/Laba_5b.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Laba_5b.dir/flags.make
 
-CMakeFiles/Laba_5b.dir/Libs/data_structures/vectorVoid/main.c.obj: CMakeFiles/Laba_5b.dir/flags.make
-CMakeFiles/Laba_5b.dir/Libs/data_structures/vectorVoid/main.c.obj: ../Libs/data_structures/vectorVoid/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Laba_5b.dir/Libs/data_structures/vectorVoid/main.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Laba_5b.dir\Libs\data_structures\vectorVoid\main.c.obj -c C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\data_structures\vectorVoid\main.c
+CMakeFiles/Laba_5b.dir/main.c.obj: CMakeFiles/Laba_5b.dir/flags.make
+CMakeFiles/Laba_5b.dir/main.c.obj: ../main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Laba_5b.dir/main.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Laba_5b.dir\main.c.obj -c C:\Users\User-GDFG\CLionProjects\Laba_5b\main.c
 
-CMakeFiles/Laba_5b.dir/Libs/data_structures/vectorVoid/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Laba_5b.dir/Libs/data_structures/vectorVoid/main.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\data_structures\vectorVoid\main.c > CMakeFiles\Laba_5b.dir\Libs\data_structures\vectorVoid\main.c.i
+CMakeFiles/Laba_5b.dir/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Laba_5b.dir/main.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\User-GDFG\CLionProjects\Laba_5b\main.c > CMakeFiles\Laba_5b.dir\main.c.i
 
-CMakeFiles/Laba_5b.dir/Libs/data_structures/vectorVoid/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Laba_5b.dir/Libs/data_structures/vectorVoid/main.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\data_structures\vectorVoid\main.c -o CMakeFiles\Laba_5b.dir\Libs\data_structures\vectorVoid\main.c.s
+CMakeFiles/Laba_5b.dir/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Laba_5b.dir/main.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\User-GDFG\CLionProjects\Laba_5b\main.c -o CMakeFiles\Laba_5b.dir\main.c.s
 
 CMakeFiles/Laba_5b.dir/Libs/algorithms/functions/function.c.obj: CMakeFiles/Laba_5b.dir/flags.make
 CMakeFiles/Laba_5b.dir/Libs/algorithms/functions/function.c.obj: ../Libs/algorithms/functions/function.c
@@ -130,29 +130,44 @@ CMakeFiles/Laba_5b.dir/Libs/data_structures/vectorVoid/vectorVoid.c.s: cmake_for
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Laba_5b.dir/Libs/data_structures/vectorVoid/vectorVoid.c.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\data_structures\vectorVoid\vectorVoid.c -o CMakeFiles\Laba_5b.dir\Libs\data_structures\vectorVoid\vectorVoid.c.s
 
+CMakeFiles/Laba_5b.dir/Libs/data_structures/matrix/matrix.c.obj: CMakeFiles/Laba_5b.dir/flags.make
+CMakeFiles/Laba_5b.dir/Libs/data_structures/matrix/matrix.c.obj: ../Libs/data_structures/matrix/matrix.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Laba_5b.dir/Libs/data_structures/matrix/matrix.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Laba_5b.dir\Libs\data_structures\matrix\matrix.c.obj -c C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\data_structures\matrix\matrix.c
+
+CMakeFiles/Laba_5b.dir/Libs/data_structures/matrix/matrix.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Laba_5b.dir/Libs/data_structures/matrix/matrix.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\data_structures\matrix\matrix.c > CMakeFiles\Laba_5b.dir\Libs\data_structures\matrix\matrix.c.i
+
+CMakeFiles/Laba_5b.dir/Libs/data_structures/matrix/matrix.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Laba_5b.dir/Libs/data_structures/matrix/matrix.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\data_structures\matrix\matrix.c -o CMakeFiles\Laba_5b.dir\Libs\data_structures\matrix\matrix.c.s
+
 # Object files for target Laba_5b
 Laba_5b_OBJECTS = \
-"CMakeFiles/Laba_5b.dir/Libs/data_structures/vectorVoid/main.c.obj" \
+"CMakeFiles/Laba_5b.dir/main.c.obj" \
 "CMakeFiles/Laba_5b.dir/Libs/algorithms/functions/function.c.obj" \
 "CMakeFiles/Laba_5b.dir/Libs/algorithms/algorithm.c.obj" \
 "CMakeFiles/Laba_5b.dir/Libs/data_structures/vector/vector.c.obj" \
-"CMakeFiles/Laba_5b.dir/Libs/data_structures/vectorVoid/vectorVoid.c.obj"
+"CMakeFiles/Laba_5b.dir/Libs/data_structures/vectorVoid/vectorVoid.c.obj" \
+"CMakeFiles/Laba_5b.dir/Libs/data_structures/matrix/matrix.c.obj"
 
 # External object files for target Laba_5b
 Laba_5b_EXTERNAL_OBJECTS =
 
-Laba_5b.exe: CMakeFiles/Laba_5b.dir/Libs/data_structures/vectorVoid/main.c.obj
+Laba_5b.exe: CMakeFiles/Laba_5b.dir/main.c.obj
 Laba_5b.exe: CMakeFiles/Laba_5b.dir/Libs/algorithms/functions/function.c.obj
 Laba_5b.exe: CMakeFiles/Laba_5b.dir/Libs/algorithms/algorithm.c.obj
 Laba_5b.exe: CMakeFiles/Laba_5b.dir/Libs/data_structures/vector/vector.c.obj
 Laba_5b.exe: CMakeFiles/Laba_5b.dir/Libs/data_structures/vectorVoid/vectorVoid.c.obj
+Laba_5b.exe: CMakeFiles/Laba_5b.dir/Libs/data_structures/matrix/matrix.c.obj
 Laba_5b.exe: CMakeFiles/Laba_5b.dir/build.make
 Laba_5b.exe: Libs/algorithms/libalgorithms.a
 Laba_5b.exe: Libs/data_structures/libdata_structures.a
 Laba_5b.exe: CMakeFiles/Laba_5b.dir/linklibs.rsp
 Laba_5b.exe: CMakeFiles/Laba_5b.dir/objects1.rsp
 Laba_5b.exe: CMakeFiles/Laba_5b.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable Laba_5b.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable Laba_5b.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Laba_5b.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

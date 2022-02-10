@@ -10,9 +10,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/algorithms/algorithm.c" "C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/CMakeFiles/Laba_5b.dir/Libs/algorithms/algorithm.c.obj"
   "C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/algorithms/functions/function.c" "C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/CMakeFiles/Laba_5b.dir/Libs/algorithms/functions/function.c.obj"
+  "C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/matrix/matrix.c" "C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/CMakeFiles/Laba_5b.dir/Libs/data_structures/matrix/matrix.c.obj"
   "C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/vector.c" "C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/CMakeFiles/Laba_5b.dir/Libs/data_structures/vector/vector.c.obj"
-  "C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vectorVoid/main.c" "C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/CMakeFiles/Laba_5b.dir/Libs/data_structures/vectorVoid/main.c.obj"
   "C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vectorVoid/vectorVoid.c" "C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/CMakeFiles/Laba_5b.dir/Libs/data_structures/vectorVoid/vectorVoid.c.obj"
+  "C:/Users/User-GDFG/CLionProjects/Laba_5b/main.c" "C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/CMakeFiles/Laba_5b.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

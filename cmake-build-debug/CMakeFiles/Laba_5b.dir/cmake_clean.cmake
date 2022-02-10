@@ -1,9 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Laba_5b.dir/Libs/algorithms/algorithm.c.obj"
   "CMakeFiles/Laba_5b.dir/Libs/algorithms/functions/function.c.obj"
+  "CMakeFiles/Laba_5b.dir/Libs/data_structures/matrix/matrix.c.obj"
   "CMakeFiles/Laba_5b.dir/Libs/data_structures/vector/vector.c.obj"
-  "CMakeFiles/Laba_5b.dir/Libs/data_structures/vectorVoid/main.c.obj"
   "CMakeFiles/Laba_5b.dir/Libs/data_structures/vectorVoid/vectorVoid.c.obj"
+  "CMakeFiles/Laba_5b.dir/main.c.obj"
   "Laba_5b.exe"
   "Laba_5b.exe.manifest"
   "Laba_5b.pdb"

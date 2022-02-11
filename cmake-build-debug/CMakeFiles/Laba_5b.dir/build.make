@@ -164,6 +164,7 @@ Laba_5b.exe: CMakeFiles/Laba_5b.dir/Libs/data_structures/matrix/matrix.c.obj
 Laba_5b.exe: CMakeFiles/Laba_5b.dir/build.make
 Laba_5b.exe: Libs/algorithms/libalgorithms.a
 Laba_5b.exe: Libs/data_structures/libdata_structures.a
+Laba_5b.exe: Libs/algorithms/libalgorithms.a
 Laba_5b.exe: CMakeFiles/Laba_5b.dir/linklibs.rsp
 Laba_5b.exe: CMakeFiles/Laba_5b.dir/objects1.rsp
 Laba_5b.exe: CMakeFiles/Laba_5b.dir/link.txt

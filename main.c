@@ -13,26 +13,20 @@ matrix mulMatrices(matrix m1, matrix m2) {
     return resM;
 }
 
-void getSquareOfMatrixIfSymmetric(matrix *m) {
-    if (isSymmetricMatrix(*m))
-        *m = mulMatrices(*m, *m);
-};
+bool isMutuallyInverseMatrices(matrix m1, matrix m2) {
+    return isEMatrix(mulMatrices(m1, m2));
+}
 
 int main() {
     int nRows;
     scanf("%d", &nRows);
-    int nCols;
-    scanf("%d", &nCols);
 
-    matrix m = getMemMatrix(nRows, nCols);
-    inputMatrix(m);
+    matrix A = getMemMatrix(nRows, nRows);
+    inputMatrix(A);
+    matrix B = getMemMatrix(nRows, nRows);
+    inputMatrix(B);
 
-    getSquareOfMatrixIfSymmetric(&m);
-
-    if (isSymmetricMatrix(m))
-        outputMatrix(m);
-    else
-        printf("NOT SYMMETRIC MATRIX");
+    printf("%d", isMutuallyInverseMatrices(A, B));
 
     return 0;
 }

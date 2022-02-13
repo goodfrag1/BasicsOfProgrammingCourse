@@ -6,43 +6,17 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/vector.h
-stddef.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/stddef.h
-malloc.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/malloc.h
-stdio.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/stdio.h
-stdlib.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/stdlib.h
-stdbool.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/stdbool.h
-assert.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/assert.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/matrix/matrix.c
+matrix.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/matrix/matrix.h
 
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vectorVoid/main.c
-stdio.h
--
-../vector/vector.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vector/vector.h
-vectorVoid.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vectorVoid/vectorVoid.h
-
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vectorVoid/vectorVoid.h
-limits.h
--
-stddef.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vectorVoid/stddef.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/matrix/matrix.h
 malloc.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vectorVoid/malloc.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/matrix/malloc.h
 stdio.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vectorVoid/stdio.h
-stdlib.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vectorVoid/stdlib.h
-stdbool.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vectorVoid/stdbool.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/matrix/stdio.h
 assert.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vectorVoid/assert.h
-memory.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/vectorVoid/memory.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/matrix/assert.h
+stdbool.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/matrix/stdbool.h
 

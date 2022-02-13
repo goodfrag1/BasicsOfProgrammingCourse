@@ -1,6 +1,10 @@
 #ifndef LABA_5B_MATRIX_H
 #define LABA_5B_MATRIX_H
 
+#include "malloc.h"
+#include "stdio.h"
+#include "stdbool.h"
+#include "assert.h"
 #include "stddef.h"
 
 typedef struct matrix {

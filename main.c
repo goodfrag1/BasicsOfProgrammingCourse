@@ -2,31 +2,43 @@
 #include "Libs/data_structures/matrix/matrix.h"
 #include "Libs/algorithms/functions/function.h"
 
-matrix mulMatrices(matrix m1, matrix m2) {
-    matrix resM = getMemMatrix(m1.nRows, m2.nCols);
-    for (int i = 0; i < m1.nRows; ++i)
-        for (int j = 0; j < m2.nCols; ++j) {
-            resM.values[i][j] = 0;
-            for (int k = 0; k < m2.nRows; ++k)
-                resM.values[i][j] += m1.values[i][k] * m2.values[k][j];
-        }
-    return resM;
+long long getSum(const int *a, int n) {
+    long long sum = 0;
+    for (int i = 0; i < n; ++i)
+        sum += a[i];
+
+    return sum;
 }
 
-bool isMutuallyInverseMatrices(matrix m1, matrix m2) {
-    return isEMatrix(mulMatrices(m1, m2));
+bool isUnique(const long long *a, int n) {
+    for (int i = 0; i < n - 1; ++i)
+        for (int j = i + 1; j < n; ++j)
+            if (a[i] == a[j])
+                return false;
+
+    return true;
+}
+
+void transposeIfMatrixHasEqualSumOfRows(matrix *m, int nRows, int nCols) {
+    long long arrayOfSums[m->nRows];
+    for (int i = 0; i < m->nRows; ++i)
+        arrayOfSums[i] = getSum(m->values[i], m->nRows);
+
+    if (!isUnique(arrayOfSums, nRows)) {
+        transposeSquareMatrix(*m);
+        outputMatrix(*m);
+    } else
+        printf("NO UNIQUE SUMS");
 }
 
 int main() {
     int nRows;
     scanf("%d", &nRows);
 
-    matrix A = getMemMatrix(nRows, nRows);
-    inputMatrix(A);
-    matrix B = getMemMatrix(nRows, nRows);
-    inputMatrix(B);
+    matrix m = getMemMatrix(nRows, nRows);
+    inputMatrix(m);
 
-    printf("%d", isMutuallyInverseMatrices(A, B));
+    transposeIfMatrixHasEqualSumOfRows(&m, m.nRows, m.nCols);
 
     return 0;
 }

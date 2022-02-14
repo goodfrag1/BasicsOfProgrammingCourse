@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/matrix/matrix.c
-matrix.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/matrix/matrix.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/algorithms/functions/function.h
+stddef.h
+-
 
 C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/matrix/matrix.h
 malloc.h
@@ -21,4 +21,12 @@ assert.h
 C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/matrix/assert.h
 stddef.h
 C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/matrix/stddef.h
+
+C:/Users/User-GDFG/CLionProjects/Laba_5b/main.c
+stdio.h
+-
+Libs/data_structures/matrix/matrix.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/matrix/matrix.h
+Libs/algorithms/functions/function.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/algorithms/functions/function.h
 

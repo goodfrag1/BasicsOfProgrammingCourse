@@ -12,8 +12,7 @@ int getMax(int *a, int n) {
 }
 
 void sortRowsByMaxElement(matrix m) {
-    for (int i = 0; i < m.nRows; ++i)
-        insertionSortRowsMatrixByRowCriteria(m, getMax);
+    insertionSortRowsMatrixByRowCriteria(m, getMax);
 }
 
 int main() {

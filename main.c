@@ -2,43 +2,32 @@
 #include "Libs/data_structures/matrix/matrix.h"
 #include "Libs/algorithms/functions/function.h"
 
-long long getSum(const int *a, int n) {
-    long long sum = 0;
-    for (int i = 0; i < n; ++i)
-        sum += a[i];
+int getMax(int *a, int n) {
+    int maxElement = a[0];
+    for (size_t i = 1; i < n; i++)
+        if (a[i] > maxElement)
+            maxElement = a[i];
 
-    return sum;
+    return maxElement;
 }
 
-bool isUnique(const long long *a, int n) {
-    for (int i = 0; i < n - 1; ++i)
-        for (int j = i + 1; j < n; ++j)
-            if (a[i] == a[j])
-                return false;
-
-    return true;
-}
-
-void transposeIfMatrixHasEqualSumOfRows(matrix *m, int nRows, int nCols) {
-    long long arrayOfSums[m->nRows];
-    for (int i = 0; i < m->nRows; ++i)
-        arrayOfSums[i] = getSum(m->values[i], m->nRows);
-
-    if (!isUnique(arrayOfSums, nRows)) {
-        transposeSquareMatrix(*m);
-        outputMatrix(*m);
-    } else
-        printf("NO UNIQUE SUMS");
+void sortRowsByMaxElement(matrix m) {
+    for (int i = 0; i < m.nRows; ++i)
+        insertionSortRowsMatrixByRowCriteria(m, getMax);
 }
 
 int main() {
     int nRows;
     scanf("%d", &nRows);
+    int nCols;
+    scanf("%d", &nCols);
 
-    matrix m = getMemMatrix(nRows, nRows);
+    matrix m = getMemMatrix(nRows, nCols);
     inputMatrix(m);
 
-    transposeIfMatrixHasEqualSumOfRows(&m, m.nRows, m.nCols);
+    sortRowsByMaxElement(m);
+
+    outputMatrix(m);
 
     return 0;
 }

@@ -18,6 +18,12 @@ typedef struct position {
     int colIndex;
 } position;
 
+// обменивает значения переменных типа float по адресам x и y
+void swap(int *a, int *b);
+
+// возвращает столбец i матрицы m
+int *getColumn(matrix m, int i);
+
 // размещает в динамической памяти матрицу размером nRows на nCols
 // Возвращает матрицу
 matrix getMemMatrix(int nRows, int nCols);

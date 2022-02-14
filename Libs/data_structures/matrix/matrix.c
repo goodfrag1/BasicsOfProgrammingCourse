@@ -1,5 +1,19 @@
 #include "matrix.h"
 
+void swap(int *a, int *b) {
+    int t = *a;
+    *a = *b;
+    *b = t;
+}
+
+int *getColumn(matrix m, int i) {
+    int *column = (int *) malloc(m.nRows * sizeof(int));
+    for (int j = 0; j < m.nRows; ++j)
+        column[i] = m.values[i][j];
+
+    return column;
+}
+
 matrix getMemMatrix(int nRows, int nCols) {
     int **values = (int **) malloc(sizeof(int *) * nRows);
     for (int i = 0; i < nRows; i++)
@@ -40,8 +54,8 @@ void inputMatrices(matrix *ms, int nMatrices) {
 }
 
 void outputMatrix(matrix m) {
-    for (int i = 0; i < m.nCols; ++i) {
-        for (int j = 0; j < m.nRows; ++j)
+    for (int i = 0; i < m.nRows; ++i) {
+        for (int j = 0; j < m.nCols; ++j)
             printf("%d ", m.values[i][j]);
         printf("\n");
     }
@@ -67,11 +81,37 @@ void swapColumns(matrix m, int j1, int j2) {
 }
 
 void insertionSortRowsMatrixByRowCriteria(matrix m, int (*criteria)(int *, int)) {
-
+    int *resultsOfCriteria = (int *) malloc(m.nRows * sizeof(int));
+    for (int i = 0; i < m.nRows; ++i)
+        resultsOfCriteria[i] = criteria(m.values[i], m.nCols);
+    for (int i = 0; i < m.nRows; ++i) {
+        int index = i;
+        while (resultsOfCriteria[index] < resultsOfCriteria[index - 1] && index > 0) {
+            swap(&resultsOfCriteria[index], &resultsOfCriteria[index - 1]);
+            swapRows(m, index, index - 1);
+        }
+    }
+    free(resultsOfCriteria);
 }
 
 void insertionSortColsMatrixByColCriteria(matrix m, int (*criteria)(int *, int)) {
-
+    int *resultsOfCriteria = (int *) malloc(m.nRows * sizeof(int));
+    for (int i = 0; i < m.nCols; ++i) {
+        int *column = getColumn(m, i);
+        resultsOfCriteria[i] = criteria(column, m.nRows);
+        free(column);
+    }
+    for (int i = 0; i < m.nCols; ++i) {
+        int index = i;
+        for (int j = i++; j < m.nCols; ++j)
+            if (resultsOfCriteria[index] > resultsOfCriteria[j])
+                index = j;
+        while (resultsOfCriteria[index] < resultsOfCriteria[index - 1] && index > 0) {
+            swap(&resultsOfCriteria[index], &resultsOfCriteria[index - 1]);
+            swapColumns(m, index, index - 1);
+        }
+    }
+    free(resultsOfCriteria);
 }
 
 bool isSquareMatrix(matrix m) {

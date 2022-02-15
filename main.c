@@ -2,36 +2,22 @@
 #include "Libs/data_structures/matrix/matrix.h"
 #include "Libs/algorithms/functions/function.h"
 
-int max(int a, int b) {
-    return a > b ? a : b;
-}
-
-long long findSumOfMaxesOfPseudoDiagonal(matrix m) {
-    long long sum = 0;
-    for (int i = 1; i < m.nCols; ++i) {
-        int j = i;
-        int k = 0;
-        int maxElement = m.values[k][j];
-        while (j < m.nCols) {
-            maxElement = max(maxElement, m.values[k][j]);
-            j++;
-            k++;
-        }
-        sum += maxElement;
-    }
-    for (int i = 1; i < m.nRows; ++i) {
-        int j = i;
-        int k = 0;
-        int maxElement = m.values[j][k];
-        while (j < m.nRows) {
-            maxElement = max(maxElement, m.values[j][k]);
-            j++;
-            k++;
-        }
-        sum += maxElement;
+int getMinInArea(matrix m) {
+    position maxPos = getMaxValuePos(m);
+    int h = maxPos.rowIndex - 1;
+    int leftBorder = maxPos.colIndex - 1;
+    int rightBorder = maxPos.colIndex + 1;
+    int minElement = m.values[maxPos.rowIndex][maxPos.colIndex];
+    while (h >= 0) {
+        for (int i = leftBorder; i < rightBorder; i++)
+            if (m.values[h][i] < minElement)
+                minElement = m.values[h][i];
+        h--;
+        leftBorder--;
+        rightBorder++;
     }
 
-    return sum;
+    return minElement;
 }
 
 int main() {
@@ -43,7 +29,7 @@ int main() {
     matrix m = getMemMatrix(nRows, nCols);
     inputMatrix(m);
 
-    printf("%lld", findSumOfMaxesOfPseudoDiagonal(m));
+    printf("%d", getMinInArea(m));
 
     return 0;
 }

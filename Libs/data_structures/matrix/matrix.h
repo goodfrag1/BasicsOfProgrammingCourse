@@ -1,6 +1,8 @@
 #ifndef LABA_5B_MATRIX_H
 #define LABA_5B_MATRIX_H
 
+#include "math.h"
+#include "memory.h"
 #include "malloc.h"
 #include "stdio.h"
 #include "stdbool.h"
@@ -20,6 +22,8 @@ typedef struct position {
 
 // обменивает значения переменных типа float по адресам x и y
 void swap(int *a, int *b);
+
+void swapF(float *a, float *b);
 
 // возвращает столбец i матрицы m
 int *getColumn(matrix m, int i);

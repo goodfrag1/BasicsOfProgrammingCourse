@@ -2,22 +2,31 @@
 #include "Libs/data_structures/matrix/matrix.h"
 #include "Libs/algorithms/functions/function.h"
 
-int getMinInArea(matrix m) {
-    position maxPos = getMaxValuePos(m);
-    int h = maxPos.rowIndex - 1;
-    int leftBorder = maxPos.colIndex - 1;
-    int rightBorder = maxPos.colIndex + 1;
-    int minElement = m.values[maxPos.rowIndex][maxPos.colIndex];
-    while (h >= 0) {
-        for (int i = leftBorder; i < rightBorder; i++)
-            if (m.values[h][i] < minElement)
-                minElement = m.values[h][i];
-        h--;
-        leftBorder--;
-        rightBorder++;
-    }
+float getDistance(int *a, int n) {
+    long long sum = 0;
+    for (int i = 0; i < n; ++i)
+        sum += pow(a[i], 2);
 
-    return minElement;
+    return sqrt(sum);
+}
+
+void insertionSortRowsMatrixByRowCriteriaF(matrix m, float (*criteria)(int *, int)) {
+    float *resultsOfCriteria = (float *) malloc(m.nRows * sizeof(float));
+    for (int i = 0; i < m.nRows; ++i)
+        resultsOfCriteria[i] = criteria(m.values[i], m.nCols);
+    for (int i = 0; i < m.nRows; ++i) {
+        int index = i;
+        while (resultsOfCriteria[index] < resultsOfCriteria[index - 1] && index > 0) {
+            swapF(&resultsOfCriteria[index], &resultsOfCriteria[index - 1]);
+            swapRows(m, index, index - 1);
+            index--;
+        }
+    }
+    free(resultsOfCriteria);
+}
+
+void sortByDistances(matrix m) {
+    insertionSortRowsMatrixByRowCriteriaF(m, getDistance);
 }
 
 int main() {
@@ -29,9 +38,9 @@ int main() {
     matrix m = getMemMatrix(nRows, nCols);
     inputMatrix(m);
 
-    printf("%d", getMinInArea(m));
+    sortByDistances(m);
+
+    outputMatrix(m);
 
     return 0;
 }
-
-

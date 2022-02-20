@@ -6,6 +6,12 @@ void swap(int *a, int *b) {
     *b = t;
 }
 
+void swapF(float *a, float *b) {
+    float t = *a;
+    *a = *b;
+    *b = t;
+}
+
 int *getColumn(matrix m, int i) {
     int *column = (int *) malloc(m.nRows * sizeof(int));
     for (int j = 0; j < m.nRows; ++j)
@@ -118,10 +124,9 @@ bool isSquareMatrix(matrix m) {
 
 bool twoMatricesEqual(matrix m1, matrix m2) {
     if (isSquareMatrix(m1) && isSquareMatrix(m2)) {
-        for (int i = 0; i < m1.nCols; ++i)
-            for (int j = 0; j < m1.nRows; ++j)
-                if (m1.values[i][j] != m2.values[i][j])
-                    return false;
+        for (int i = 0; i < m1.nRows; ++i)
+            if (!memcmp(m1.values, m2.values, sizeof(int) * m1.nCols))
+                return false;
     } else
         return false;
 
@@ -140,7 +145,7 @@ bool isEMatrix(matrix m) {
 bool isSymmetricMatrix(matrix m) {
     if (isSquareMatrix(m)) {
         for (int i = 0; i < m.nRows; ++i)
-            for (int j = 0; j < m.nCols; ++j)
+            for (int j = i + 1; j < m.nCols; ++j)
                 if (i != m.nCols && m.values[i][j] != m.values[j][i])
                     return false;
     } else

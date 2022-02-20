@@ -2,31 +2,37 @@
 #include "Libs/data_structures/matrix/matrix.h"
 #include "Libs/algorithms/functions/function.h"
 
-float getDistance(int *a, int n) {
+long long getSum(const int *a, int n) {
     long long sum = 0;
     for (int i = 0; i < n; ++i)
-        sum += pow(a[i], 2);
+        sum += a[i];
 
-    return sqrt(sum);
+    return sum;
 }
 
-void insertionSortRowsMatrixByRowCriteriaF(matrix m, float (*criteria)(int *, int)) {
-    float *resultsOfCriteria = (float *) malloc(m.nRows * sizeof(float));
-    for (int i = 0; i < m.nRows; ++i)
-        resultsOfCriteria[i] = criteria(m.values[i], m.nCols);
-    for (int i = 0; i < m.nRows; ++i) {
-        int index = i;
-        while (resultsOfCriteria[index] < resultsOfCriteria[index - 1] && index > 0) {
-            swapF(&resultsOfCriteria[index], &resultsOfCriteria[index - 1]);
-            swapRows(m, index, index - 1);
-            index--;
-        }
+int cmp_long_long(const void *pa, const void *pb) {
+    return memcmp(pa, pb, sizeof(long long));
+}
+
+int countNUnique(long long *a, int n) {
+    int count = 0;
+    for (int i = 0; i < n; ++i) {
+        int j = 0;
+        while (j < i && cmp_long_long(a + j, a + i))
+            j++;
+        count += j == i;
     }
-    free(resultsOfCriteria);
+
+    return count;
 }
 
-void sortByDistances(matrix m) {
-    insertionSortRowsMatrixByRowCriteriaF(m, getDistance);
+int countEqClassesByRowsSum(matrix m) {
+    long long arrayOfSums[m.nRows];
+    for (int i = 0; i < m.nRows; ++i)
+        arrayOfSums[i] = getSum(m.values[i], m.nCols);
+    int countOfUnique = countNUnique(arrayOfSums, m.nRows);
+
+    return countOfUnique;
 }
 
 int main() {
@@ -38,9 +44,7 @@ int main() {
     matrix m = getMemMatrix(nRows, nCols);
     inputMatrix(m);
 
-    sortByDistances(m);
-
-    outputMatrix(m);
+    printf("%d", countEqClassesByRowsSum(m));
 
     return 0;
 }

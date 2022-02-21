@@ -2,31 +2,43 @@
 #include "Libs/data_structures/matrix/matrix.h"
 #include "Libs/algorithms/functions/function.h"
 
-bool isNonDescendingSorted(const int *a, int n) {
-    for (size_t i = 0; i < n - 1; i++)
-        if (a[i] > a[i + 1])
-            return false;
-
-    return true;
-}
-
-bool hasAllNonDescendingRows(matrix m) {
-    for (int i = 0; i < m.nRows; ++i)
-        if (!isNonDescendingSorted(m.values[i], m.nCols))
-            return false;
-
-    return true;
-}
-
-int countNonDescendingRowsMatrices(matrix *ms, int nMatrix) {
+int countValues(const int *a, int n, int value) {
     int count = 0;
-    for (int i = 0; i < nMatrix; ++i) {
-        count += hasAllNonDescendingRows(ms[i]);
-    }
+    for (int i = 0; i < n; ++i)
+        if (a[i] == value)
+            count++;
 
     return count;
 }
 
+int countZeroRows(matrix m) {
+    int count = 0;
+    for (int i = 0; i < m.nRows; ++i)
+        if (countValues(m.values[i], m.nCols, 0) == m.nCols)
+            count++;
+
+    return count;
+}
+
+void printMatrixWithMaxZeroRows(matrix *ms, int nMatrix) {
+    int maxZeroRows = 0;
+    for (int i = 0; i < nMatrix; ++i)
+        if (countZeroRows(ms[i]) > maxZeroRows)
+            maxZeroRows = countZeroRows(ms[i]);
+
+    int k = 0;
+    int maxZeroRowsIndexes[nMatrix];
+    for (int i = 0; i < nMatrix; ++i)
+        if (countZeroRows(ms[i]) == maxZeroRows) {
+            maxZeroRowsIndexes[k] = i;
+            k++;
+        }
+
+    for (int i = 0; i < nMatrix; ++i) {
+        outputMatrix(ms[maxZeroRowsIndexes[i]]);
+        printf("\n");
+    }
+}
 
 int main() {
     int nMatrices;
@@ -39,7 +51,7 @@ int main() {
     matrix *ms = getMemArrayOfMatrices(nMatrices, nRows, nCols);
     inputMatrices(ms, nMatrices);
 
-    printf("%d", countNonDescendingRowsMatrices(ms, nMatrices));
+    printMatrixWithMaxZeroRows(ms, nMatrices);
 
     return 0;
 }

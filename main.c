@@ -2,43 +2,30 @@
 #include "Libs/data_structures/matrix/matrix.h"
 #include "Libs/algorithms/functions/function.h"
 
-matrix mulMatrices(matrix m1, matrix m2) {
-    matrix resM = getMemMatrix(m1.nRows, m2.nCols);
-    for (int i = 0; i < m1.nRows; ++i)
-        for (int j = 0; j < m2.nCols; ++j) {
-            resM.values[i][j] = 0;
-            for (int k = 0; k < m2.nRows; ++k)
-                resM.values[i][j] += m1.values[i][k] * m2.values[k][j];
-        }
-    return resM;
+int getMin(int *a, int n) {
+    int minElement = a[0];
+    for (size_t i = 1; i < n; i++)
+        if (a[i] < minElement)
+            minElement = a[i];
+
+    return minElement;
 }
 
-void getSquareOfMatrixIfSymmetric(matrix *m) {
-    if (isSymmetricMatrix(*m))
-        *m = mulMatrices(*m, *m);
+void sortColsByMinElement(matrix m) {
+    insertionSortColsMatrixByColCriteria(m, getMin);
 }
 
-void test_getSquareOfMatrixIfSymmetric_true() {
-    matrix m1 = createMatrixFromArray((int[]) {1, 2, 2, 1}, 2, 2);
-    matrix m2 = createMatrixFromArray((int[]) {5, 4, 4, 5}, 2, 2);
+void test_sortColsByMinElement() {
+    matrix m1 = createMatrixFromArray((int[]) {3, 5, 2, 4, 3, 3, 2, 5, 1, 8, 2, 7, 6, 1, 4, 4, 8, 3}, 3, 6);
+    matrix m2 = createMatrixFromArray((int[]) {5, 2, 3, 3, 3, 4, 5, 1, 2, 2, 7, 8, 1, 4, 6, 8, 3, 4}, 3, 6);
 
-    getSquareOfMatrixIfSymmetric(&m1);
+    sortColsByMinElement(m1);
 
     assert(twoMatricesEqual(m1, m2));
 }
 
-void test_getSquareOfMatrixIfSymmetric_false() {
-    matrix m1 = createMatrixFromArray((int[]) {1, 2, 3, 4, 5, 6}, 3, 2);
-    matrix m2 = createMatrixFromArray((int[]) {5, 4, 4, 5}, 3, 2);
-
-    getSquareOfMatrixIfSymmetric(&m1);
-
-    assert(!twoMatricesEqual(m1, m2));
-}
-
 void test() {
-    test_getSquareOfMatrixIfSymmetric_true();
-    test_getSquareOfMatrixIfSymmetric_false();
+    test_sortColsByMinElement();
 }
 
 int main() {
@@ -52,12 +39,9 @@ int main() {
     matrix m = getMemMatrix(nRows, nCols);
     inputMatrix(m);
 
-    getSquareOfMatrixIfSymmetric(&m);
+    sortColsByMinElement(m);
 
-    if (isSymmetricMatrix(m))
-        outputMatrix(m);
-    else
-        printf("NOT SYMMETRIC MATRIX");
+    outputMatrix(m);
 
     return 0;
 }

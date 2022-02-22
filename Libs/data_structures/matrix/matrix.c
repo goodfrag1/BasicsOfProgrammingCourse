@@ -115,7 +115,6 @@ void insertionSortColsMatrixByColCriteria(matrix m, int (*criteria)(int *, int))
             index--;
         }
     }
-    free(resultsOfCriteria);
 }
 
 bool isSquareMatrix(matrix m) {
@@ -123,7 +122,7 @@ bool isSquareMatrix(matrix m) {
 }
 
 bool twoMatricesEqual(matrix m1, matrix m2) {
-    if (isSquareMatrix(m1) && isSquareMatrix(m2)) {
+    if (m1.nRows == m2.nRows && m1.nCols == m2.nCols) {
         for (int i = 0; i < m1.nRows; ++i)
             if (!memcmp(m1.values, m2.values, sizeof(int) * m1.nCols))
                 return false;

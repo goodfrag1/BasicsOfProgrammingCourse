@@ -2,34 +2,43 @@
 #include "Libs/data_structures/matrix/matrix.h"
 #include "Libs/algorithms/functions/function.h"
 
-position getLeftMin(matrix m) {
-    return getMinValuePos(m);
+bool checkIsSpecialElement(matrix m, size_t k) {
+    int max = m.values[0][k];
+    int sum = 0;
+    for (int i = 0; i < m.nRows; ++i) {
+        sum += m.values[i][k];
+        if (m.values[i][k] > max)
+            max = m.values[i][k];
+    }
+
+    return sum - max < max;
 }
 
-void swapPenultimateRow(matrix m) {
-    position minElementPos = getLeftMin(m);
-    int minElementCol = minElementPos.colIndex;
-    for (int i = m.nRows - 1; i >= 0; --i)
-        m.values[m.nRows - 2][i] = m.values[i][minElementCol];
+int getNSpecialElement(matrix m) {
+    int count = 0;
+    for (size_t i = 0; i < m.nCols; ++i)
+        count += checkIsSpecialElement(m, i);
+
+    return count;
 }
 
-void test_swapPenultimateRow_oneElement() {
-    matrix m1 = createMatrixFromArray((int[]) {1}, 1, 1);
-    matrix m2 = createMatrixFromArray((int[]) {1}, 1, 1);
+void test_getNSpecialElement_notEqualElements() {
+    matrix m = createMatrixFromArray((int[]) {3, 5, 5, 4, 2, 3, 6, 7, 12, 2, 1, 2}, 3, 4);
 
-    assert(twoMatricesEqual(m1, m2));
+
+    assert(getNSpecialElement(m) == 2);
 }
 
-void test_swapPenultimateRow_notOneElement() {
-    matrix m1 = createMatrixFromArray((int[]) {1, 2, 3, 4}, 2, 2);
-    matrix m2 = createMatrixFromArray((int[]) {1, 3, 2, 4}, 2, 2);
+void test_getNSpecialElement_equalElements() {
+    matrix m = createMatrixFromArray((int[]) {3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3}, 3, 4);
 
-    assert(twoMatricesEqual(m1, m2));
+
+    assert(getNSpecialElement(m) == 0);
 }
 
 void test() {
-    test_swapPenultimateRow_notOneElement();
-    test_swapPenultimateRow_oneElement();
+    test_getNSpecialElement_equalElements();
+    test_getNSpecialElement_notEqualElements();
 }
 
 int main() {
@@ -37,13 +46,13 @@ int main() {
 
     int nRows;
     scanf("%d", &nRows);
+    int nCols;
+    scanf("%d", &nCols);
 
-    matrix m = getMemMatrix(nRows, nRows);
+    matrix m = getMemMatrix(nRows, nCols);
     inputMatrix(m);
 
-    swapPenultimateRow(m);
-
-    outputMatrix(m);
+    printf("%d", getNSpecialElement(m));
 
     return 0;
 }

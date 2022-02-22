@@ -2,39 +2,47 @@
 #include "Libs/data_structures/matrix/matrix.h"
 #include "Libs/algorithms/functions/function.h"
 
-int getMinInArea(matrix m) {
-    position maxPos = getMaxValuePos(m);
-    int h = maxPos.rowIndex - 1;
-    int leftBorder = maxPos.colIndex - 1;
-    int rightBorder = maxPos.colIndex + 1;
-    int minElement = m.values[maxPos.rowIndex][maxPos.colIndex];
-    while (h >= 0) {
-        for (int i = leftBorder; i < rightBorder; i++)
-            if (m.values[h][i] < minElement)
-                minElement = m.values[h][i];
-        h--;
-        leftBorder--;
-        rightBorder++;
-    }
-
-    return minElement;
+int max(int a, int b) {
+    return a > b ? a : b;
 }
 
-void test_getMinInArea_notEdgeMin() {
-    matrix m = createMatrixFromArray((int[]) {10, 7, 5, 6, 3, 11, 8, 9, 4, 1, 12, 2}, 3, 4);
+long long findSumOfMaxesOfPseudoDiagonal(matrix m) {
+    int n = m.nRows + m.nCols - 1;
+    int *maxElements = (int *) (calloc(n, sizeof(int)));
 
-    assert(getMinInArea(m) == 5);
+    int index = m.nRows - 1;
+    long long sum = 0;
+    for (int i = 0; i < m.nRows; ++i)
+        for (int j = 0; j < m.nCols; ++j)
+            if (i != j) {
+                int k = index - i + j;
+                if (i == 0 || j == 0)
+                    maxElements[k] = m.values[i][j];
+                else
+                    maxElements[k] = max(maxElements[k], m.values[i][j]);
+            }
+
+    for (int i = 0; i < n; ++i)
+        sum += maxElements[i];
+
+    return sum;
 }
 
-void test_getMinInArea_edgeMin() {
-    matrix m = createMatrixFromArray((int[]) {6, 8, 9, 2, 7, 12, 3, 4, 10, 11, 5, 1}, 3, 4);
+void test_findSumOfMaxesOfPseudoDiagonal_notOneElement() {
+    matrix m = createMatrixFromArray((int[]) {3, 2, 5, 4, 1, 3, 6, 3, 3, 2, 1, 2}, 3, 4);
 
-    assert(getMinInArea(m) == 6);
+    assert(findSumOfMaxesOfPseudoDiagonal(m) == 20);
+}
+
+void test_findSumOfMaxesOfPseudoDiagonal_oneElement() {
+    matrix m = createMatrixFromArray((int[]) {3}, 1, 1);
+
+    assert(findSumOfMaxesOfPseudoDiagonal(m) == 0);
 }
 
 void test() {
-    test_getMinInArea_edgeMin();
-    test_getMinInArea_notEdgeMin();
+    test_findSumOfMaxesOfPseudoDiagonal_notOneElement();
+    test_findSumOfMaxesOfPseudoDiagonal_oneElement();
 }
 
 int main() {
@@ -48,7 +56,7 @@ int main() {
     matrix m = getMemMatrix(nRows, nCols);
     inputMatrix(m);
 
-    printf("%d", getMinInArea(m));
+    printf("%lld", findSumOfMaxesOfPseudoDiagonal(m));
 
     return 0;
 }

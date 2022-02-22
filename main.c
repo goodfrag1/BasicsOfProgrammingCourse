@@ -2,66 +2,53 @@
 #include "Libs/data_structures/matrix/matrix.h"
 #include "Libs/algorithms/functions/function.h"
 
-int countValues(const int *a, int n, int value) {
-    int count = 0;
-    for (int i = 0; i < n; ++i)
-        if (a[i] == value)
-            count++;
+bool isNonDescendingSorted(const int *a, int n) {
+    for (size_t i = 0; i < n - 1; i++)
+        if (a[i] >= a[i + 1])
+            return false;
 
-    return count;
+    return true;
 }
 
-int countZeroRows(matrix m) {
-    int count = 0;
+bool hasAllNonDescendingRows(matrix m) {
     for (int i = 0; i < m.nRows; ++i)
-        if (countValues(m.values[i], m.nCols, 0) == m.nCols)
-            count++;
+        if (!isNonDescendingSorted(m.values[i], m.nCols))
+            return false;
+
+    return true;
+}
+
+int countNonDescendingRowsMatrices(matrix *ms, int nMatrix) {
+    int count = 0;
+    for (int i = 0; i < nMatrix; ++i) {
+        count += hasAllNonDescendingRows(ms[i]);
+    }
 
     return count;
 }
 
-void printMatrixWithMaxZeroRows(matrix *ms, int nMatrix) {
-    int maxZeroRows = 0;
-    for (int i = 0; i < nMatrix; ++i)
-        if (countZeroRows(ms[i]) > maxZeroRows)
-            maxZeroRows = countZeroRows(ms[i]);
+void test_isNonDescendingSorted_false() {
+    int a[] = {1, 2, 3, 4};
 
-    int k = 0;
-    int matrixWithMaxZeroRowsIndexes[nMatrix];
-    for (int i = 0; i < nMatrix; ++i)
-        if (countZeroRows(ms[i]) == maxZeroRows) {
-            matrixWithMaxZeroRowsIndexes[k] = i;
-            k++;
-        }
-
-    for (int i = 0; i < k; ++i) {
-        outputMatrix(ms[matrixWithMaxZeroRowsIndexes[i]]);
-        printf("\n");
-    }
+    assert(isNonDescendingSorted(a, 4) == true);
 }
 
-void test_countZeroRows_allZeroRows() {
-    matrix m = createMatrixFromArray((int[]) {0, 0, 0, 0}, 2, 2);
+void test_isNonDescendingSorted_true() {
+    int a[] = {4, 3, 2, 1};
 
-    assert(countZeroRows(m) == m.nRows);
+    assert(isNonDescendingSorted(a, 4) == false);
 }
 
-void test_countZeroRows_noZeroRows() {
-    matrix m = createMatrixFromArray((int[]) {1, 2, 3, 4}, 2, 2);
+void test_isNonDescendingSorted_equalElements() {
+    int a[] = {1,1,1,1};
 
-    assert(countZeroRows(m) == 0);
-}
-
-void test_countZeroRows_withZeroRows() {
-    matrix m = createMatrixFromArray((int[]) {0, 0, 1, 2}, 2, 2);
-
-    assert(countZeroRows(m) == 1);
+    assert(isNonDescendingSorted(a, 4) == false);
 }
 
 void test() {
-    test_countZeroRows_noZeroRows();
-    test_countZeroRows_withZeroRows();
-    test_countZeroRows_allZeroRows();
+    test_isNonDescendingSorted_true();
+    test_isNonDescendingSorted_false();
+    test_isNonDescendingSorted_equalElements();
 }
 
 int main() {
@@ -77,7 +64,7 @@ int main() {
     matrix *ms = getMemArrayOfMatrices(nMatrices, nRows, nCols);
     inputMatrices(ms, nMatrices);
 
-    printMatrixWithMaxZeroRows(ms, nMatrices);
+    printf("%d", countNonDescendingRowsMatrices(ms, nMatrices));
 
     return 0;
 }

@@ -40,15 +40,43 @@ void test_isNonDescendingSorted_true() {
 }
 
 void test_isNonDescendingSorted_equalElements() {
-    int a[] = {1,1,1,1};
+    int a[] = {1, 1, 1, 1};
 
     assert(isNonDescendingSorted(a, 4) == false);
+}
+
+void test_hasAllNonDescendingRows_true() {
+    matrix m = createMatrixFromArray((int[]) {4, 3, 2, 1}, 2, 2);
+
+    assert(hasAllNonDescendingRows(m) == false);
+}
+
+void test_hasAllNonDescendingRows_false() {
+    matrix m = createMatrixFromArray((int[]) {1, 2, 3, 4}, 2, 2);
+
+    assert(hasAllNonDescendingRows(m) == true);
+}
+
+void test_countNonDescendingRowsMatrices_notZeroNonDescendingRowsMatrices() {
+    matrix *ms = createArrayOfMatrixFromArray((int[]) {1, 2, 3, 4}, 2, 2, 2);
+
+    assert(countNonDescendingRowsMatrices(ms, 2) == 2);
+}
+
+void test_countNonDescendingRowsMatrices_zeroNonDescendingRowsMatrices() {
+    matrix *ms = createArrayOfMatrixFromArray((int[]) {4, 3, 2, 1}, 2, 2, 2);
+
+    assert(countNonDescendingRowsMatrices(ms, 2) == 0);
 }
 
 void test() {
     test_isNonDescendingSorted_true();
     test_isNonDescendingSorted_false();
     test_isNonDescendingSorted_equalElements();
+    test_hasAllNonDescendingRows_true();
+    test_hasAllNonDescendingRows_false();
+    test_countNonDescendingRowsMatrices_notZeroNonDescendingRowsMatrices();
+    test_countNonDescendingRowsMatrices_zeroNonDescendingRowsMatrices();
 }
 
 int main() {

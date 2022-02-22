@@ -1,6 +1,7 @@
 #ifndef LABA_5B_MATRIX_H
 #define LABA_5B_MATRIX_H
 
+#include "stdlib.h"
 #include "math.h"
 #include "memory.h"
 #include "malloc.h"

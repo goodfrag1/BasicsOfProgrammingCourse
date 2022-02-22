@@ -2,43 +2,80 @@
 #include "Libs/data_structures/matrix/matrix.h"
 #include "Libs/algorithms/functions/function.h"
 
-bool checkIsSpecialElement(matrix m, size_t k) {
-    int max = m.values[0][k];
-    int sum = 0;
-    for (int i = 0; i < m.nRows; ++i) {
-        sum += m.values[i][k];
-        if (m.values[i][k] > max)
-            max = m.values[i][k];
-    }
+long long getSum(const int *a, int n) {
+    long long sum = 0;
+    for (int i = 0; i < n; ++i)
+        sum += a[i];
 
-    return sum - max < max;
+    return sum;
 }
 
-int getNSpecialElement(matrix m) {
-    int count = 0;
-    for (size_t i = 0; i < m.nCols; ++i)
-        count += checkIsSpecialElement(m, i);
+int cmp_long_long(const void *pa, const void *pb) {
+    long long arg1 = *(const long *) pa;
+    long long arg2 = *(const long *) pb;
+    if (arg1 < arg2) return -1;
+    if (arg1 > arg2) return 1;
+    return 0;
+}
+
+int countNUnique(long long *a, int n) {
+    int count = 1;
+    long long previous = a[0];
+    for (int i = 1; i < n; ++i)
+        if (a[i] != previous) {
+            count++;
+            previous = a[i];
+        }
 
     return count;
 }
 
-void test_getNSpecialElement_notEqualElements() {
-    matrix m = createMatrixFromArray((int[]) {3, 5, 5, 4, 2, 3, 6, 7, 12, 2, 1, 2}, 3, 4);
+int countEqClassesByRowsSum(matrix m) {
+    long long arrayOfSums[m.nRows];
+    for (int i = 0; i < m.nRows; ++i)
+        arrayOfSums[i] = getSum(m.values[i], m.nCols);
 
+    qsort(arrayOfSums, m.nRows, sizeof(long long), cmp_long_long);
 
-    assert(getNSpecialElement(m) == 2);
+    return countNUnique(arrayOfSums, m.nRows);
 }
 
-void test_getNSpecialElement_equalElements() {
-    matrix m = createMatrixFromArray((int[]) {3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3}, 3, 4);
+void test_NUnique_notOneElement() {
+    long long a[] = {1, 2, 3, 4};
 
+    assert(countNUnique(a, 4) == 4);
+}
 
-    assert(getNSpecialElement(m) == 0);
+void test_NUnique_oneElement() {
+    long long a[] = {1};
+
+    assert(countNUnique(a, 1) == 1);
+}
+
+void test_NUnique_noUniqueElements() {
+    long long a[] = {1, 1, 1, 1};
+
+    assert(countNUnique(a, 4) == 1);
+}
+
+void test_countEqClassesByRowsSum_diffClasses() {
+    matrix m = createMatrixFromArray((int[]) {7, 1, 2, 7, 5, 4, 4, 3, 1, 6, 8, 0}, 6, 2);
+
+    assert(countEqClassesByRowsSum(m) == 3);
+}
+
+void test_countEqClassesByRowsSum_similarClasses() {
+    matrix m = createMatrixFromArray((int[]) {7, 1, 1, 7, 5, 3, 4, 4, 2, 6, 8, 0}, 6, 2);
+
+    assert(countEqClassesByRowsSum(m) == 1);
 }
 
 void test() {
-    test_getNSpecialElement_equalElements();
-    test_getNSpecialElement_notEqualElements();
+    test_NUnique_noUniqueElements();
+    test_NUnique_notOneElement();
+    test_NUnique_oneElement();
+    test_countEqClassesByRowsSum_diffClasses();
+    test_countEqClassesByRowsSum_similarClasses();
 }
 
 int main() {
@@ -52,7 +89,7 @@ int main() {
     matrix m = getMemMatrix(nRows, nCols);
     inputMatrix(m);
 
-    printf("%d", getNSpecialElement(m));
+    printf("%d", countEqClassesByRowsSum(m));
 
     return 0;
 }

@@ -17,7 +17,47 @@ long long getSpecialScalarProduct(matrix m) {
     return getScalarProductRowAndCol(m, maxElementRow, minElementCol);
 }
 
+void test_getScalarProductRowAndCol_notZeroMatrix() {
+    matrix m = createMatrixFromArray((int[]) {1, 2, 3, 4}, 2, 2);
+
+    assert(getScalarProductRowAndCol(m, 1, 0) == 15);
+}
+
+void test_getScalarProductRowAndCol_zeroMatrix() {
+    matrix m = createMatrixFromArray((int[]) {0, 0, 0, 0}, 2, 2);
+
+    assert(getScalarProductRowAndCol(m, 0, 1) == 0);
+}
+
+void test_getSpecialScalarProductRowAndCol_notZeroMatrix() {
+    matrix m = createMatrixFromArray((int[]) {1, 2, 3, 4}, 2, 2);
+
+    assert(getSpecialScalarProduct(m) == 15);
+}
+
+void test_getSpecialScalarProductRowAndCol_zeroMatrix() {
+    matrix m = createMatrixFromArray((int[]) {0, 0, 0, 0}, 2, 2);
+
+    assert(getSpecialScalarProduct(m) == 0);
+}
+
+void test_getSpecialScalarProductRowAndCol_oneElement() {
+    matrix m = createMatrixFromArray((int[]) {2}, 1, 1);
+
+    assert(getSpecialScalarProduct(m) == 4);
+}
+
+void test() {
+    test_getScalarProductRowAndCol_notZeroMatrix();
+    test_getScalarProductRowAndCol_zeroMatrix();
+    test_getSpecialScalarProductRowAndCol_notZeroMatrix();
+    test_getSpecialScalarProductRowAndCol_zeroMatrix();
+    test_getSpecialScalarProductRowAndCol_oneElement();
+}
+
 int main() {
+    test();
+
     int nRows;
     scanf("%d", &nRows);
 

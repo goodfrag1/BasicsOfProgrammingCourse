@@ -2,80 +2,51 @@
 #include "Libs/data_structures/matrix/matrix.h"
 #include "Libs/algorithms/functions/function.h"
 
-long long getSum(const int *a, int n) {
+#define EPS 1e-8
+
+float getDistance(int *a, int n) {
     long long sum = 0;
     for (int i = 0; i < n; ++i)
-        sum += a[i];
+        sum += pow(a[i], 2);
 
-    return sum;
+    return sqrtf(sum);
 }
 
-int cmp_long_long(const void *pa, const void *pb) {
-    long long arg1 = *(const long *) pa;
-    long long arg2 = *(const long *) pb;
-    if (arg1 < arg2) return -1;
-    if (arg1 > arg2) return 1;
-    return 0;
-}
-
-int countNUnique(long long *a, int n) {
-    int count = 1;
-    long long previous = a[0];
-    for (int i = 1; i < n; ++i)
-        if (a[i] != previous) {
-            count++;
-            previous = a[i];
-        }
-
-    return count;
-}
-
-int countEqClassesByRowsSum(matrix m) {
-    long long arrayOfSums[m.nRows];
+void insertionSortRowsMatrixByRowCriteriaF(matrix m, float (*criteria)(int *, int)) {
+    float *resultsOfCriteria = (float *) malloc(m.nRows * sizeof(float));
     for (int i = 0; i < m.nRows; ++i)
-        arrayOfSums[i] = getSum(m.values[i], m.nCols);
-
-    qsort(arrayOfSums, m.nRows, sizeof(long long), cmp_long_long);
-
-    return countNUnique(arrayOfSums, m.nRows);
+        resultsOfCriteria[i] = criteria(m.values[i], m.nCols);
+    for (int i = 0; i < m.nRows; ++i) {
+        int index = i;
+        while (resultsOfCriteria[index] < resultsOfCriteria[index - 1] && index > 0) {
+            swapF(&resultsOfCriteria[index], &resultsOfCriteria[index - 1]);
+            swapRows(m, index, index - 1);
+            index--;
+        }
+    }
+    free(resultsOfCriteria);
 }
 
-void test_NUnique_notOneElement() {
-    long long a[] = {1, 2, 3, 4};
-
-    assert(countNUnique(a, 4) == 4);
+void sortByDistances(matrix m) {
+    insertionSortRowsMatrixByRowCriteriaF(m, getDistance);
 }
 
-void test_NUnique_oneElement() {
-    long long a[] = {1};
+void test_getDistance() {
+    int a[] = {1, 2, 3, 4};
 
-    assert(countNUnique(a, 1) == 1);
+    assert((getDistance(a, 4) - sqrt(30)) > EPS);
 }
 
-void test_NUnique_noUniqueElements() {
-    long long a[] = {1, 1, 1, 1};
+void test_sortByDistance() {
+    matrix m1 = createMatrixFromArray((int[]) {4, 3, 2, 1}, 2, 2);
+    matrix m2 = createMatrixFromArray((int[]) {1, 2, 3, 4}, 2, 2);
 
-    assert(countNUnique(a, 4) == 1);
-}
-
-void test_countEqClassesByRowsSum_diffClasses() {
-    matrix m = createMatrixFromArray((int[]) {7, 1, 2, 7, 5, 4, 4, 3, 1, 6, 8, 0}, 6, 2);
-
-    assert(countEqClassesByRowsSum(m) == 3);
-}
-
-void test_countEqClassesByRowsSum_similarClasses() {
-    matrix m = createMatrixFromArray((int[]) {7, 1, 1, 7, 5, 3, 4, 4, 2, 6, 8, 0}, 6, 2);
-
-    assert(countEqClassesByRowsSum(m) == 1);
+    assert(twoMatricesEqual(m1, m2));
 }
 
 void test() {
-    test_NUnique_noUniqueElements();
-    test_NUnique_notOneElement();
-    test_NUnique_oneElement();
-    test_countEqClassesByRowsSum_diffClasses();
-    test_countEqClassesByRowsSum_similarClasses();
+    test_getDistance();
+    test_sortByDistance();
 }
 
 int main() {
@@ -89,7 +60,9 @@ int main() {
     matrix m = getMemMatrix(nRows, nCols);
     inputMatrix(m);
 
-    printf("%d", countEqClassesByRowsSum(m));
+    sortByDistances(m);
+
+    outputMatrix(m);
 
     return 0;
 }

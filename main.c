@@ -2,143 +2,66 @@
 #include "Libs/data_structures/matrix/matrix.h"
 #include "Libs/algorithms/functions/function.h"
 
-typedef struct matrixF {
-    float **values; // элементы матрицы
-    int nRows; // количество рядов
-    int nCols; // количество столбцов
-} matrixF;
+int countValues(const int *a, int n, int value) {
+    int count = 0;
+    for (int i = 0; i < n; ++i)
+        if (a[i] == value)
+            count++;
 
-matrixF getMemMatrixF(int nRows, int nCols) {
-    float **values = (float **) malloc(sizeof(float *) * nRows);
-    for (int i = 0; i < nRows; i++)
-        values[i] = (float *) malloc(sizeof(float) * nCols);
-
-    return (matrixF) {values, nRows, nCols};
+    return count;
 }
 
-matrixF *getMemArrayOfMatricesF(int nMatrices, int nRows, int nCols) {
-    matrixF *ms = (matrixF *) malloc(sizeof(matrixF) * nMatrices);
-    for (int i = 0; i <= nMatrices; i++)
-        ms[i] = getMemMatrixF(nRows, nCols);
-
-    return ms;
-}
-
-void inputMatrixF(matrixF m) {
+int countZeroRows(matrix m) {
+    int count = 0;
     for (int i = 0; i < m.nRows; ++i)
-        for (int j = 0; j < m.nCols; ++j)
-            scanf("%f", &m.values[i][j]);
+        if (countValues(m.values[i], m.nCols, 0) == m.nCols)
+            count++;
+
+    return count;
 }
 
-void inputMatricesF(matrixF *ms, int nMatrices) {
-    for (int i = 0; i < nMatrices; ++i)
-        inputMatrixF(ms[i]);
-}
+void printMatrixWithMaxZeroRows(matrix *ms, int nMatrix) {
+    int maxZeroRows = 0;
+    for (int i = 0; i < nMatrix; ++i)
+        if (countZeroRows(ms[i]) > maxZeroRows)
+            maxZeroRows = countZeroRows(ms[i]);
 
-void outputMatrixF(matrixF m) {
-    for (int i = 0; i < m.nRows; ++i) {
-        for (int j = 0; j < m.nCols; ++j)
-            printf("%f ", m.values[i][j]);
+    int k = 0;
+    int matrixWithMaxZeroRowsIndexes[nMatrix];
+    for (int i = 0; i < nMatrix; ++i)
+        if (countZeroRows(ms[i]) == maxZeroRows) {
+            matrixWithMaxZeroRowsIndexes[k] = i;
+            k++;
+        }
+
+    for (int i = 0; i < k; ++i) {
+        outputMatrix(ms[matrixWithMaxZeroRowsIndexes[i]]);
         printf("\n");
     }
 }
 
-matrixF createMatrixFromArrayF(const float *a, size_t nRows, size_t nCols) {
-    matrixF m = getMemMatrixF(nRows, nCols);
-    int k = 0;
-    for (int i = 0; i < nRows; i++)
-        for (int j = 0; j < nCols; j++)
-            m.values[i][j] = a[k++];
+void test_countZeroRows_allZeroRows() {
+    matrix m = createMatrixFromArray((int[]) {0, 0, 0, 0}, 2, 2);
 
-    return m;
+    assert(countZeroRows(m) == m.nRows);
 }
 
-float getMaxAbs(matrixF m) {
-    float maxElement = fabsf(m.values[0][0]);
-    for (int i = 0; i < m.nRows; ++i)
-        for (int j = 1; j < m.nCols; ++j)
-            if (fabsf(m.values[i][j]) > maxElement)
-                maxElement = fabsf(m.values[i][j]);
+void test_countZeroRows_noZeroRows() {
+    matrix m = createMatrixFromArray((int[]) {1, 2, 3, 4}, 2, 2);
 
-    return maxElement;
+    assert(countZeroRows(m) == 0);
 }
 
-float getMinAbs(matrixF m) {
-    float minElement = fabsf(m.values[0][0]);
-    for (int i = 0; i < m.nRows; ++i)
-        for (int j = 1; j < m.nCols; ++j)
-            if (fabsf(m.values[i][j]) < minElement)
-                minElement = fabsf(m.values[i][j]);
+void test_countZeroRows_withZeroRows() {
+    matrix m = createMatrixFromArray((int[]) {0, 0, 1, 2}, 2, 2);
 
-    return minElement;
-}
-
-float findMinElement(const float *a, const size_t n) {
-    float minElement = a[0];
-    for (size_t i = 1; i < n; i++)
-        if (a[i] < minElement)
-            minElement = a[i];
-
-    return minElement;
-}
-
-void printMatrixWithMinAbs(matrixF *ms, int nMatrix) {
-    float maxAbs[nMatrix];
-    for (int i = 0; i < nMatrix; ++i)
-        maxAbs[i] = getMaxAbs(ms[i]);
-
-    float minAbs = findMinElement(maxAbs, nMatrix);
-
-    for (int i = 0; i < nMatrix; ++i)
-        if (maxAbs[i] == minAbs) {
-            outputMatrixF(ms[i]);
-            printf("\n");
-        }
-}
-
-void test_getMinAbs_zeroMatrix() {
-    matrixF m = createMatrixFromArrayF((float[]) {0, 0, 0, 0}, 2, 2);
-
-    assert(getMinAbs(m) == 0);
-}
-
-void test_getMinAbs_notZeroMatrix() {
-    matrixF m = createMatrixFromArrayF((float[]) {-1, 2, 3, 4}, 2, 2);
-
-    assert(getMinAbs(m) == 1);
-}
-
-void test_getMinAbs_oneElement() {
-    matrixF m = createMatrixFromArrayF((float[]) {-4}, 1, 1);
-
-    assert(getMinAbs(m) == 4);
-}
-
-void test_getMaxAbs_zeroMatrix() {
-    matrixF m = createMatrixFromArrayF((float[]) {0, 0, 0, 0}, 2, 2);
-
-    assert(getMaxAbs(m) == 0);
-}
-
-void test_getMaxAbs_notZeroMatrix() {
-    matrixF m = createMatrixFromArrayF((float[]) {-1, 2, 3, -4}, 2, 2);
-
-    assert(getMaxAbs(m) == 4);
-}
-
-void test_getMaxAbs_oneElement() {
-    matrixF m = createMatrixFromArrayF((float[]) {-4}, 1, 1);
-
-    assert(getMaxAbs(m) == 4);
+    assert(countZeroRows(m) == 1);
 }
 
 void test() {
-    test_getMinAbs_zeroMatrix();
-    test_getMinAbs_notZeroMatrix();
-    test_getMinAbs_oneElement();
-    test_getMaxAbs_notZeroMatrix();
-    test_getMaxAbs_zeroMatrix();
-    test_getMaxAbs_oneElement();
+    test_countZeroRows_noZeroRows();
+    test_countZeroRows_withZeroRows();
+    test_countZeroRows_allZeroRows();
 }
 
 int main() {
@@ -151,10 +74,10 @@ int main() {
     int nCols;
     scanf("%d", &nCols);
 
-    matrixF *ms = getMemArrayOfMatricesF(nMatrices, nRows, nCols);
-    inputMatricesF(ms, nMatrices);
+    matrix *ms = getMemArrayOfMatrices(nMatrices, nRows, nCols);
+    inputMatrices(ms, nMatrices);
 
-    printMatrixWithMinAbs(ms, nMatrices);
+    printMatrixWithMaxZeroRows(ms, nMatrices);
 
     return 0;
 }

@@ -2,6 +2,7 @@
 #include "memory.h"
 #include "stdio.h"
 
+
 void assertString(char *expected, char *got,
                   char const *fileName, char const *funcName,
                   int line) {
@@ -14,7 +15,7 @@ void assertString(char *expected, char *got,
         fprintf(stderr, "%s - OK\n", funcName);
 }
 
-size_t strlen_(char *begin) {
+size_t strlen_(const char *begin) {
     char *end = begin;
     while (*end != '\0')
         end++;
@@ -57,14 +58,14 @@ char *findSpaceReverse(char *rbegin, const char *rend) {
     return rbegin;
 }
 
-int strcmp_(const char *lhs, const char *rhs) {
+int strcmp_(char *lhs, char *rhs) {
     if (strlen_(lhs) == strlen_(rhs))
         return 0;
 
     return strlen_(lhs) - strlen_(rhs);
 }
 
-char *copy(const char *beginSource, const char *endSource,
+char *copy(char *beginSource, char *endSource,
            char *beginDestination) {
     while (beginSource != endSource) {
         memcpy(beginDestination, beginSource, sizeof(char));
@@ -75,7 +76,7 @@ char *copy(const char *beginSource, const char *endSource,
     return beginDestination;
 }
 
-char *copyIf(char *beginSource, const char *endSource,
+char *copyIf(char *beginSource, char *endSource,
              char *beginDestination, int (*f)(char)) {
     while (beginSource != endSource)
         if (f(*beginSource)) {
@@ -89,14 +90,14 @@ char *copyIf(char *beginSource, const char *endSource,
 }
 
 char *copyIfReverse(char *rbeginSource, const char *rendSource,
-                    char *beginDestination, int (*f)(int)) {
+                    char *beginDestination, int (*f)(char)) {
     while (rbeginSource != rendSource)
-        if (f) {
+        if (f(*rbeginSource)) {
             memcpy(beginDestination, rbeginSource, sizeof(char));
             beginDestination++;
             rbeginSource--;
         } else
             rbeginSource--;
 
-    return ++beginDestination;
+    return beginDestination;
 }

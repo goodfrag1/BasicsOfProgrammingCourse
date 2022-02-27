@@ -12,3 +12,10 @@ CMakeFiles/str.dir/Libs/string/tasks/2_task/removeExtraSpaces.c.obj: \
  ../Libs/string/string_.h \
  ../Libs/string/tasks/2\ task/removeExtraSpaces.c \
  ../Libs/string/tasks/2\ task/removeExtraSpaces.h
+CMakeFiles/str.dir/Libs/string/tasks/3_task/digitToStart.c.obj: \
+ ../Libs/string/string_.h \
+ ../Libs/string/tasks/3\ task/digitToStart.c \
+ ../Libs/string/tasks/3\ task/digitToStart.h
+CMakeFiles/str.dir/Libs/string/tasks/4_task/changeDigitsOnSpacesByValue.c.obj: \
+ ../Libs/string/tasks/4\ task/changeDigitsOnSpacesByValue.c \
+ ../Libs/string/tasks/4\ task/changeDigitsOnSpacesByValue.h

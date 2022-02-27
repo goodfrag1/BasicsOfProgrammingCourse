@@ -9,6 +9,6 @@ add_executable(project main.c)
 add_library(str Libs/string/string_.h Libs/string/string_.c
         "Libs/string/tasks/1 task/removeNonLetters.c"
         "Libs/string/tasks/2 task/removeExtraSpaces.c"
-        )
+        "Libs/string/tasks/3 task/digitToStart.c" "Libs/string/tasks/4 task/changeDigitsOnSpacesByValue.c" "Libs/string/tasks/4 task/changeDigitsOnSpacesByValue.h")
 
 target_link_libraries(project str)

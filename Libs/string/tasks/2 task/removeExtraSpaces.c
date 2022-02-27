@@ -30,7 +30,14 @@ void test_removeExtraSpaces_zeroSpaces() {
     assertString("Badlab,IS", s, __FILE__, __FUNCTION__, __LINE__);
 }
 
+void test_removeExtraSpaces_emptyString() {
+    char s[] = " ";
+    removeExtraSpaces(s);
+    assertString(" ", s, __FILE__, __FUNCTION__, __LINE__);
+}
+
 void test_2Task() {
     test_removeExtraSpaces_notZeroSpaces();
     test_removeExtraSpaces_zeroSpaces();
+    test_removeExtraSpaces_emptyString();
 }

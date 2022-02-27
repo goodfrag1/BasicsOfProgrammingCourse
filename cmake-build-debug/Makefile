@@ -213,6 +213,54 @@ Libs/string/tasks/2_task/removeExtraSpaces.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/2_task/removeExtraSpaces.c.s
 .PHONY : Libs/string/tasks/2_task/removeExtraSpaces.c.s
 
+Libs/string/tasks/3_task/digitToStart.obj: Libs/string/tasks/3_task/digitToStart.c.obj
+.PHONY : Libs/string/tasks/3_task/digitToStart.obj
+
+# target to build an object file
+Libs/string/tasks/3_task/digitToStart.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/3_task/digitToStart.c.obj
+.PHONY : Libs/string/tasks/3_task/digitToStart.c.obj
+
+Libs/string/tasks/3_task/digitToStart.i: Libs/string/tasks/3_task/digitToStart.c.i
+.PHONY : Libs/string/tasks/3_task/digitToStart.i
+
+# target to preprocess a source file
+Libs/string/tasks/3_task/digitToStart.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/3_task/digitToStart.c.i
+.PHONY : Libs/string/tasks/3_task/digitToStart.c.i
+
+Libs/string/tasks/3_task/digitToStart.s: Libs/string/tasks/3_task/digitToStart.c.s
+.PHONY : Libs/string/tasks/3_task/digitToStart.s
+
+# target to generate assembly for a file
+Libs/string/tasks/3_task/digitToStart.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/3_task/digitToStart.c.s
+.PHONY : Libs/string/tasks/3_task/digitToStart.c.s
+
+Libs/string/tasks/4_task/changeDigitsOnSpacesByValue.obj: Libs/string/tasks/4_task/changeDigitsOnSpacesByValue.c.obj
+.PHONY : Libs/string/tasks/4_task/changeDigitsOnSpacesByValue.obj
+
+# target to build an object file
+Libs/string/tasks/4_task/changeDigitsOnSpacesByValue.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/4_task/changeDigitsOnSpacesByValue.c.obj
+.PHONY : Libs/string/tasks/4_task/changeDigitsOnSpacesByValue.c.obj
+
+Libs/string/tasks/4_task/changeDigitsOnSpacesByValue.i: Libs/string/tasks/4_task/changeDigitsOnSpacesByValue.c.i
+.PHONY : Libs/string/tasks/4_task/changeDigitsOnSpacesByValue.i
+
+# target to preprocess a source file
+Libs/string/tasks/4_task/changeDigitsOnSpacesByValue.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/4_task/changeDigitsOnSpacesByValue.c.i
+.PHONY : Libs/string/tasks/4_task/changeDigitsOnSpacesByValue.c.i
+
+Libs/string/tasks/4_task/changeDigitsOnSpacesByValue.s: Libs/string/tasks/4_task/changeDigitsOnSpacesByValue.c.s
+.PHONY : Libs/string/tasks/4_task/changeDigitsOnSpacesByValue.s
+
+# target to generate assembly for a file
+Libs/string/tasks/4_task/changeDigitsOnSpacesByValue.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/4_task/changeDigitsOnSpacesByValue.c.s
+.PHONY : Libs/string/tasks/4_task/changeDigitsOnSpacesByValue.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -256,6 +304,12 @@ help:
 	@echo ... Libs/string/tasks/2_task/removeExtraSpaces.obj
 	@echo ... Libs/string/tasks/2_task/removeExtraSpaces.i
 	@echo ... Libs/string/tasks/2_task/removeExtraSpaces.s
+	@echo ... Libs/string/tasks/3_task/digitToStart.obj
+	@echo ... Libs/string/tasks/3_task/digitToStart.i
+	@echo ... Libs/string/tasks/3_task/digitToStart.s
+	@echo ... Libs/string/tasks/4_task/changeDigitsOnSpacesByValue.obj
+	@echo ... Libs/string/tasks/4_task/changeDigitsOnSpacesByValue.i
+	@echo ... Libs/string/tasks/4_task/changeDigitsOnSpacesByValue.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -3,5 +3,5 @@
 
 CMakeFiles/project.dir/main.c.obj: \
  ../Libs/string/string_.h \
- ../Libs/string/tasks/2\ task/removeExtraSpaces.h \
+ ../Libs/string/tasks/3\ task/digitToStart.h \
  ../main.c

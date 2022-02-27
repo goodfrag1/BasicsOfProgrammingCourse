@@ -8,6 +8,7 @@ add_executable(project main.c)
 
 add_library(str Libs/string/string_.h Libs/string/string_.c
         "Libs/string/tasks/1 task/removeNonLetters.c"
+        "Libs/string/tasks/2 task/removeExtraSpaces.c"
         )
 
 target_link_libraries(project str)

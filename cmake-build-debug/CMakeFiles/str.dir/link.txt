@@ -1,2 +1,2 @@
-C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe qc libstr.a CMakeFiles/str.dir/Libs/string/string_.c.obj CMakeFiles/str.dir/Libs/string/tasks/1_task/removeNonLetters.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe qc libstr.a CMakeFiles/str.dir/Libs/string/string_.c.obj CMakeFiles/str.dir/Libs/string/tasks/1_task/removeNonLetters.c.obj CMakeFiles/str.dir/Libs/string/tasks/2_task/removeExtraSpaces.c.obj
 C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ranlib.exe libstr.a

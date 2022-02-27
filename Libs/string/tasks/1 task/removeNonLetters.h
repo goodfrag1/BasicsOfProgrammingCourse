@@ -5,6 +5,6 @@
 
 void removeNonLetters(char *s);
 
-void test();
+void test_1Task();
 
 #endif //LABA_5E_REMOVENONLETTERS_H

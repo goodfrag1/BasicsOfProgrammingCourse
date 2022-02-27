@@ -8,3 +8,7 @@ CMakeFiles/str.dir/Libs/string/tasks/1_task/removeNonLetters.c.obj: \
  ../Libs/string/string_.h \
  ../Libs/string/tasks/1\ task/removeNonLetters.c \
  ../Libs/string/tasks/1\ task/removeNonLetters.h
+CMakeFiles/str.dir/Libs/string/tasks/2_task/removeExtraSpaces.c.obj: \
+ ../Libs/string/string_.h \
+ ../Libs/string/tasks/2\ task/removeExtraSpaces.c \
+ ../Libs/string/tasks/2\ task/removeExtraSpaces.h

@@ -29,7 +29,7 @@ void test_removeNonLetters_emptyString() {
     assertString("", s, __FILE__, __FUNCTION__, __LINE__);
 }
 
-void test(){
+void test_1Task(){
     test_removeNonLetters_emptyString();
     test_removeNonLetters_notEmptyString();
 }

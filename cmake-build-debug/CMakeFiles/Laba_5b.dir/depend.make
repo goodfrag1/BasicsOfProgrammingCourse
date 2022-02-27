@@ -16,7 +16,11 @@ CMakeFiles/Laba_5b.dir/Libs/data_structures/vector/vector.c.obj: \
 CMakeFiles/Laba_5b.dir/Libs/data_structures/vectorVoid/vectorVoid.c.obj: \
  ../Libs/data_structures/vectorVoid/vectorVoid.c \
  ../Libs/data_structures/vectorVoid/vectorVoid.h
+CMakeFiles/Laba_5b.dir/Libs/string/string_.c.obj: \
+ ../Libs/string/string_.c \
+ ../Libs/string/string_.h
+CMakeFiles/Laba_5b.dir/Libs/string/tasks/removeNonLetters.c.obj: \
+ ../Libs/string/tasks/removeNonLetters.c \
+ ../Libs/string/tasks/removeNonLetters.h
 CMakeFiles/Laba_5b.dir/main.c.obj: \
- ../Libs/algorithms/functions/function.h \
- ../Libs/data_structures/matrix/matrix.h \
  ../main.c

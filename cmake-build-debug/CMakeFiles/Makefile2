@@ -62,145 +62,70 @@ CMAKE_BINARY_DIR = C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Laba_5b.dir/all
-all: Libs/all
+all: CMakeFiles/project.dir/all
+all: CMakeFiles/str.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: Libs/preinstall
+preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Laba_5b.dir/clean
-clean: Libs/clean
+clean: CMakeFiles/project.dir/clean
+clean: CMakeFiles/str.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory Libs
-
-# Recursive "all" directory target.
-Libs/all: Libs/algorithms/all
-Libs/all: Libs/data_structures/all
-.PHONY : Libs/all
-
-# Recursive "preinstall" directory target.
-Libs/preinstall: Libs/algorithms/preinstall
-Libs/preinstall: Libs/data_structures/preinstall
-.PHONY : Libs/preinstall
-
-# Recursive "clean" directory target.
-Libs/clean: Libs/algorithms/clean
-Libs/clean: Libs/data_structures/clean
-.PHONY : Libs/clean
-
-#=============================================================================
-# Directory level rules for directory Libs/algorithms
-
-# Recursive "all" directory target.
-Libs/algorithms/all: Libs/algorithms/CMakeFiles/algorithms.dir/all
-.PHONY : Libs/algorithms/all
-
-# Recursive "preinstall" directory target.
-Libs/algorithms/preinstall:
-.PHONY : Libs/algorithms/preinstall
-
-# Recursive "clean" directory target.
-Libs/algorithms/clean: Libs/algorithms/CMakeFiles/algorithms.dir/clean
-.PHONY : Libs/algorithms/clean
-
-#=============================================================================
-# Directory level rules for directory Libs/data_structures
-
-# Recursive "all" directory target.
-Libs/data_structures/all: Libs/data_structures/CMakeFiles/data_structures.dir/all
-.PHONY : Libs/data_structures/all
-
-# Recursive "preinstall" directory target.
-Libs/data_structures/preinstall:
-.PHONY : Libs/data_structures/preinstall
-
-# Recursive "clean" directory target.
-Libs/data_structures/clean: Libs/data_structures/CMakeFiles/data_structures.dir/clean
-.PHONY : Libs/data_structures/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/Laba_5b.dir
+# Target rules for target CMakeFiles/project.dir
 
 # All Build rule for target.
-CMakeFiles/Laba_5b.dir/all: Libs/algorithms/CMakeFiles/algorithms.dir/all
-CMakeFiles/Laba_5b.dir/all: Libs/data_structures/CMakeFiles/data_structures.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target Laba_5b"
-.PHONY : CMakeFiles/Laba_5b.dir/all
+CMakeFiles/project.dir/all: CMakeFiles/str.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target project"
+.PHONY : CMakeFiles/project.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Laba_5b.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles 14
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Laba_5b.dir/all
+CMakeFiles/project.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/project.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/Laba_5b.dir/rule
+.PHONY : CMakeFiles/project.dir/rule
 
 # Convenience name for target.
-Laba_5b: CMakeFiles/Laba_5b.dir/rule
-.PHONY : Laba_5b
+project: CMakeFiles/project.dir/rule
+.PHONY : project
 
 # clean rule for target.
-CMakeFiles/Laba_5b.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/clean
-.PHONY : CMakeFiles/Laba_5b.dir/clean
+CMakeFiles/project.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/clean
+.PHONY : CMakeFiles/project.dir/clean
 
 #=============================================================================
-# Target rules for target Libs/algorithms/CMakeFiles/algorithms.dir
+# Target rules for target CMakeFiles/str.dir
 
 # All Build rule for target.
-Libs/algorithms/CMakeFiles/algorithms.dir/all:
-	$(MAKE) $(MAKESILENT) -f Libs\algorithms\CMakeFiles\algorithms.dir\build.make Libs/algorithms/CMakeFiles/algorithms.dir/depend
-	$(MAKE) $(MAKESILENT) -f Libs\algorithms\CMakeFiles\algorithms.dir\build.make Libs/algorithms/CMakeFiles/algorithms.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles --progress-num=8,9,10 "Built target algorithms"
-.PHONY : Libs/algorithms/CMakeFiles/algorithms.dir/all
+CMakeFiles/str.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles --progress-num=3,4,5 "Built target str"
+.PHONY : CMakeFiles/str.dir/all
 
 # Build rule for subdir invocation for target.
-Libs/algorithms/CMakeFiles/algorithms.dir/rule: cmake_check_build_system
+CMakeFiles/str.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Libs/algorithms/CMakeFiles/algorithms.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/str.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles 0
-.PHONY : Libs/algorithms/CMakeFiles/algorithms.dir/rule
+.PHONY : CMakeFiles/str.dir/rule
 
 # Convenience name for target.
-algorithms: Libs/algorithms/CMakeFiles/algorithms.dir/rule
-.PHONY : algorithms
+str: CMakeFiles/str.dir/rule
+.PHONY : str
 
 # clean rule for target.
-Libs/algorithms/CMakeFiles/algorithms.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Libs\algorithms\CMakeFiles\algorithms.dir\build.make Libs/algorithms/CMakeFiles/algorithms.dir/clean
-.PHONY : Libs/algorithms/CMakeFiles/algorithms.dir/clean
-
-#=============================================================================
-# Target rules for target Libs/data_structures/CMakeFiles/data_structures.dir
-
-# All Build rule for target.
-Libs/data_structures/CMakeFiles/data_structures.dir/all: Libs/algorithms/CMakeFiles/algorithms.dir/all
-	$(MAKE) $(MAKESILENT) -f Libs\data_structures\CMakeFiles\data_structures.dir\build.make Libs/data_structures/CMakeFiles/data_structures.dir/depend
-	$(MAKE) $(MAKESILENT) -f Libs\data_structures\CMakeFiles\data_structures.dir\build.make Libs/data_structures/CMakeFiles/data_structures.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles --progress-num=11,12,13,14 "Built target data_structures"
-.PHONY : Libs/data_structures/CMakeFiles/data_structures.dir/all
-
-# Build rule for subdir invocation for target.
-Libs/data_structures/CMakeFiles/data_structures.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles 7
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Libs/data_structures/CMakeFiles/data_structures.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles 0
-.PHONY : Libs/data_structures/CMakeFiles/data_structures.dir/rule
-
-# Convenience name for target.
-data_structures: Libs/data_structures/CMakeFiles/data_structures.dir/rule
-.PHONY : data_structures
-
-# clean rule for target.
-Libs/data_structures/CMakeFiles/data_structures.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Libs\data_structures\CMakeFiles\data_structures.dir\build.make Libs/data_structures/CMakeFiles/data_structures.dir/clean
-.PHONY : Libs/data_structures/CMakeFiles/data_structures.dir/clean
+CMakeFiles/str.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/clean
+.PHONY : CMakeFiles/str.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

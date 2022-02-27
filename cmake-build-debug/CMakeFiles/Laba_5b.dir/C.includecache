@@ -6,33 +6,15 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/algorithms/functions/function.h
-stddef.h
--
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/string_.c
+string_.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/string_.h
 
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/matrix/matrix.h
-stdlib.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/matrix/stdlib.h
-math.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/matrix/math.h
-memory.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/matrix/memory.h
-malloc.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/matrix/malloc.h
-stdio.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/matrix/stdio.h
-stdbool.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/matrix/stdbool.h
-assert.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/matrix/assert.h
-stddef.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/matrix/stddef.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/string_.h
 
-C:/Users/User-GDFG/CLionProjects/Laba_5b/main.c
-stdio.h
--
-Libs/data_structures/matrix/matrix.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/data_structures/matrix/matrix.h
-Libs/algorithms/functions/function.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/algorithms/functions/function.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/removeNonLetters.c
+removeNonLetters.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/removeNonLetters.h
+
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/removeNonLetters.h
 

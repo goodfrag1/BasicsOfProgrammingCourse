@@ -116,170 +116,85 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Laba_5b
+# Target rules for targets named project
 
 # Build rule for target.
-Laba_5b: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Laba_5b
-.PHONY : Laba_5b
+project: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 project
+.PHONY : project
 
 # fast build rule for target.
-Laba_5b/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/build
-.PHONY : Laba_5b/fast
+project/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/build
+.PHONY : project/fast
 
 #=============================================================================
-# Target rules for targets named algorithms
+# Target rules for targets named str
 
 # Build rule for target.
-algorithms: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 algorithms
-.PHONY : algorithms
+str: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 str
+.PHONY : str
 
 # fast build rule for target.
-algorithms/fast:
-	$(MAKE) $(MAKESILENT) -f Libs\algorithms\CMakeFiles\algorithms.dir\build.make Libs/algorithms/CMakeFiles/algorithms.dir/build
-.PHONY : algorithms/fast
+str/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/build
+.PHONY : str/fast
 
-#=============================================================================
-# Target rules for targets named data_structures
-
-# Build rule for target.
-data_structures: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 data_structures
-.PHONY : data_structures
-
-# fast build rule for target.
-data_structures/fast:
-	$(MAKE) $(MAKESILENT) -f Libs\data_structures\CMakeFiles\data_structures.dir\build.make Libs/data_structures/CMakeFiles/data_structures.dir/build
-.PHONY : data_structures/fast
-
-Libs/algorithms/algorithm.obj: Libs/algorithms/algorithm.c.obj
-.PHONY : Libs/algorithms/algorithm.obj
+Libs/string/string_.obj: Libs/string/string_.c.obj
+.PHONY : Libs/string/string_.obj
 
 # target to build an object file
-Libs/algorithms/algorithm.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/algorithms/algorithm.c.obj
-.PHONY : Libs/algorithms/algorithm.c.obj
+Libs/string/string_.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/string_.c.obj
+.PHONY : Libs/string/string_.c.obj
 
-Libs/algorithms/algorithm.i: Libs/algorithms/algorithm.c.i
-.PHONY : Libs/algorithms/algorithm.i
+Libs/string/string_.i: Libs/string/string_.c.i
+.PHONY : Libs/string/string_.i
 
 # target to preprocess a source file
-Libs/algorithms/algorithm.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/algorithms/algorithm.c.i
-.PHONY : Libs/algorithms/algorithm.c.i
+Libs/string/string_.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/string_.c.i
+.PHONY : Libs/string/string_.c.i
 
-Libs/algorithms/algorithm.s: Libs/algorithms/algorithm.c.s
-.PHONY : Libs/algorithms/algorithm.s
+Libs/string/string_.s: Libs/string/string_.c.s
+.PHONY : Libs/string/string_.s
 
 # target to generate assembly for a file
-Libs/algorithms/algorithm.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/algorithms/algorithm.c.s
-.PHONY : Libs/algorithms/algorithm.c.s
+Libs/string/string_.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/string_.c.s
+.PHONY : Libs/string/string_.c.s
 
-Libs/algorithms/functions/function.obj: Libs/algorithms/functions/function.c.obj
-.PHONY : Libs/algorithms/functions/function.obj
+Libs/string/tasks/1_task/removeNonLetters.obj: Libs/string/tasks/1_task/removeNonLetters.c.obj
+.PHONY : Libs/string/tasks/1_task/removeNonLetters.obj
 
 # target to build an object file
-Libs/algorithms/functions/function.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/algorithms/functions/function.c.obj
-.PHONY : Libs/algorithms/functions/function.c.obj
+Libs/string/tasks/1_task/removeNonLetters.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/1_task/removeNonLetters.c.obj
+.PHONY : Libs/string/tasks/1_task/removeNonLetters.c.obj
 
-Libs/algorithms/functions/function.i: Libs/algorithms/functions/function.c.i
-.PHONY : Libs/algorithms/functions/function.i
-
-# target to preprocess a source file
-Libs/algorithms/functions/function.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/algorithms/functions/function.c.i
-.PHONY : Libs/algorithms/functions/function.c.i
-
-Libs/algorithms/functions/function.s: Libs/algorithms/functions/function.c.s
-.PHONY : Libs/algorithms/functions/function.s
-
-# target to generate assembly for a file
-Libs/algorithms/functions/function.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/algorithms/functions/function.c.s
-.PHONY : Libs/algorithms/functions/function.c.s
-
-Libs/data_structures/matrix/matrix.obj: Libs/data_structures/matrix/matrix.c.obj
-.PHONY : Libs/data_structures/matrix/matrix.obj
-
-# target to build an object file
-Libs/data_structures/matrix/matrix.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/data_structures/matrix/matrix.c.obj
-.PHONY : Libs/data_structures/matrix/matrix.c.obj
-
-Libs/data_structures/matrix/matrix.i: Libs/data_structures/matrix/matrix.c.i
-.PHONY : Libs/data_structures/matrix/matrix.i
+Libs/string/tasks/1_task/removeNonLetters.i: Libs/string/tasks/1_task/removeNonLetters.c.i
+.PHONY : Libs/string/tasks/1_task/removeNonLetters.i
 
 # target to preprocess a source file
-Libs/data_structures/matrix/matrix.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/data_structures/matrix/matrix.c.i
-.PHONY : Libs/data_structures/matrix/matrix.c.i
+Libs/string/tasks/1_task/removeNonLetters.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/1_task/removeNonLetters.c.i
+.PHONY : Libs/string/tasks/1_task/removeNonLetters.c.i
 
-Libs/data_structures/matrix/matrix.s: Libs/data_structures/matrix/matrix.c.s
-.PHONY : Libs/data_structures/matrix/matrix.s
-
-# target to generate assembly for a file
-Libs/data_structures/matrix/matrix.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/data_structures/matrix/matrix.c.s
-.PHONY : Libs/data_structures/matrix/matrix.c.s
-
-Libs/data_structures/vector/vector.obj: Libs/data_structures/vector/vector.c.obj
-.PHONY : Libs/data_structures/vector/vector.obj
-
-# target to build an object file
-Libs/data_structures/vector/vector.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/data_structures/vector/vector.c.obj
-.PHONY : Libs/data_structures/vector/vector.c.obj
-
-Libs/data_structures/vector/vector.i: Libs/data_structures/vector/vector.c.i
-.PHONY : Libs/data_structures/vector/vector.i
-
-# target to preprocess a source file
-Libs/data_structures/vector/vector.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/data_structures/vector/vector.c.i
-.PHONY : Libs/data_structures/vector/vector.c.i
-
-Libs/data_structures/vector/vector.s: Libs/data_structures/vector/vector.c.s
-.PHONY : Libs/data_structures/vector/vector.s
+Libs/string/tasks/1_task/removeNonLetters.s: Libs/string/tasks/1_task/removeNonLetters.c.s
+.PHONY : Libs/string/tasks/1_task/removeNonLetters.s
 
 # target to generate assembly for a file
-Libs/data_structures/vector/vector.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/data_structures/vector/vector.c.s
-.PHONY : Libs/data_structures/vector/vector.c.s
-
-Libs/data_structures/vectorVoid/vectorVoid.obj: Libs/data_structures/vectorVoid/vectorVoid.c.obj
-.PHONY : Libs/data_structures/vectorVoid/vectorVoid.obj
-
-# target to build an object file
-Libs/data_structures/vectorVoid/vectorVoid.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/data_structures/vectorVoid/vectorVoid.c.obj
-.PHONY : Libs/data_structures/vectorVoid/vectorVoid.c.obj
-
-Libs/data_structures/vectorVoid/vectorVoid.i: Libs/data_structures/vectorVoid/vectorVoid.c.i
-.PHONY : Libs/data_structures/vectorVoid/vectorVoid.i
-
-# target to preprocess a source file
-Libs/data_structures/vectorVoid/vectorVoid.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/data_structures/vectorVoid/vectorVoid.c.i
-.PHONY : Libs/data_structures/vectorVoid/vectorVoid.c.i
-
-Libs/data_structures/vectorVoid/vectorVoid.s: Libs/data_structures/vectorVoid/vectorVoid.c.s
-.PHONY : Libs/data_structures/vectorVoid/vectorVoid.s
-
-# target to generate assembly for a file
-Libs/data_structures/vectorVoid/vectorVoid.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/Libs/data_structures/vectorVoid/vectorVoid.c.s
-.PHONY : Libs/data_structures/vectorVoid/vectorVoid.c.s
+Libs/string/tasks/1_task/removeNonLetters.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/1_task/removeNonLetters.c.s
+.PHONY : Libs/string/tasks/1_task/removeNonLetters.c.s
 
 main.obj: main.c.obj
 .PHONY : main.obj
 
 # target to build an object file
 main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/main.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/main.c.obj
 .PHONY : main.c.obj
 
 main.i: main.c.i
@@ -287,7 +202,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -295,7 +210,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Laba_5b.dir\build.make CMakeFiles/Laba_5b.dir/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project.dir\build.make CMakeFiles/project.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -306,24 +221,14 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Laba_5b
-	@echo ... algorithms
-	@echo ... data_structures
-	@echo ... Libs/algorithms/algorithm.obj
-	@echo ... Libs/algorithms/algorithm.i
-	@echo ... Libs/algorithms/algorithm.s
-	@echo ... Libs/algorithms/functions/function.obj
-	@echo ... Libs/algorithms/functions/function.i
-	@echo ... Libs/algorithms/functions/function.s
-	@echo ... Libs/data_structures/matrix/matrix.obj
-	@echo ... Libs/data_structures/matrix/matrix.i
-	@echo ... Libs/data_structures/matrix/matrix.s
-	@echo ... Libs/data_structures/vector/vector.obj
-	@echo ... Libs/data_structures/vector/vector.i
-	@echo ... Libs/data_structures/vector/vector.s
-	@echo ... Libs/data_structures/vectorVoid/vectorVoid.obj
-	@echo ... Libs/data_structures/vectorVoid/vectorVoid.i
-	@echo ... Libs/data_structures/vectorVoid/vectorVoid.s
+	@echo ... project
+	@echo ... str
+	@echo ... Libs/string/string_.obj
+	@echo ... Libs/string/string_.i
+	@echo ... Libs/string/string_.s
+	@echo ... Libs/string/tasks/1_task/removeNonLetters.obj
+	@echo ... Libs/string/tasks/1_task/removeNonLetters.i
+	@echo ... Libs/string/tasks/1_task/removeNonLetters.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

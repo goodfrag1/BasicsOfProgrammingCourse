@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Laba_5b.dir/Libs/data_structures/matrix/matrix.c.obj"
   "CMakeFiles/Laba_5b.dir/Libs/data_structures/vector/vector.c.obj"
   "CMakeFiles/Laba_5b.dir/Libs/data_structures/vectorVoid/vectorVoid.c.obj"
+  "CMakeFiles/Laba_5b.dir/Libs/string/string_.c.obj"
+  "CMakeFiles/Laba_5b.dir/Libs/string/tasks/removeNonLetters.c.obj"
   "CMakeFiles/Laba_5b.dir/main.c.obj"
   "Laba_5b.exe"
   "Laba_5b.exe.manifest"

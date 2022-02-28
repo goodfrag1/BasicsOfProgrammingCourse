@@ -261,6 +261,54 @@ Libs/string/tasks/4_task/changeDigitsOnSpacesByValue.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/4_task/changeDigitsOnSpacesByValue.c.s
 .PHONY : Libs/string/tasks/4_task/changeDigitsOnSpacesByValue.c.s
 
+Libs/string/tasks/5_task/replace.obj: Libs/string/tasks/5_task/replace.c.obj
+.PHONY : Libs/string/tasks/5_task/replace.obj
+
+# target to build an object file
+Libs/string/tasks/5_task/replace.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/5_task/replace.c.obj
+.PHONY : Libs/string/tasks/5_task/replace.c.obj
+
+Libs/string/tasks/5_task/replace.i: Libs/string/tasks/5_task/replace.c.i
+.PHONY : Libs/string/tasks/5_task/replace.i
+
+# target to preprocess a source file
+Libs/string/tasks/5_task/replace.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/5_task/replace.c.i
+.PHONY : Libs/string/tasks/5_task/replace.c.i
+
+Libs/string/tasks/5_task/replace.s: Libs/string/tasks/5_task/replace.c.s
+.PHONY : Libs/string/tasks/5_task/replace.s
+
+# target to generate assembly for a file
+Libs/string/tasks/5_task/replace.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/5_task/replace.c.s
+.PHONY : Libs/string/tasks/5_task/replace.c.s
+
+Libs/string/tasks/6_task/checkSortingInString.obj: Libs/string/tasks/6_task/checkSortingInString.c.obj
+.PHONY : Libs/string/tasks/6_task/checkSortingInString.obj
+
+# target to build an object file
+Libs/string/tasks/6_task/checkSortingInString.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/6_task/checkSortingInString.c.obj
+.PHONY : Libs/string/tasks/6_task/checkSortingInString.c.obj
+
+Libs/string/tasks/6_task/checkSortingInString.i: Libs/string/tasks/6_task/checkSortingInString.c.i
+.PHONY : Libs/string/tasks/6_task/checkSortingInString.i
+
+# target to preprocess a source file
+Libs/string/tasks/6_task/checkSortingInString.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/6_task/checkSortingInString.c.i
+.PHONY : Libs/string/tasks/6_task/checkSortingInString.c.i
+
+Libs/string/tasks/6_task/checkSortingInString.s: Libs/string/tasks/6_task/checkSortingInString.c.s
+.PHONY : Libs/string/tasks/6_task/checkSortingInString.s
+
+# target to generate assembly for a file
+Libs/string/tasks/6_task/checkSortingInString.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/6_task/checkSortingInString.c.s
+.PHONY : Libs/string/tasks/6_task/checkSortingInString.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -310,6 +358,12 @@ help:
 	@echo ... Libs/string/tasks/4_task/changeDigitsOnSpacesByValue.obj
 	@echo ... Libs/string/tasks/4_task/changeDigitsOnSpacesByValue.i
 	@echo ... Libs/string/tasks/4_task/changeDigitsOnSpacesByValue.s
+	@echo ... Libs/string/tasks/5_task/replace.obj
+	@echo ... Libs/string/tasks/5_task/replace.i
+	@echo ... Libs/string/tasks/5_task/replace.s
+	@echo ... Libs/string/tasks/6_task/checkSortingInString.obj
+	@echo ... Libs/string/tasks/6_task/checkSortingInString.i
+	@echo ... Libs/string/tasks/6_task/checkSortingInString.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

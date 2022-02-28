@@ -12,6 +12,6 @@ void digitToStart(WordDescriptor word);
 
 bool getWordReverse(char *rbegin, char *rend, WordDescriptor *word);
 
-void test();
+void test_3Task();
 
 #endif //LABA_5E_DIGITTOSTART_H

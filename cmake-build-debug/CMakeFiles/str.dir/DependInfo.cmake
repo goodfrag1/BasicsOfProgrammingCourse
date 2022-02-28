@@ -13,6 +13,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/2 task/removeExtraSpaces.c" "C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/CMakeFiles/str.dir/Libs/string/tasks/2_task/removeExtraSpaces.c.obj"
   "C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/3 task/digitToStart.c" "C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/CMakeFiles/str.dir/Libs/string/tasks/3_task/digitToStart.c.obj"
   "C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/4 task/changeDigitsOnSpacesByValue.c" "C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/CMakeFiles/str.dir/Libs/string/tasks/4_task/changeDigitsOnSpacesByValue.c.obj"
+  "C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/5 task/replace.c" "C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/CMakeFiles/str.dir/Libs/string/tasks/5_task/replace.c.obj"
+  "C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/6 task/checkSortingInString.c" "C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/CMakeFiles/str.dir/Libs/string/tasks/6_task/checkSortingInString.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

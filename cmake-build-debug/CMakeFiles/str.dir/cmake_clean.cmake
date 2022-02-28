@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/str.dir/Libs/string/tasks/2_task/removeExtraSpaces.c.obj"
   "CMakeFiles/str.dir/Libs/string/tasks/3_task/digitToStart.c.obj"
   "CMakeFiles/str.dir/Libs/string/tasks/4_task/changeDigitsOnSpacesByValue.c.obj"
+  "CMakeFiles/str.dir/Libs/string/tasks/5_task/replace.c.obj"
+  "CMakeFiles/str.dir/Libs/string/tasks/6_task/checkSortingInString.c.obj"
   "libstr.a"
   "libstr.pdb"
 )

@@ -59,10 +59,14 @@ char *findSpaceReverse(char *rbegin, const char *rend) {
 }
 
 int strcmp_(char *lhs, char *rhs) {
-    if (strlen_(lhs) == strlen_(rhs))
-        return 0;
+    while (*rhs == *lhs) {
+        if (*rhs == '\0')
+            return 0;
+        ++lhs;
+        ++rhs;
+    }
 
-    return strlen_(lhs) - strlen_(rhs);
+    return (unsigned char) *lhs - (unsigned char) *rhs;
 }
 
 char *copy(char *beginSource, char *endSource,

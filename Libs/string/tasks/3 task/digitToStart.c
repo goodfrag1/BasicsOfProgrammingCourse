@@ -112,7 +112,7 @@ void test_digitToStart_additionalTask_emptyString() {
 }
 
 
-void test() {
+void test_3Task() {
     test_getWordReverse();
     test_digitToStart_notZeroDigitsInString();
     test_digitToStart_additionalTask_notZeroDigitsInString();

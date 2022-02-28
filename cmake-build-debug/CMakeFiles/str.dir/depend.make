@@ -17,5 +17,14 @@ CMakeFiles/str.dir/Libs/string/tasks/3_task/digitToStart.c.obj: \
  ../Libs/string/tasks/3\ task/digitToStart.c \
  ../Libs/string/tasks/3\ task/digitToStart.h
 CMakeFiles/str.dir/Libs/string/tasks/4_task/changeDigitsOnSpacesByValue.c.obj: \
+ ../Libs/string/string_.h \
  ../Libs/string/tasks/4\ task/changeDigitsOnSpacesByValue.c \
  ../Libs/string/tasks/4\ task/changeDigitsOnSpacesByValue.h
+CMakeFiles/str.dir/Libs/string/tasks/5_task/replace.c.obj: \
+ ../Libs/string/string_.h \
+ ../Libs/string/tasks/5\ task/replace.c \
+ ../Libs/string/tasks/5\ task/replace.h
+CMakeFiles/str.dir/Libs/string/tasks/6_task/checkSortingInString.c.obj: \
+ ../Libs/string/string_.h \
+ ../Libs/string/tasks/6\ task/checkSortingInString.c \
+ ../Libs/string/tasks/6\ task/checkSortingInString.h

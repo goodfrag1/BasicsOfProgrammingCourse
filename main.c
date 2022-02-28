@@ -1,9 +1,9 @@
-#include <stdio.h>
-#include "Libs/string/tasks/3 task/digitToStart.h"
+#include "Libs/string/tasks/6 task/checkSortingInString.h"
 
 int main() {
 
-    test();
+test_6Task();
+
 
     return 0;
 }

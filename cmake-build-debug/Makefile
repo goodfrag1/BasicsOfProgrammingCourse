@@ -309,6 +309,30 @@ Libs/string/tasks/6_task/checkSortingInString.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/6_task/checkSortingInString.c.s
 .PHONY : Libs/string/tasks/6_task/checkSortingInString.c.s
 
+Libs/string/tasks/7_task/printWordsOfStringReverse.obj: Libs/string/tasks/7_task/printWordsOfStringReverse.c.obj
+.PHONY : Libs/string/tasks/7_task/printWordsOfStringReverse.obj
+
+# target to build an object file
+Libs/string/tasks/7_task/printWordsOfStringReverse.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/7_task/printWordsOfStringReverse.c.obj
+.PHONY : Libs/string/tasks/7_task/printWordsOfStringReverse.c.obj
+
+Libs/string/tasks/7_task/printWordsOfStringReverse.i: Libs/string/tasks/7_task/printWordsOfStringReverse.c.i
+.PHONY : Libs/string/tasks/7_task/printWordsOfStringReverse.i
+
+# target to preprocess a source file
+Libs/string/tasks/7_task/printWordsOfStringReverse.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/7_task/printWordsOfStringReverse.c.i
+.PHONY : Libs/string/tasks/7_task/printWordsOfStringReverse.c.i
+
+Libs/string/tasks/7_task/printWordsOfStringReverse.s: Libs/string/tasks/7_task/printWordsOfStringReverse.c.s
+.PHONY : Libs/string/tasks/7_task/printWordsOfStringReverse.s
+
+# target to generate assembly for a file
+Libs/string/tasks/7_task/printWordsOfStringReverse.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/7_task/printWordsOfStringReverse.c.s
+.PHONY : Libs/string/tasks/7_task/printWordsOfStringReverse.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -364,6 +388,9 @@ help:
 	@echo ... Libs/string/tasks/6_task/checkSortingInString.obj
 	@echo ... Libs/string/tasks/6_task/checkSortingInString.i
 	@echo ... Libs/string/tasks/6_task/checkSortingInString.s
+	@echo ... Libs/string/tasks/7_task/printWordsOfStringReverse.obj
+	@echo ... Libs/string/tasks/7_task/printWordsOfStringReverse.i
+	@echo ... Libs/string/tasks/7_task/printWordsOfStringReverse.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

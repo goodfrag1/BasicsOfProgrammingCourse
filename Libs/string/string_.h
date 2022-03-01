@@ -8,6 +8,7 @@
 
 #include "string.h"
 #include "stdbool.h"
+#include "ctype.h"
 
 char stringBuffer[MAX_STRING_SIZE + 1];
 

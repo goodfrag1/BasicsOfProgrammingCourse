@@ -28,3 +28,7 @@ CMakeFiles/str.dir/Libs/string/tasks/6_task/checkSortingInString.c.obj: \
  ../Libs/string/string_.h \
  ../Libs/string/tasks/6\ task/checkSortingInString.c \
  ../Libs/string/tasks/6\ task/checkSortingInString.h
+CMakeFiles/str.dir/Libs/string/tasks/7_task/printWordsOfStringReverse.c.obj: \
+ ../Libs/string/string_.h \
+ ../Libs/string/tasks/7\ task/printWordsOfStringReverse.c \
+ ../Libs/string/tasks/7\ task/printWordsOfStringReverse.h

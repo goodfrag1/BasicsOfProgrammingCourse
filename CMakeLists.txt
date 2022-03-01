@@ -13,6 +13,7 @@ add_library(str Libs/string/string_.h Libs/string/string_.c
         "Libs/string/tasks/4 task/changeDigitsOnSpacesByValue.c"
         "Libs/string/tasks/5 task/replace.c"
         "Libs/string/tasks/6 task/checkSortingInString.c"
+        "Libs/string/tasks/7 task/printWordsOfStringReverse.c"
         )
 
 target_link_libraries(project str)

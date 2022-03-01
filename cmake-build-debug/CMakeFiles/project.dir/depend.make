@@ -3,5 +3,5 @@
 
 CMakeFiles/project.dir/main.c.obj: \
  ../Libs/string/string_.h \
- ../Libs/string/tasks/6\ task/checkSortingInString.h \
+ ../Libs/string/tasks/7\ task/printWordsOfStringReverse.h \
  ../main.c

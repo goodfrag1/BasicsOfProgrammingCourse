@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/str.dir/Libs/string/tasks/4_task/changeDigitsOnSpacesByValue.c.obj"
   "CMakeFiles/str.dir/Libs/string/tasks/5_task/replace.c.obj"
   "CMakeFiles/str.dir/Libs/string/tasks/6_task/checkSortingInString.c.obj"
+  "CMakeFiles/str.dir/Libs/string/tasks/7_task/printWordsOfStringReverse.c.obj"
   "libstr.a"
   "libstr.pdb"
 )

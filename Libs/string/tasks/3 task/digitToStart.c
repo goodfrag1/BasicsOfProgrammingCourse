@@ -32,6 +32,9 @@ void digitToStart(WordDescriptor word) {
     copyIf(stringBuffer, endStringBuffer, recPosition, isAlpha);
 }
 
+// преобразовывает строку таким образом, чтобы цифры каждого слова были
+// перенесены в начало слова без изменения порядка следования их в слове,
+// буквы переносит в конец слова.
 void digitToStart_additionalTask(WordDescriptor word) {
     char *endStringBuffer = copy(word.begin, word.end, stringBuffer);
     char *recPosition = copyIf(stringBuffer,
@@ -40,11 +43,11 @@ void digitToStart_additionalTask(WordDescriptor word) {
 }
 
 bool getWordReverse(char *rbegin, char *rend, WordDescriptor *word) {
-    word->begin = findNonSpaceReverse(rbegin, rend);
-    if (*word->begin == '\0')
+    word->begin = findSpaceReverse(rbegin, rend);
+    if (word->begin == rend)
         return 0;
 
-    word->end = findSpaceReverse(word->begin, rend);
+    word->end = findSpace(word->begin);
 
     return 1;
 }

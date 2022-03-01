@@ -1,8 +1,8 @@
-#include "Libs/string/tasks/6 task/checkSortingInString.h"
+#include "Libs/string/tasks/7 task/printWordsOfStringReverse.h"
 
 int main() {
-
-test_6Task();
+    char s[]="Very bad laba";
+    printWordsOfStringReverse(s);
 
 
     return 0;

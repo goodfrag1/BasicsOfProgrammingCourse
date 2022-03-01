@@ -2,7 +2,6 @@
 #include "memory.h"
 #include "stdio.h"
 
-
 void assertString(char *expected, char *got,
                   char const *fileName, char const *funcName,
                   int line) {
@@ -31,28 +30,28 @@ char *find(char *begin, char *end, int ch) {
 }
 
 char *findNonSpace(char *begin) {
-    while (*begin != '\0' && *begin == ' ')
+    while (*begin != '\0' && isspace(*begin))
         begin++;
 
     return begin;
 }
 
 char *findSpace(char *begin) {
-    while (*begin != '\0' && *begin != ' ')
+    while (*begin != '\0' && !isspace(*begin))
         begin++;
 
     return begin;
 }
 
 char *findNonSpaceReverse(char *rbegin, const char *rend) {
-    while (rbegin != rend && *rbegin == ' ')
+    while (rbegin != rend && isspace(*rbegin))
         rbegin--;
 
     return rbegin;
 }
 
 char *findSpaceReverse(char *rbegin, const char *rend) {
-    while (rbegin != rend && *rbegin != ' ')
+    while (rbegin != rend && !isspace(*rbegin))
         rbegin--;
 
     return rbegin;

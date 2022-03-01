@@ -3,5 +3,5 @@
 
 CMakeFiles/project.dir/main.c.obj: \
  ../Libs/string/string_.h \
- ../Libs/string/tasks/7\ task/printWordsOfStringReverse.h \
+ ../Libs/string/tasks/8\ task/countWordsPalindromes.h \
  ../main.c

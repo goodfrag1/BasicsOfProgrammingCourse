@@ -158,6 +158,12 @@
 		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/7 task/printWordsOfStringReverse.h">
 			<Option target="str"/>
 		</Unit>
+		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/8 task/countWordsPalindromes.c">
+			<Option target="str"/>
+		</Unit>
+		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/8 task/countWordsPalindromes.h">
+			<Option target="str"/>
+		</Unit>
 		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/main.c">
 			<Option target="project"/>
 		</Unit>

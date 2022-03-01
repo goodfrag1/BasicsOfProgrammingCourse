@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/str.dir/Libs/string/tasks/5_task/replace.c.obj"
   "CMakeFiles/str.dir/Libs/string/tasks/6_task/checkSortingInString.c.obj"
   "CMakeFiles/str.dir/Libs/string/tasks/7_task/printWordsOfStringReverse.c.obj"
+  "CMakeFiles/str.dir/Libs/string/tasks/8_task/countWordsPalindromes.c.obj"
   "libstr.a"
   "libstr.pdb"
 )

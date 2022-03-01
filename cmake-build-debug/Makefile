@@ -333,6 +333,30 @@ Libs/string/tasks/7_task/printWordsOfStringReverse.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/7_task/printWordsOfStringReverse.c.s
 .PHONY : Libs/string/tasks/7_task/printWordsOfStringReverse.c.s
 
+Libs/string/tasks/8_task/countWordsPalindromes.obj: Libs/string/tasks/8_task/countWordsPalindromes.c.obj
+.PHONY : Libs/string/tasks/8_task/countWordsPalindromes.obj
+
+# target to build an object file
+Libs/string/tasks/8_task/countWordsPalindromes.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/8_task/countWordsPalindromes.c.obj
+.PHONY : Libs/string/tasks/8_task/countWordsPalindromes.c.obj
+
+Libs/string/tasks/8_task/countWordsPalindromes.i: Libs/string/tasks/8_task/countWordsPalindromes.c.i
+.PHONY : Libs/string/tasks/8_task/countWordsPalindromes.i
+
+# target to preprocess a source file
+Libs/string/tasks/8_task/countWordsPalindromes.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/8_task/countWordsPalindromes.c.i
+.PHONY : Libs/string/tasks/8_task/countWordsPalindromes.c.i
+
+Libs/string/tasks/8_task/countWordsPalindromes.s: Libs/string/tasks/8_task/countWordsPalindromes.c.s
+.PHONY : Libs/string/tasks/8_task/countWordsPalindromes.s
+
+# target to generate assembly for a file
+Libs/string/tasks/8_task/countWordsPalindromes.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/8_task/countWordsPalindromes.c.s
+.PHONY : Libs/string/tasks/8_task/countWordsPalindromes.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -391,6 +415,9 @@ help:
 	@echo ... Libs/string/tasks/7_task/printWordsOfStringReverse.obj
 	@echo ... Libs/string/tasks/7_task/printWordsOfStringReverse.i
 	@echo ... Libs/string/tasks/7_task/printWordsOfStringReverse.s
+	@echo ... Libs/string/tasks/8_task/countWordsPalindromes.obj
+	@echo ... Libs/string/tasks/8_task/countWordsPalindromes.i
+	@echo ... Libs/string/tasks/8_task/countWordsPalindromes.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

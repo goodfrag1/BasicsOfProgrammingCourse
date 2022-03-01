@@ -32,3 +32,7 @@ CMakeFiles/str.dir/Libs/string/tasks/7_task/printWordsOfStringReverse.c.obj: \
  ../Libs/string/string_.h \
  ../Libs/string/tasks/7\ task/printWordsOfStringReverse.c \
  ../Libs/string/tasks/7\ task/printWordsOfStringReverse.h
+CMakeFiles/str.dir/Libs/string/tasks/8_task/countWordsPalindromes.c.obj: \
+ ../Libs/string/string_.h \
+ ../Libs/string/tasks/8\ task/countWordsPalindromes.c \
+ ../Libs/string/tasks/8\ task/countWordsPalindromes.h

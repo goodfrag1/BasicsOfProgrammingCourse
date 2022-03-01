@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/5 task/replace.c" "C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/CMakeFiles/str.dir/Libs/string/tasks/5_task/replace.c.obj"
   "C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/6 task/checkSortingInString.c" "C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/CMakeFiles/str.dir/Libs/string/tasks/6_task/checkSortingInString.c.obj"
   "C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/7 task/printWordsOfStringReverse.c" "C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/CMakeFiles/str.dir/Libs/string/tasks/7_task/printWordsOfStringReverse.c.obj"
+  "C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/8 task/countWordsPalindromes.c" "C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/CMakeFiles/str.dir/Libs/string/tasks/8_task/countWordsPalindromes.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

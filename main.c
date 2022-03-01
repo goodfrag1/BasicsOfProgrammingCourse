@@ -1,9 +1,8 @@
-#include "Libs/string/tasks/7 task/printWordsOfStringReverse.h"
+#include "Libs/string/tasks/8 task/countWordsPalindromes.h"
 
 int main() {
-    char s[]="Very bad laba";
-    printWordsOfStringReverse(s);
 
+    test_8Task();
 
     return 0;
 }

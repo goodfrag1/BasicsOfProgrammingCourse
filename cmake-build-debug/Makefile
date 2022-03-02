@@ -165,6 +165,30 @@ Libs/string/string_.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/string_.c.s
 .PHONY : Libs/string/string_.c.s
 
+Libs/string/tasks/10_task/reverseWordsInString.obj: Libs/string/tasks/10_task/reverseWordsInString.c.obj
+.PHONY : Libs/string/tasks/10_task/reverseWordsInString.obj
+
+# target to build an object file
+Libs/string/tasks/10_task/reverseWordsInString.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/10_task/reverseWordsInString.c.obj
+.PHONY : Libs/string/tasks/10_task/reverseWordsInString.c.obj
+
+Libs/string/tasks/10_task/reverseWordsInString.i: Libs/string/tasks/10_task/reverseWordsInString.c.i
+.PHONY : Libs/string/tasks/10_task/reverseWordsInString.i
+
+# target to preprocess a source file
+Libs/string/tasks/10_task/reverseWordsInString.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/10_task/reverseWordsInString.c.i
+.PHONY : Libs/string/tasks/10_task/reverseWordsInString.c.i
+
+Libs/string/tasks/10_task/reverseWordsInString.s: Libs/string/tasks/10_task/reverseWordsInString.c.s
+.PHONY : Libs/string/tasks/10_task/reverseWordsInString.s
+
+# target to generate assembly for a file
+Libs/string/tasks/10_task/reverseWordsInString.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/10_task/reverseWordsInString.c.s
+.PHONY : Libs/string/tasks/10_task/reverseWordsInString.c.s
+
 Libs/string/tasks/1_task/removeNonLetters.obj: Libs/string/tasks/1_task/removeNonLetters.c.obj
 .PHONY : Libs/string/tasks/1_task/removeNonLetters.obj
 
@@ -394,6 +418,9 @@ help:
 	@echo ... Libs/string/string_.obj
 	@echo ... Libs/string/string_.i
 	@echo ... Libs/string/string_.s
+	@echo ... Libs/string/tasks/10_task/reverseWordsInString.obj
+	@echo ... Libs/string/tasks/10_task/reverseWordsInString.i
+	@echo ... Libs/string/tasks/10_task/reverseWordsInString.s
 	@echo ... Libs/string/tasks/1_task/removeNonLetters.obj
 	@echo ... Libs/string/tasks/1_task/removeNonLetters.i
 	@echo ... Libs/string/tasks/1_task/removeNonLetters.s

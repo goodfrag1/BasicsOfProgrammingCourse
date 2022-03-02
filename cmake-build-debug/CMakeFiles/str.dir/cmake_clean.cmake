@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/str.dir/Libs/string/string_.c.obj"
+  "CMakeFiles/str.dir/Libs/string/tasks/10_task/reverseWordsInString.c.obj"
   "CMakeFiles/str.dir/Libs/string/tasks/1_task/removeNonLetters.c.obj"
   "CMakeFiles/str.dir/Libs/string/tasks/2_task/removeExtraSpaces.c.obj"
   "CMakeFiles/str.dir/Libs/string/tasks/3_task/digitToStart.c.obj"

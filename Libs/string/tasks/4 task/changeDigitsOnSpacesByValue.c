@@ -7,30 +7,24 @@ char *getEndOfString(char *s) {
     return s;
 }
 
-int isDigit(char x) {
-    return x >= '0' && x <= '9';
-}
-
 
 void changeDigitsOnSpacesByValue(char *s) {
     char *endOfString = getEndOfString(s);
+    char *beginOfStringBuffer = stringBuffer;
     char *endOfStringBuffer = copy(s, endOfString, stringBuffer);
-    char *readPtr = stringBuffer;
-    char *recPtr = s;
+    *endOfStringBuffer = '\0';
 
-    while (s != endOfString) {
-        *s = ' ';
-        s++;
+    while (*beginOfStringBuffer != '\0') {
+        if (isalpha(*beginOfStringBuffer))
+            *s++ = *beginOfStringBuffer;
+        else if (isdigit(*beginOfStringBuffer)) {
+            unsigned char x = *beginOfStringBuffer - '0';
+            while (x--)
+                *s++ = ' ';
+        }
+        beginOfStringBuffer++;
     }
-    *s = ' ';
-
-    while (readPtr != endOfStringBuffer) {
-        if (isDigit(*readPtr))
-            recPtr += *readPtr;
-        *recPtr = *readPtr;
-        readPtr++;
-    }
-    *recPtr = '\0';
+    *s = '\0';
 }
 
 void test_changeDigitsOnSpacesByValue_notZeroDigits() {
@@ -40,13 +34,19 @@ void test_changeDigitsOnSpacesByValue_notZeroDigits() {
 }
 
 void test_changeDigitsOnSpacesByValue_zeroDigits() {
-
+    char s[] = "ABC";
+    changeDigitsOnSpacesByValue(s);
+    assertString("ABC", s, __FILE__, __FUNCTION__, __LINE__);
 }
 
 void test_changeDigitsOnSpacesByValue_emptyString() {
-
+    char s[] = " ";
+    changeDigitsOnSpacesByValue(s);
+    assertString("", s, __FILE__, __FUNCTION__, __LINE__);
 }
 
 void test_4Task() {
     test_changeDigitsOnSpacesByValue_notZeroDigits();
+    test_changeDigitsOnSpacesByValue_zeroDigits();
+    test_changeDigitsOnSpacesByValue_emptyString();
 }

@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/string_.c" "C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/CMakeFiles/str.dir/Libs/string/string_.c.obj"
+  "C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/10 task/reverseWordsInString.c" "C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/CMakeFiles/str.dir/Libs/string/tasks/10_task/reverseWordsInString.c.obj"
   "C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/1 task/removeNonLetters.c" "C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/CMakeFiles/str.dir/Libs/string/tasks/1_task/removeNonLetters.c.obj"
   "C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/2 task/removeExtraSpaces.c" "C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/CMakeFiles/str.dir/Libs/string/tasks/2_task/removeExtraSpaces.c.obj"
   "C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/3 task/digitToStart.c" "C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/CMakeFiles/str.dir/Libs/string/tasks/3_task/digitToStart.c.obj"

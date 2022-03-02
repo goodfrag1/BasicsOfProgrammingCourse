@@ -18,8 +18,7 @@ char *getEndOfString(char *s) {
 }
 
 void getBagOfWords(BagOfWords *bag, char *s) {
-    char *endOfString = getEndOfString(s);
-    for (int i = 0; s != endOfString; ++i) {
+    for (int i = 0; *s != '\0'; ++i) {
         getWord(s, &bag->words[i]);
         bag->size++;
         s = bag->words[i].end;

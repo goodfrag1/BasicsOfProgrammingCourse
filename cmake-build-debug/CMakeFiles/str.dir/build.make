@@ -182,6 +182,19 @@ CMakeFiles/str.dir/Libs/string/tasks/8_task/countWordsPalindromes.c.s: cmake_for
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/str.dir/Libs/string/tasks/8_task/countWordsPalindromes.c.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\8 task\countWordsPalindromes.c" -o CMakeFiles\str.dir\Libs\string\tasks\8_task\countWordsPalindromes.c.s
 
+CMakeFiles/str.dir/Libs/string/tasks/10_task/reverseWordsInString.c.obj: CMakeFiles/str.dir/flags.make
+CMakeFiles/str.dir/Libs/string/tasks/10_task/reverseWordsInString.c.obj: ../Libs/string/tasks/10\ task/reverseWordsInString.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/str.dir/Libs/string/tasks/10_task/reverseWordsInString.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\str.dir\Libs\string\tasks\10_task\reverseWordsInString.c.obj -c "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\10 task\reverseWordsInString.c"
+
+CMakeFiles/str.dir/Libs/string/tasks/10_task/reverseWordsInString.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/str.dir/Libs/string/tasks/10_task/reverseWordsInString.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\10 task\reverseWordsInString.c" > CMakeFiles\str.dir\Libs\string\tasks\10_task\reverseWordsInString.c.i
+
+CMakeFiles/str.dir/Libs/string/tasks/10_task/reverseWordsInString.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/str.dir/Libs/string/tasks/10_task/reverseWordsInString.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\10 task\reverseWordsInString.c" -o CMakeFiles\str.dir\Libs\string\tasks\10_task\reverseWordsInString.c.s
+
 # Object files for target str
 str_OBJECTS = \
 "CMakeFiles/str.dir/Libs/string/string_.c.obj" \
@@ -192,7 +205,8 @@ str_OBJECTS = \
 "CMakeFiles/str.dir/Libs/string/tasks/5_task/replace.c.obj" \
 "CMakeFiles/str.dir/Libs/string/tasks/6_task/checkSortingInString.c.obj" \
 "CMakeFiles/str.dir/Libs/string/tasks/7_task/printWordsOfStringReverse.c.obj" \
-"CMakeFiles/str.dir/Libs/string/tasks/8_task/countWordsPalindromes.c.obj"
+"CMakeFiles/str.dir/Libs/string/tasks/8_task/countWordsPalindromes.c.obj" \
+"CMakeFiles/str.dir/Libs/string/tasks/10_task/reverseWordsInString.c.obj"
 
 # External object files for target str
 str_EXTERNAL_OBJECTS =
@@ -206,9 +220,10 @@ libstr.a: CMakeFiles/str.dir/Libs/string/tasks/5_task/replace.c.obj
 libstr.a: CMakeFiles/str.dir/Libs/string/tasks/6_task/checkSortingInString.c.obj
 libstr.a: CMakeFiles/str.dir/Libs/string/tasks/7_task/printWordsOfStringReverse.c.obj
 libstr.a: CMakeFiles/str.dir/Libs/string/tasks/8_task/countWordsPalindromes.c.obj
+libstr.a: CMakeFiles/str.dir/Libs/string/tasks/10_task/reverseWordsInString.c.obj
 libstr.a: CMakeFiles/str.dir/build.make
 libstr.a: CMakeFiles/str.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C static library libstr.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C static library libstr.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\str.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\str.dir\link.txt --verbose=$(VERBOSE)
 

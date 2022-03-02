@@ -15,6 +15,6 @@ add_library(str Libs/string/string_.h Libs/string/string_.c
         "Libs/string/tasks/6 task/checkSortingInString.c"
         "Libs/string/tasks/7 task/printWordsOfStringReverse.c"
         "Libs/string/tasks/8 task/countWordsPalindromes.c"
-        )
+        "Libs/string/tasks/10 task/reverseWordsInString.c" "Libs/string/tasks/10 task/reverseWordsInString.h")
 
 target_link_libraries(project str)

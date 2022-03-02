@@ -4,6 +4,10 @@
 CMakeFiles/str.dir/Libs/string/string_.c.obj: \
  ../Libs/string/string_.c \
  ../Libs/string/string_.h
+CMakeFiles/str.dir/Libs/string/tasks/10_task/reverseWordsInString.c.obj: \
+ ../Libs/string/string_.h \
+ ../Libs/string/tasks/10\ task/reverseWordsInString.c \
+ ../Libs/string/tasks/10\ task/reverseWordsInString.h
 CMakeFiles/str.dir/Libs/string/tasks/1_task/removeNonLetters.c.obj: \
  ../Libs/string/string_.h \
  ../Libs/string/tasks/1\ task/removeNonLetters.c \

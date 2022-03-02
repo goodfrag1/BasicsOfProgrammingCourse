@@ -20,16 +20,18 @@ void removeNonLetters(char *s) {
 void test_removeNonLetters_notEmptyString() {
     char s[] = "Hi 123";
     removeNonLetters(s);
-    assertString("Hi123", s, __FILE__, __FUNCTION__, __LINE__);
+
+    ASSERT_STRING("Hi123", s);
 }
 
 void test_removeNonLetters_emptyString() {
     char s[] = " ";
     removeNonLetters(s);
-    assertString("", s, __FILE__, __FUNCTION__, __LINE__);
+
+    ASSERT_STRING("", s);
 }
 
-void test_1Task(){
+void test_1Task() {
     test_removeNonLetters_emptyString();
     test_removeNonLetters_notEmptyString();
 }

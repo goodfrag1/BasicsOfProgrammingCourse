@@ -10,4 +10,6 @@ typedef struct WordDescriptor {
 
 void reverseWordsInString(char *s);
 
+void test_10Task();
+
 #endif //LABA_5B_REVERSEWORDSINSTRING_H

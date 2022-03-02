@@ -8,6 +8,14 @@ CMakeFiles/str.dir/Libs/string/tasks/10_task/reverseWordsInString.c.obj: \
  ../Libs/string/string_.h \
  ../Libs/string/tasks/10\ task/reverseWordsInString.c \
  ../Libs/string/tasks/10\ task/reverseWordsInString.h
+CMakeFiles/str.dir/Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.obj: \
+ ../Libs/string/string_.h \
+ ../Libs/string/tasks/15\ task/getStringOfWordsDiffOfLastWord.c \
+ ../Libs/string/tasks/15\ task/getStringOfWordsDiffOfLastWord.h
+CMakeFiles/str.dir/Libs/string/tasks/17_task/deleteWordsEqualLast.c.obj: \
+ ../Libs/string/string_.h \
+ ../Libs/string/tasks/17\ task/deleteWordsEqualLast.c \
+ ../Libs/string/tasks/17\ task/deleteWordsEqualLast.h
 CMakeFiles/str.dir/Libs/string/tasks/1_task/removeNonLetters.c.obj: \
  ../Libs/string/string_.h \
  ../Libs/string/tasks/1\ task/removeNonLetters.c \

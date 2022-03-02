@@ -189,6 +189,78 @@ Libs/string/tasks/10_task/reverseWordsInString.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/10_task/reverseWordsInString.c.s
 .PHONY : Libs/string/tasks/10_task/reverseWordsInString.c.s
 
+Libs/string/tasks/13_task/isStringHaveEqualWords.obj: Libs/string/tasks/13_task/isStringHaveEqualWords.c.obj
+.PHONY : Libs/string/tasks/13_task/isStringHaveEqualWords.obj
+
+# target to build an object file
+Libs/string/tasks/13_task/isStringHaveEqualWords.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/13_task/isStringHaveEqualWords.c.obj
+.PHONY : Libs/string/tasks/13_task/isStringHaveEqualWords.c.obj
+
+Libs/string/tasks/13_task/isStringHaveEqualWords.i: Libs/string/tasks/13_task/isStringHaveEqualWords.c.i
+.PHONY : Libs/string/tasks/13_task/isStringHaveEqualWords.i
+
+# target to preprocess a source file
+Libs/string/tasks/13_task/isStringHaveEqualWords.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/13_task/isStringHaveEqualWords.c.i
+.PHONY : Libs/string/tasks/13_task/isStringHaveEqualWords.c.i
+
+Libs/string/tasks/13_task/isStringHaveEqualWords.s: Libs/string/tasks/13_task/isStringHaveEqualWords.c.s
+.PHONY : Libs/string/tasks/13_task/isStringHaveEqualWords.s
+
+# target to generate assembly for a file
+Libs/string/tasks/13_task/isStringHaveEqualWords.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/13_task/isStringHaveEqualWords.c.s
+.PHONY : Libs/string/tasks/13_task/isStringHaveEqualWords.c.s
+
+Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.obj: Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.obj
+.PHONY : Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.obj
+
+# target to build an object file
+Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.obj
+.PHONY : Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.obj
+
+Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.i: Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.i
+.PHONY : Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.i
+
+# target to preprocess a source file
+Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.i
+.PHONY : Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.i
+
+Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.s: Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.s
+.PHONY : Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.s
+
+# target to generate assembly for a file
+Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.s
+.PHONY : Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.s
+
+Libs/string/tasks/17_task/deleteWordsEqualLast.obj: Libs/string/tasks/17_task/deleteWordsEqualLast.c.obj
+.PHONY : Libs/string/tasks/17_task/deleteWordsEqualLast.obj
+
+# target to build an object file
+Libs/string/tasks/17_task/deleteWordsEqualLast.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/17_task/deleteWordsEqualLast.c.obj
+.PHONY : Libs/string/tasks/17_task/deleteWordsEqualLast.c.obj
+
+Libs/string/tasks/17_task/deleteWordsEqualLast.i: Libs/string/tasks/17_task/deleteWordsEqualLast.c.i
+.PHONY : Libs/string/tasks/17_task/deleteWordsEqualLast.i
+
+# target to preprocess a source file
+Libs/string/tasks/17_task/deleteWordsEqualLast.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/17_task/deleteWordsEqualLast.c.i
+.PHONY : Libs/string/tasks/17_task/deleteWordsEqualLast.c.i
+
+Libs/string/tasks/17_task/deleteWordsEqualLast.s: Libs/string/tasks/17_task/deleteWordsEqualLast.c.s
+.PHONY : Libs/string/tasks/17_task/deleteWordsEqualLast.s
+
+# target to generate assembly for a file
+Libs/string/tasks/17_task/deleteWordsEqualLast.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/17_task/deleteWordsEqualLast.c.s
+.PHONY : Libs/string/tasks/17_task/deleteWordsEqualLast.c.s
+
 Libs/string/tasks/1_task/removeNonLetters.obj: Libs/string/tasks/1_task/removeNonLetters.c.obj
 .PHONY : Libs/string/tasks/1_task/removeNonLetters.obj
 
@@ -421,6 +493,15 @@ help:
 	@echo ... Libs/string/tasks/10_task/reverseWordsInString.obj
 	@echo ... Libs/string/tasks/10_task/reverseWordsInString.i
 	@echo ... Libs/string/tasks/10_task/reverseWordsInString.s
+	@echo ... Libs/string/tasks/13_task/isStringHaveEqualWords.obj
+	@echo ... Libs/string/tasks/13_task/isStringHaveEqualWords.i
+	@echo ... Libs/string/tasks/13_task/isStringHaveEqualWords.s
+	@echo ... Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.obj
+	@echo ... Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.i
+	@echo ... Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.s
+	@echo ... Libs/string/tasks/17_task/deleteWordsEqualLast.obj
+	@echo ... Libs/string/tasks/17_task/deleteWordsEqualLast.i
+	@echo ... Libs/string/tasks/17_task/deleteWordsEqualLast.s
 	@echo ... Libs/string/tasks/1_task/removeNonLetters.obj
 	@echo ... Libs/string/tasks/1_task/removeNonLetters.i
 	@echo ... Libs/string/tasks/1_task/removeNonLetters.s

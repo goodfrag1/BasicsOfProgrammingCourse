@@ -128,6 +128,24 @@
 		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/10 task/reverseWordsInString.h">
 			<Option target="str"/>
 		</Unit>
+		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/13 task/isStringHaveEqualWords.c">
+			<Option target="str"/>
+		</Unit>
+		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/13 task/isStringHaveEqualWords.h">
+			<Option target="str"/>
+		</Unit>
+		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/15 task/getStringOfWordsDiffOfLastWord.c">
+			<Option target="str"/>
+		</Unit>
+		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/15 task/getStringOfWordsDiffOfLastWord.h">
+			<Option target="str"/>
+		</Unit>
+		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/17 task/deleteWordsEqualLast.c">
+			<Option target="str"/>
+		</Unit>
+		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/17 task/deleteWordsEqualLast.h">
+			<Option target="str"/>
+		</Unit>
 		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/2 task/removeExtraSpaces.c">
 			<Option target="str"/>
 		</Unit>

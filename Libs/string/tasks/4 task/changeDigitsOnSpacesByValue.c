@@ -30,19 +30,22 @@ void changeDigitsOnSpacesByValue(char *s) {
 void test_changeDigitsOnSpacesByValue_notZeroDigits() {
     char s[] = "A3B0C1";
     changeDigitsOnSpacesByValue(s);
-    assertString("A   BC ", s, __FILE__, __FUNCTION__, __LINE__);
+
+    ASSERT_STRING("A   BC ",s);
 }
 
 void test_changeDigitsOnSpacesByValue_zeroDigits() {
     char s[] = "ABC";
     changeDigitsOnSpacesByValue(s);
-    assertString("ABC", s, __FILE__, __FUNCTION__, __LINE__);
+
+    ASSERT_STRING("ABC", s);
 }
 
 void test_changeDigitsOnSpacesByValue_emptyString() {
     char s[] = " ";
     changeDigitsOnSpacesByValue(s);
-    assertString("", s, __FILE__, __FUNCTION__, __LINE__);
+
+    ASSERT_STRING("", s);
 }
 
 void test_4Task() {

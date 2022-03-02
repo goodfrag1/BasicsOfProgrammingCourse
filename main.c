@@ -1,8 +1,8 @@
-#include "Libs/string/tasks/5 task/replace.h"
+#include "Libs/string/tasks/17 task/deleteWordsEqualLast.h"
 
 int main() {
 
-test_5Task();
+   test_17Task();
 
     return 0;
 }

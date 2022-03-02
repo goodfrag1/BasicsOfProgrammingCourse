@@ -10,13 +10,6 @@ int getWord(char *beginSearch, WordDescriptor *word) {
     return 1;
 }
 
-char *getEndOfString(char *s) {
-    while (*s != '\0')
-        s++;
-
-    return s;
-}
-
 void getBagOfWords(BagOfWords *bag, char *s) {
     for (int i = 0; *s != '\0'; ++i) {
         getWord(s, &bag->words[i]);
@@ -29,6 +22,6 @@ void getBagOfWords(BagOfWords *bag, char *s) {
 
 void printWordsOfStringReverse(char *s) {
     getBagOfWords(&_bag, s);
-    for (int i = _bag.size; i > -1; --i)
+    for (int i = _bag.size; i >= 0; --i)
         printf("%s\n", _bag.words[i].begin);
 }

@@ -11,8 +11,12 @@ int getWord(char *beginSearch, WordDescriptor *word) {
 }
 
 int areWordsEqual(WordDescriptor w1, WordDescriptor w2) {
-    return strcmp_(w1.begin, w2.begin);
+    while (w1.begin != w1.end - 1 && w2.begin != w2.end - 1 && (*w1.begin == *w2.begin))
+        w1.begin++, w2.begin++;
+
+    return *w1.begin - *w2.begin;
 }
+
 
 bool checkSortingInString(char *s) {
     WordDescriptor currentWord;

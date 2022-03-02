@@ -7,33 +7,32 @@ char *getEndOfString(char *s) {
     return s;
 }
 
-int isGraph(char s) {
-    return s != ' ';
-}
-
 void removeExtraSpaces(char *s) {
     char *endSource = getEndOfString(s);
     char *beginSource = findSpace(s);
-    char *destination = copyIf(beginSource, endSource, beginSource + 1, isGraph);
+    char *destination = copyIf(beginSource, endSource, beginSource + 1, isgraph);
     *destination = '\0';
 }
 
 void test_removeExtraSpaces_notZeroSpaces() {
     char s[] = "Nice lab, IS";
     removeExtraSpaces(s);
-    assertString("Nice lab,IS", s, __FILE__, __FUNCTION__, __LINE__);
+
+    ASSERT_STRING("Nice lab,IS", s);
 }
 
 void test_removeExtraSpaces_zeroSpaces() {
     char s[] = "Badlab,IS";
     removeExtraSpaces(s);
-    assertString("Badlab,IS", s, __FILE__, __FUNCTION__, __LINE__);
+
+    ASSERT_STRING("Badlab,IS", s);
 }
 
 void test_removeExtraSpaces_emptyString() {
     char s[] = " ";
     removeExtraSpaces(s);
-    assertString(" ", s, __FILE__, __FUNCTION__, __LINE__);
+
+    ASSERT_STRING(" ", s);
 }
 
 void test_2Task() {

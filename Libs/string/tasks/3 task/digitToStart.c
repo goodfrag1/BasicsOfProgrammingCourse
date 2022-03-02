@@ -10,14 +10,6 @@ int getWord(char *beginSearch, WordDescriptor *word) {
     return 1;
 }
 
-int isDigit(char x) {
-    return x >= '0' && x <= '9';
-}
-
-int isAlpha(char x) {
-    return (x >= 'a' && x <= 'z') || (x >= 'A' && x <= 'Z');
-}
-
 char *getEndOfString(char *s) {
     while (*s != '\0')
         s++;
@@ -28,8 +20,8 @@ char *getEndOfString(char *s) {
 void digitToStart(WordDescriptor word) {
     char *endStringBuffer = copy(word.begin, word.end, stringBuffer);
     char *recPosition = copyIfReverse(endStringBuffer - 1,
-                                      stringBuffer - 1, word.begin, isDigit);
-    copyIf(stringBuffer, endStringBuffer, recPosition, isAlpha);
+                                      stringBuffer - 1, word.begin, isdigit);
+    copyIf(stringBuffer, endStringBuffer, recPosition, isalpha);
 }
 
 // преобразовывает строку таким образом, чтобы цифры каждого слова были
@@ -38,8 +30,8 @@ void digitToStart(WordDescriptor word) {
 void digitToStart_additionalTask(WordDescriptor word) {
     char *endStringBuffer = copy(word.begin, word.end, stringBuffer);
     char *recPosition = copyIf(stringBuffer,
-                               endStringBuffer, word.begin, isDigit);
-    copyIf(stringBuffer, endStringBuffer, recPosition, isAlpha);
+                               endStringBuffer, word.begin, isdigit);
+    copyIf(stringBuffer, endStringBuffer, recPosition, isalpha);
 }
 
 bool getWordReverse(char *rbegin, char *rend, WordDescriptor *word) {
@@ -58,7 +50,7 @@ void test_getWordReverse() {
     WordDescriptor word;
     getWordReverse(endOfString - 1, s, &word);
 
-    assertString("Hello", word.end, __FILE__, __FUNCTION__, __LINE__);
+    ASSERT_STRING("Hello", word.begin);
 }
 
 
@@ -72,7 +64,7 @@ void test_digitToStart_notZeroDigitsInString() {
         beginSearch = word.end;
     }
 
-    assertString("123ABC", s, __FILE__, __FUNCTION__, __LINE__);
+    ASSERT_STRING("123Hi", s);
 }
 
 void test_digitToStart_additionalTask_notZeroDigitsInString() {
@@ -85,7 +77,7 @@ void test_digitToStart_additionalTask_notZeroDigitsInString() {
         beginSearch = word.end;
     }
 
-    assertString("123Hi", s, __FILE__, __FUNCTION__, __LINE__);
+    ASSERT_STRING("123Hi", s);
 }
 
 void test_digitToStart_additionalTask_zeroDigitsInString() {
@@ -98,7 +90,7 @@ void test_digitToStart_additionalTask_zeroDigitsInString() {
         beginSearch = word.end;
     }
 
-    assertString("Hello", s, __FILE__, __FUNCTION__, __LINE__);
+    ASSERT_STRING("Hello", s);
 }
 
 void test_digitToStart_additionalTask_emptyString() {
@@ -111,7 +103,7 @@ void test_digitToStart_additionalTask_emptyString() {
         beginSearch = word.end;
     }
 
-    assertString(" ", s, __FILE__, __FUNCTION__, __LINE__);
+    ASSERT_STRING(" ", s);
 }
 
 

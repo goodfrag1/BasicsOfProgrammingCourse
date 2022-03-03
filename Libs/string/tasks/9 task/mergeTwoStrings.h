@@ -8,4 +8,8 @@ typedef struct WordDescriptor {
     char *end;
 } WordDescriptor;
 
+void mergeTwoStrings(char *s, char *str1, char *str2);
+
+void test_9Task();
+
 #endif //LABA_5B_MERGETWOSTRINGS_H

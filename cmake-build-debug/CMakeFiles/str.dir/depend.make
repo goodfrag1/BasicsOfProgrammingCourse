@@ -56,3 +56,7 @@ CMakeFiles/str.dir/Libs/string/tasks/8_task/countWordsPalindromes.c.obj: \
  ../Libs/string/string_.h \
  ../Libs/string/tasks/8\ task/countWordsPalindromes.c \
  ../Libs/string/tasks/8\ task/countWordsPalindromes.h
+CMakeFiles/str.dir/Libs/string/tasks/9_task/mergeTwoStrings.c.obj: \
+ ../Libs/string/string_.h \
+ ../Libs/string/tasks/9\ task/mergeTwoStrings.c \
+ ../Libs/string/tasks/9\ task/mergeTwoStrings.h

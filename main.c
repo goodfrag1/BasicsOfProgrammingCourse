@@ -1,7 +1,7 @@
-#include "Libs/string/tasks/13 task/isStringHaveEqualWords.h"
+#include "Libs/string/tasks/9 task/mergeTwoStrings.h"
 int main() {
 
-    test_13Task();
+    test_9Task();
 
     return 0;
 }

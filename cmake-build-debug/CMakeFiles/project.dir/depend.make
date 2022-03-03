@@ -3,5 +3,5 @@
 
 CMakeFiles/project.dir/main.c.obj: \
  ../Libs/string/string_.h \
- ../Libs/string/tasks/13\ task/isStringHaveEqualWords.h \
+ ../Libs/string/tasks/9\ task/mergeTwoStrings.h \
  ../main.c

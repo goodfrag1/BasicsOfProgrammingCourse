@@ -128,6 +128,12 @@
 		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/10 task/reverseWordsInString.h">
 			<Option target="str"/>
 		</Unit>
+		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/11 task/printWordBeforeFirstWordWithA.c">
+			<Option target="str"/>
+		</Unit>
+		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/11 task/printWordBeforeFirstWordWithA.h">
+			<Option target="str"/>
+		</Unit>
 		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/13 task/isStringHaveEqualWords.c">
 			<Option target="str"/>
 		</Unit>
@@ -186,6 +192,12 @@
 			<Option target="str"/>
 		</Unit>
 		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/8 task/countWordsPalindromes.h">
+			<Option target="str"/>
+		</Unit>
+		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/9 task/mergeTwoStrings.c">
+			<Option target="str"/>
+		</Unit>
+		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/9 task/mergeTwoStrings.h">
 			<Option target="str"/>
 		</Unit>
 		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/main.c">

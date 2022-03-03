@@ -1,7 +1,7 @@
-#include "Libs/string/tasks/10 task/reverseWordsInString.h"
+#include "Libs/string/tasks/13 task/isStringHaveEqualWords.h"
 int main() {
 
-   test_10Task();
+    test_13Task();
 
     return 0;
 }

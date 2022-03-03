@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/str.dir/Libs/string/string_.c.obj"
   "CMakeFiles/str.dir/Libs/string/tasks/10_task/reverseWordsInString.c.obj"
+  "CMakeFiles/str.dir/Libs/string/tasks/11_task/printWordBeforeFirstWordWithA.c.obj"
   "CMakeFiles/str.dir/Libs/string/tasks/13_task/isStringHaveEqualWords.c.obj"
   "CMakeFiles/str.dir/Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.obj"
   "CMakeFiles/str.dir/Libs/string/tasks/17_task/deleteWordsEqualLast.c.obj"
@@ -12,6 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/str.dir/Libs/string/tasks/6_task/checkSortingInString.c.obj"
   "CMakeFiles/str.dir/Libs/string/tasks/7_task/printWordsOfStringReverse.c.obj"
   "CMakeFiles/str.dir/Libs/string/tasks/8_task/countWordsPalindromes.c.obj"
+  "CMakeFiles/str.dir/Libs/string/tasks/9_task/mergeTwoStrings.c.obj"
   "libstr.a"
   "libstr.pdb"
 )

@@ -189,6 +189,30 @@ Libs/string/tasks/10_task/reverseWordsInString.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/10_task/reverseWordsInString.c.s
 .PHONY : Libs/string/tasks/10_task/reverseWordsInString.c.s
 
+Libs/string/tasks/11_task/printWordBeforeFirstWordWithA.obj: Libs/string/tasks/11_task/printWordBeforeFirstWordWithA.c.obj
+.PHONY : Libs/string/tasks/11_task/printWordBeforeFirstWordWithA.obj
+
+# target to build an object file
+Libs/string/tasks/11_task/printWordBeforeFirstWordWithA.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/11_task/printWordBeforeFirstWordWithA.c.obj
+.PHONY : Libs/string/tasks/11_task/printWordBeforeFirstWordWithA.c.obj
+
+Libs/string/tasks/11_task/printWordBeforeFirstWordWithA.i: Libs/string/tasks/11_task/printWordBeforeFirstWordWithA.c.i
+.PHONY : Libs/string/tasks/11_task/printWordBeforeFirstWordWithA.i
+
+# target to preprocess a source file
+Libs/string/tasks/11_task/printWordBeforeFirstWordWithA.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/11_task/printWordBeforeFirstWordWithA.c.i
+.PHONY : Libs/string/tasks/11_task/printWordBeforeFirstWordWithA.c.i
+
+Libs/string/tasks/11_task/printWordBeforeFirstWordWithA.s: Libs/string/tasks/11_task/printWordBeforeFirstWordWithA.c.s
+.PHONY : Libs/string/tasks/11_task/printWordBeforeFirstWordWithA.s
+
+# target to generate assembly for a file
+Libs/string/tasks/11_task/printWordBeforeFirstWordWithA.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/11_task/printWordBeforeFirstWordWithA.c.s
+.PHONY : Libs/string/tasks/11_task/printWordBeforeFirstWordWithA.c.s
+
 Libs/string/tasks/13_task/isStringHaveEqualWords.obj: Libs/string/tasks/13_task/isStringHaveEqualWords.c.obj
 .PHONY : Libs/string/tasks/13_task/isStringHaveEqualWords.obj
 
@@ -453,6 +477,30 @@ Libs/string/tasks/8_task/countWordsPalindromes.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/8_task/countWordsPalindromes.c.s
 .PHONY : Libs/string/tasks/8_task/countWordsPalindromes.c.s
 
+Libs/string/tasks/9_task/mergeTwoStrings.obj: Libs/string/tasks/9_task/mergeTwoStrings.c.obj
+.PHONY : Libs/string/tasks/9_task/mergeTwoStrings.obj
+
+# target to build an object file
+Libs/string/tasks/9_task/mergeTwoStrings.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/9_task/mergeTwoStrings.c.obj
+.PHONY : Libs/string/tasks/9_task/mergeTwoStrings.c.obj
+
+Libs/string/tasks/9_task/mergeTwoStrings.i: Libs/string/tasks/9_task/mergeTwoStrings.c.i
+.PHONY : Libs/string/tasks/9_task/mergeTwoStrings.i
+
+# target to preprocess a source file
+Libs/string/tasks/9_task/mergeTwoStrings.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/9_task/mergeTwoStrings.c.i
+.PHONY : Libs/string/tasks/9_task/mergeTwoStrings.c.i
+
+Libs/string/tasks/9_task/mergeTwoStrings.s: Libs/string/tasks/9_task/mergeTwoStrings.c.s
+.PHONY : Libs/string/tasks/9_task/mergeTwoStrings.s
+
+# target to generate assembly for a file
+Libs/string/tasks/9_task/mergeTwoStrings.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/9_task/mergeTwoStrings.c.s
+.PHONY : Libs/string/tasks/9_task/mergeTwoStrings.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -493,6 +541,9 @@ help:
 	@echo ... Libs/string/tasks/10_task/reverseWordsInString.obj
 	@echo ... Libs/string/tasks/10_task/reverseWordsInString.i
 	@echo ... Libs/string/tasks/10_task/reverseWordsInString.s
+	@echo ... Libs/string/tasks/11_task/printWordBeforeFirstWordWithA.obj
+	@echo ... Libs/string/tasks/11_task/printWordBeforeFirstWordWithA.i
+	@echo ... Libs/string/tasks/11_task/printWordBeforeFirstWordWithA.s
 	@echo ... Libs/string/tasks/13_task/isStringHaveEqualWords.obj
 	@echo ... Libs/string/tasks/13_task/isStringHaveEqualWords.i
 	@echo ... Libs/string/tasks/13_task/isStringHaveEqualWords.s
@@ -526,6 +577,9 @@ help:
 	@echo ... Libs/string/tasks/8_task/countWordsPalindromes.obj
 	@echo ... Libs/string/tasks/8_task/countWordsPalindromes.i
 	@echo ... Libs/string/tasks/8_task/countWordsPalindromes.s
+	@echo ... Libs/string/tasks/9_task/mergeTwoStrings.obj
+	@echo ... Libs/string/tasks/9_task/mergeTwoStrings.i
+	@echo ... Libs/string/tasks/9_task/mergeTwoStrings.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

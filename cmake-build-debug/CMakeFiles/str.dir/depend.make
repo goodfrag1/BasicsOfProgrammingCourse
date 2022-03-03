@@ -8,6 +8,10 @@ CMakeFiles/str.dir/Libs/string/tasks/10_task/reverseWordsInString.c.obj: \
  ../Libs/string/string_.h \
  ../Libs/string/tasks/10\ task/reverseWordsInString.c \
  ../Libs/string/tasks/10\ task/reverseWordsInString.h
+CMakeFiles/str.dir/Libs/string/tasks/11_task/printWordBeforeFirstWordWithA.c.obj: \
+ ../Libs/string/string_.h \
+ ../Libs/string/tasks/11\ task/printWordBeforeFirstWordWithA.c \
+ ../Libs/string/tasks/11\ task/printWordBeforeFirstWordWithA.h
 CMakeFiles/str.dir/Libs/string/tasks/13_task/isStringHaveEqualWords.c.obj: \
  ../Libs/string/string_.h \
  ../Libs/string/tasks/13\ task/isStringHaveEqualWords.c \

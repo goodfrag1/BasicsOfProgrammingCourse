@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/string_.c" "C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/CMakeFiles/str.dir/Libs/string/string_.c.obj"
   "C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/10 task/reverseWordsInString.c" "C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/CMakeFiles/str.dir/Libs/string/tasks/10_task/reverseWordsInString.c.obj"
+  "C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/11 task/printWordBeforeFirstWordWithA.c" "C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/CMakeFiles/str.dir/Libs/string/tasks/11_task/printWordBeforeFirstWordWithA.c.obj"
   "C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/13 task/isStringHaveEqualWords.c" "C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/CMakeFiles/str.dir/Libs/string/tasks/13_task/isStringHaveEqualWords.c.obj"
   "C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/15 task/getStringOfWordsDiffOfLastWord.c" "C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/CMakeFiles/str.dir/Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.obj"
   "C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/17 task/deleteWordsEqualLast.c" "C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/CMakeFiles/str.dir/Libs/string/tasks/17_task/deleteWordsEqualLast.c.obj"
@@ -21,6 +22,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/6 task/checkSortingInString.c" "C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/CMakeFiles/str.dir/Libs/string/tasks/6_task/checkSortingInString.c.obj"
   "C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/7 task/printWordsOfStringReverse.c" "C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/CMakeFiles/str.dir/Libs/string/tasks/7_task/printWordsOfStringReverse.c.obj"
   "C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/8 task/countWordsPalindromes.c" "C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/CMakeFiles/str.dir/Libs/string/tasks/8_task/countWordsPalindromes.c.obj"
+  "C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/9 task/mergeTwoStrings.c" "C:/Users/User-GDFG/CLionProjects/Laba_5b/cmake-build-debug/CMakeFiles/str.dir/Libs/string/tasks/9_task/mergeTwoStrings.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

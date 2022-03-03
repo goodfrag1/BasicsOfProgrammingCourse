@@ -6,14 +6,6 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/string_.c
-string_.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/string_.h
-memory.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/memory.h
-stdio.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/stdio.h
-
 C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/string_.h
 string.h
 C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/string.h
@@ -22,21 +14,11 @@ C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/stdbool.h
 ctype.h
 C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/ctype.h
 
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/17 task/deleteWordsEqualLast.c
-deleteWordsEqualLast.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/17 task/deleteWordsEqualLast.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/10 task/reverseWordsInString.c
+reverseWordsInString.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/10 task/reverseWordsInString.h
 
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/17 task/deleteWordsEqualLast.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/10 task/reverseWordsInString.h
 ../../string_.h
 C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/string_.h
-
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/6 task/checkSortingInString.c
-checkSortingInString.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/6 task/checkSortingInString.h
-
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/6 task/checkSortingInString.h
-../../string_.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/string_.h
-stdio.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/6 task/stdio.h
 

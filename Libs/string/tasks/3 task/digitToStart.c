@@ -64,7 +64,7 @@ void test_digitToStart_notZeroDigitsInString() {
         beginSearch = word.end;
     }
 
-    ASSERT_STRING("123Hi", s);
+    ASSERT_STRING("123ABC", s);
 }
 
 void test_digitToStart_additionalTask_notZeroDigitsInString() {

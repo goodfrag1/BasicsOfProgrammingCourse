@@ -1,8 +1,7 @@
-#include "Libs/string/tasks/17 task/deleteWordsEqualLast.h"
-
+#include "Libs/string/tasks/10 task/reverseWordsInString.h"
 int main() {
 
-   test_17Task();
+   test_10Task();
 
     return 0;
 }

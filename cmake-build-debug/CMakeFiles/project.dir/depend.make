@@ -3,5 +3,5 @@
 
 CMakeFiles/project.dir/main.c.obj: \
  ../Libs/string/string_.h \
- ../Libs/string/tasks/17\ task/deleteWordsEqualLast.h \
+ ../Libs/string/tasks/10\ task/reverseWordsInString.h \
  ../main.c

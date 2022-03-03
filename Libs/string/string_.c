@@ -70,33 +70,32 @@ int strcmp_(char *lhs, char *rhs) {
 
 char *copy(char *beginSource, char *endSource,
            char *beginDestination) {
-    memcpy(beginDestination, beginSource, endSource - beginSource);
+    size_t size = endSource - beginSource;
+    memcpy(beginDestination, beginSource, size);
 
-    return beginDestination+(endSource - beginSource);
+    return beginDestination + size;
 }
 
 char *copyIf(char *beginSource, char *endSource,
              char *beginDestination, int (*f)(int)) {
-    while (beginSource != endSource)
-        if (f(*beginSource)) {
-            memcpy(beginDestination, beginSource, sizeof(char));
-            beginDestination++;
-            beginSource++;
-        } else
-            beginSource++;
+    while (beginSource != endSource) {
+        if (f(*beginSource))
+            *beginDestination++ = *beginSource;
+
+        beginSource++;
+    }
 
     return beginDestination;
 }
 
 char *copyIfReverse(char *rbeginSource, const char *rendSource,
                     char *beginDestination, int (*f)(int)) {
-    while (rbeginSource != rendSource)
-        if (f(*rbeginSource)) {
-            memcpy(beginDestination, rbeginSource, sizeof(char));
-            beginDestination++;
-            rbeginSource--;
-        } else
-            rbeginSource--;
+    while (rbeginSource != rendSource) {
+        if (f(*rbeginSource))
+            *beginDestination++ = *rbeginSource;
+
+        rbeginSource--;
+    }
 
     return beginDestination;
 }

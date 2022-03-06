@@ -12,6 +12,10 @@ CMakeFiles/str.dir/Libs/string/tasks/11_task/printWordBeforeFirstWordWithA.c.obj
  ../Libs/string/string_.h \
  ../Libs/string/tasks/11\ task/printWordBeforeFirstWordWithA.c \
  ../Libs/string/tasks/11\ task/printWordBeforeFirstWordWithA.h
+CMakeFiles/str.dir/Libs/string/tasks/12_task/getLastWordFromFirstStringIsInSecondString.c.obj: \
+ ../Libs/string/string_.h \
+ ../Libs/string/tasks/12\ task/getLastWordFromFirstStringIsInSecondString.c \
+ ../Libs/string/tasks/12\ task/getLastWordFromFirstStringIsInSecondString.h
 CMakeFiles/str.dir/Libs/string/tasks/13_task/isStringHaveEqualWords.c.obj: \
  ../Libs/string/string_.h \
  ../Libs/string/tasks/13\ task/isStringHaveEqualWords.c \

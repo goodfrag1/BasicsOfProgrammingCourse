@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/str.dir/Libs/string/string_.c.obj"
   "CMakeFiles/str.dir/Libs/string/tasks/10_task/reverseWordsInString.c.obj"
   "CMakeFiles/str.dir/Libs/string/tasks/11_task/printWordBeforeFirstWordWithA.c.obj"
+  "CMakeFiles/str.dir/Libs/string/tasks/12_task/getLastWordFromFirstStringIsInSecondString.c.obj"
   "CMakeFiles/str.dir/Libs/string/tasks/13_task/isStringHaveEqualWords.c.obj"
   "CMakeFiles/str.dir/Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.obj"
   "CMakeFiles/str.dir/Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecondString.c.obj"

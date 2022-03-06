@@ -11,11 +11,14 @@ int getWord(char *beginSearch, WordDescriptor *word) {
 }
 
 void getBagOfWords(BagOfWords *bag, char *s) {
-    for (int i = 0; *s != '\0'; ++i) {
-        getWord(s, &bag->words[i]);
+    char *readPtr = s;
+    bag->size = 0;
+    while (getWord(readPtr, &bag->words[bag->size])) {
+        readPtr = bag->words[bag->size].end;
         bag->size++;
-        s = bag->words[i].end;
     }
+    for (int i = 0; i < bag->size; i++)
+        *bag->words[i].end = '\0';
 }
 
 int areWordsEqual(WordDescriptor w1, WordDescriptor w2) {

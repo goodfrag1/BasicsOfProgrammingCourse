@@ -1,7 +1,8 @@
-#include "Libs/string/tasks/16 task/getLastWordFromFirstStringIsInSecondString.h"
+#include "Libs/string/tasks/12 task/getLastWordFromFirstStringIsInSecondString.h"
+
 int main() {
 
-    test_16Task();
+    test_12Task();
 
     return 0;
 }

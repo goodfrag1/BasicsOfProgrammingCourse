@@ -22,6 +22,6 @@ add_library(str Libs/string/string_.h Libs/string/string_.c
         "Libs/string/tasks/15 task/getStringOfWordsDiffOfLastWord.c"
         "Libs/string/tasks/17 task/deleteWordsEqualLast.c"
         "Libs/string/tasks/19 task/isEveryLetterInString.c"
-        "Libs/string/tasks/16 task/getLastWordFromFirstStringIsInSecondString.c" "Libs/string/tasks/16 task/getLastWordFromFirstStringIsInSecondString.h")
+        "Libs/string/tasks/16 task/getLastWordFromFirstStringIsInSecondString.c" "Libs/string/tasks/16 task/getLastWordFromFirstStringIsInSecondString.h" "Libs/string/tasks/12 task/getLastWordFromFirstStringIsInSecondString.c" "Libs/string/tasks/12 task/getLastWordFromFirstStringIsInSecondString.h")
 
 target_link_libraries(project str)

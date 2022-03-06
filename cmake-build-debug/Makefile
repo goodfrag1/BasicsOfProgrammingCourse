@@ -285,6 +285,30 @@ Libs/string/tasks/17_task/deleteWordsEqualLast.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/17_task/deleteWordsEqualLast.c.s
 .PHONY : Libs/string/tasks/17_task/deleteWordsEqualLast.c.s
 
+Libs/string/tasks/19_task/isEveryLetterInString.obj: Libs/string/tasks/19_task/isEveryLetterInString.c.obj
+.PHONY : Libs/string/tasks/19_task/isEveryLetterInString.obj
+
+# target to build an object file
+Libs/string/tasks/19_task/isEveryLetterInString.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/19_task/isEveryLetterInString.c.obj
+.PHONY : Libs/string/tasks/19_task/isEveryLetterInString.c.obj
+
+Libs/string/tasks/19_task/isEveryLetterInString.i: Libs/string/tasks/19_task/isEveryLetterInString.c.i
+.PHONY : Libs/string/tasks/19_task/isEveryLetterInString.i
+
+# target to preprocess a source file
+Libs/string/tasks/19_task/isEveryLetterInString.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/19_task/isEveryLetterInString.c.i
+.PHONY : Libs/string/tasks/19_task/isEveryLetterInString.c.i
+
+Libs/string/tasks/19_task/isEveryLetterInString.s: Libs/string/tasks/19_task/isEveryLetterInString.c.s
+.PHONY : Libs/string/tasks/19_task/isEveryLetterInString.s
+
+# target to generate assembly for a file
+Libs/string/tasks/19_task/isEveryLetterInString.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/19_task/isEveryLetterInString.c.s
+.PHONY : Libs/string/tasks/19_task/isEveryLetterInString.c.s
+
 Libs/string/tasks/1_task/removeNonLetters.obj: Libs/string/tasks/1_task/removeNonLetters.c.obj
 .PHONY : Libs/string/tasks/1_task/removeNonLetters.obj
 
@@ -553,6 +577,9 @@ help:
 	@echo ... Libs/string/tasks/17_task/deleteWordsEqualLast.obj
 	@echo ... Libs/string/tasks/17_task/deleteWordsEqualLast.i
 	@echo ... Libs/string/tasks/17_task/deleteWordsEqualLast.s
+	@echo ... Libs/string/tasks/19_task/isEveryLetterInString.obj
+	@echo ... Libs/string/tasks/19_task/isEveryLetterInString.i
+	@echo ... Libs/string/tasks/19_task/isEveryLetterInString.s
 	@echo ... Libs/string/tasks/1_task/removeNonLetters.obj
 	@echo ... Libs/string/tasks/1_task/removeNonLetters.i
 	@echo ... Libs/string/tasks/1_task/removeNonLetters.s

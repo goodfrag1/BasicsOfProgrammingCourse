@@ -24,6 +24,10 @@ CMakeFiles/str.dir/Libs/string/tasks/17_task/deleteWordsEqualLast.c.obj: \
  ../Libs/string/string_.h \
  ../Libs/string/tasks/17\ task/deleteWordsEqualLast.c \
  ../Libs/string/tasks/17\ task/deleteWordsEqualLast.h
+CMakeFiles/str.dir/Libs/string/tasks/19_task/isEveryLetterInString.c.obj: \
+ ../Libs/string/string_.h \
+ ../Libs/string/tasks/19\ task/isEveryLetterInString.c \
+ ../Libs/string/tasks/19\ task/isEveryLetterInString.h
 CMakeFiles/str.dir/Libs/string/tasks/1_task/removeNonLetters.c.obj: \
  ../Libs/string/string_.h \
  ../Libs/string/tasks/1\ task/removeNonLetters.c \

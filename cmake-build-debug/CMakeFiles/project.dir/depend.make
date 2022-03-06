@@ -3,5 +3,5 @@
 
 CMakeFiles/project.dir/main.c.obj: \
  ../Libs/string/string_.h \
- ../Libs/string/tasks/9\ task/mergeTwoStrings.h \
+ ../Libs/string/tasks/19\ task/isEveryLetterInString.h \
  ../main.c

@@ -146,6 +146,12 @@
 		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/13 task/isStringHaveEqualWords.h">
 			<Option target="str"/>
 		</Unit>
+		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/14 task/isWordsContainsSameLetters.c">
+			<Option target="str"/>
+		</Unit>
+		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/14 task/isWordsContainsSameLetters.h">
+			<Option target="str"/>
+		</Unit>
 		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/15 task/getStringOfWordsDiffOfLastWord.c">
 			<Option target="str"/>
 		</Unit>

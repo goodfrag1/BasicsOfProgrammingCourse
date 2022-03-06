@@ -1,8 +1,8 @@
-#include "Libs/string/tasks/12 task/getLastWordFromFirstStringIsInSecondString.h"
+#include "Libs/string/tasks/14 task/isWordsContainsSameLetters.h"
 
 int main() {
 
-    test_12Task();
+    test_14Task();
 
     return 0;
 }

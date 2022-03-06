@@ -261,6 +261,30 @@ Libs/string/tasks/13_task/isStringHaveEqualWords.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/13_task/isStringHaveEqualWords.c.s
 .PHONY : Libs/string/tasks/13_task/isStringHaveEqualWords.c.s
 
+Libs/string/tasks/14_task/isWordsContainsSameLetters.obj: Libs/string/tasks/14_task/isWordsContainsSameLetters.c.obj
+.PHONY : Libs/string/tasks/14_task/isWordsContainsSameLetters.obj
+
+# target to build an object file
+Libs/string/tasks/14_task/isWordsContainsSameLetters.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/14_task/isWordsContainsSameLetters.c.obj
+.PHONY : Libs/string/tasks/14_task/isWordsContainsSameLetters.c.obj
+
+Libs/string/tasks/14_task/isWordsContainsSameLetters.i: Libs/string/tasks/14_task/isWordsContainsSameLetters.c.i
+.PHONY : Libs/string/tasks/14_task/isWordsContainsSameLetters.i
+
+# target to preprocess a source file
+Libs/string/tasks/14_task/isWordsContainsSameLetters.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/14_task/isWordsContainsSameLetters.c.i
+.PHONY : Libs/string/tasks/14_task/isWordsContainsSameLetters.c.i
+
+Libs/string/tasks/14_task/isWordsContainsSameLetters.s: Libs/string/tasks/14_task/isWordsContainsSameLetters.c.s
+.PHONY : Libs/string/tasks/14_task/isWordsContainsSameLetters.s
+
+# target to generate assembly for a file
+Libs/string/tasks/14_task/isWordsContainsSameLetters.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/14_task/isWordsContainsSameLetters.c.s
+.PHONY : Libs/string/tasks/14_task/isWordsContainsSameLetters.c.s
+
 Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.obj: Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.obj
 .PHONY : Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.obj
 
@@ -622,6 +646,9 @@ help:
 	@echo ... Libs/string/tasks/13_task/isStringHaveEqualWords.obj
 	@echo ... Libs/string/tasks/13_task/isStringHaveEqualWords.i
 	@echo ... Libs/string/tasks/13_task/isStringHaveEqualWords.s
+	@echo ... Libs/string/tasks/14_task/isWordsContainsSameLetters.obj
+	@echo ... Libs/string/tasks/14_task/isWordsContainsSameLetters.i
+	@echo ... Libs/string/tasks/14_task/isWordsContainsSameLetters.s
 	@echo ... Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.obj
 	@echo ... Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.i
 	@echo ... Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.s

@@ -221,9 +221,22 @@ CMakeFiles/str.dir/Libs/string/tasks/11_task/printWordBeforeFirstWordWithA.c.s: 
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/str.dir/Libs/string/tasks/11_task/printWordBeforeFirstWordWithA.c.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\11 task\printWordBeforeFirstWordWithA.c" -o CMakeFiles\str.dir\Libs\string\tasks\11_task\printWordBeforeFirstWordWithA.c.s
 
+CMakeFiles/str.dir/Libs/string/tasks/12_task/getLastWordFromFirstStringIsInSecondString.c.obj: CMakeFiles/str.dir/flags.make
+CMakeFiles/str.dir/Libs/string/tasks/12_task/getLastWordFromFirstStringIsInSecondString.c.obj: ../Libs/string/tasks/12\ task/getLastWordFromFirstStringIsInSecondString.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/str.dir/Libs/string/tasks/12_task/getLastWordFromFirstStringIsInSecondString.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\str.dir\Libs\string\tasks\12_task\getLastWordFromFirstStringIsInSecondString.c.obj -c "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\12 task\getLastWordFromFirstStringIsInSecondString.c"
+
+CMakeFiles/str.dir/Libs/string/tasks/12_task/getLastWordFromFirstStringIsInSecondString.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/str.dir/Libs/string/tasks/12_task/getLastWordFromFirstStringIsInSecondString.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\12 task\getLastWordFromFirstStringIsInSecondString.c" > CMakeFiles\str.dir\Libs\string\tasks\12_task\getLastWordFromFirstStringIsInSecondString.c.i
+
+CMakeFiles/str.dir/Libs/string/tasks/12_task/getLastWordFromFirstStringIsInSecondString.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/str.dir/Libs/string/tasks/12_task/getLastWordFromFirstStringIsInSecondString.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\12 task\getLastWordFromFirstStringIsInSecondString.c" -o CMakeFiles\str.dir\Libs\string\tasks\12_task\getLastWordFromFirstStringIsInSecondString.c.s
+
 CMakeFiles/str.dir/Libs/string/tasks/13_task/isStringHaveEqualWords.c.obj: CMakeFiles/str.dir/flags.make
 CMakeFiles/str.dir/Libs/string/tasks/13_task/isStringHaveEqualWords.c.obj: ../Libs/string/tasks/13\ task/isStringHaveEqualWords.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/str.dir/Libs/string/tasks/13_task/isStringHaveEqualWords.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/str.dir/Libs/string/tasks/13_task/isStringHaveEqualWords.c.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\str.dir\Libs\string\tasks\13_task\isStringHaveEqualWords.c.obj -c "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\13 task\isStringHaveEqualWords.c"
 
 CMakeFiles/str.dir/Libs/string/tasks/13_task/isStringHaveEqualWords.c.i: cmake_force
@@ -234,9 +247,22 @@ CMakeFiles/str.dir/Libs/string/tasks/13_task/isStringHaveEqualWords.c.s: cmake_f
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/str.dir/Libs/string/tasks/13_task/isStringHaveEqualWords.c.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\13 task\isStringHaveEqualWords.c" -o CMakeFiles\str.dir\Libs\string\tasks\13_task\isStringHaveEqualWords.c.s
 
+CMakeFiles/str.dir/Libs/string/tasks/14_task/isWordsContainsSameLetters.c.obj: CMakeFiles/str.dir/flags.make
+CMakeFiles/str.dir/Libs/string/tasks/14_task/isWordsContainsSameLetters.c.obj: ../Libs/string/tasks/14\ task/isWordsContainsSameLetters.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/str.dir/Libs/string/tasks/14_task/isWordsContainsSameLetters.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\str.dir\Libs\string\tasks\14_task\isWordsContainsSameLetters.c.obj -c "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\14 task\isWordsContainsSameLetters.c"
+
+CMakeFiles/str.dir/Libs/string/tasks/14_task/isWordsContainsSameLetters.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/str.dir/Libs/string/tasks/14_task/isWordsContainsSameLetters.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\14 task\isWordsContainsSameLetters.c" > CMakeFiles\str.dir\Libs\string\tasks\14_task\isWordsContainsSameLetters.c.i
+
+CMakeFiles/str.dir/Libs/string/tasks/14_task/isWordsContainsSameLetters.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/str.dir/Libs/string/tasks/14_task/isWordsContainsSameLetters.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\14 task\isWordsContainsSameLetters.c" -o CMakeFiles\str.dir\Libs\string\tasks\14_task\isWordsContainsSameLetters.c.s
+
 CMakeFiles/str.dir/Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.obj: CMakeFiles/str.dir/flags.make
 CMakeFiles/str.dir/Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.obj: ../Libs/string/tasks/15\ task/getStringOfWordsDiffOfLastWord.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/str.dir/Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/str.dir/Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\str.dir\Libs\string\tasks\15_task\getStringOfWordsDiffOfLastWord.c.obj -c "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\15 task\getStringOfWordsDiffOfLastWord.c"
 
 CMakeFiles/str.dir/Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.i: cmake_force
@@ -246,32 +272,6 @@ CMakeFiles/str.dir/Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.i:
 CMakeFiles/str.dir/Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/str.dir/Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\15 task\getStringOfWordsDiffOfLastWord.c" -o CMakeFiles\str.dir\Libs\string\tasks\15_task\getStringOfWordsDiffOfLastWord.c.s
-
-CMakeFiles/str.dir/Libs/string/tasks/17_task/deleteWordsEqualLast.c.obj: CMakeFiles/str.dir/flags.make
-CMakeFiles/str.dir/Libs/string/tasks/17_task/deleteWordsEqualLast.c.obj: ../Libs/string/tasks/17\ task/deleteWordsEqualLast.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/str.dir/Libs/string/tasks/17_task/deleteWordsEqualLast.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\str.dir\Libs\string\tasks\17_task\deleteWordsEqualLast.c.obj -c "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\17 task\deleteWordsEqualLast.c"
-
-CMakeFiles/str.dir/Libs/string/tasks/17_task/deleteWordsEqualLast.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/str.dir/Libs/string/tasks/17_task/deleteWordsEqualLast.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\17 task\deleteWordsEqualLast.c" > CMakeFiles\str.dir\Libs\string\tasks\17_task\deleteWordsEqualLast.c.i
-
-CMakeFiles/str.dir/Libs/string/tasks/17_task/deleteWordsEqualLast.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/str.dir/Libs/string/tasks/17_task/deleteWordsEqualLast.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\17 task\deleteWordsEqualLast.c" -o CMakeFiles\str.dir\Libs\string\tasks\17_task\deleteWordsEqualLast.c.s
-
-CMakeFiles/str.dir/Libs/string/tasks/19_task/isEveryLetterInString.c.obj: CMakeFiles/str.dir/flags.make
-CMakeFiles/str.dir/Libs/string/tasks/19_task/isEveryLetterInString.c.obj: ../Libs/string/tasks/19\ task/isEveryLetterInString.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/str.dir/Libs/string/tasks/19_task/isEveryLetterInString.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\str.dir\Libs\string\tasks\19_task\isEveryLetterInString.c.obj -c "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\19 task\isEveryLetterInString.c"
-
-CMakeFiles/str.dir/Libs/string/tasks/19_task/isEveryLetterInString.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/str.dir/Libs/string/tasks/19_task/isEveryLetterInString.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\19 task\isEveryLetterInString.c" > CMakeFiles\str.dir\Libs\string\tasks\19_task\isEveryLetterInString.c.i
-
-CMakeFiles/str.dir/Libs/string/tasks/19_task/isEveryLetterInString.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/str.dir/Libs/string/tasks/19_task/isEveryLetterInString.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\19 task\isEveryLetterInString.c" -o CMakeFiles\str.dir\Libs\string\tasks\19_task\isEveryLetterInString.c.s
 
 CMakeFiles/str.dir/Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecondString.c.obj: CMakeFiles/str.dir/flags.make
 CMakeFiles/str.dir/Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecondString.c.obj: ../Libs/string/tasks/16\ task/getLastWordFromFirstStringIsInSecondString.c
@@ -286,18 +286,31 @@ CMakeFiles/str.dir/Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecon
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/str.dir/Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecondString.c.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\16 task\getLastWordFromFirstStringIsInSecondString.c" -o CMakeFiles\str.dir\Libs\string\tasks\16_task\getLastWordFromFirstStringIsInSecondString.c.s
 
-CMakeFiles/str.dir/Libs/string/tasks/12_task/getLastWordFromFirstStringIsInSecondString.c.obj: CMakeFiles/str.dir/flags.make
-CMakeFiles/str.dir/Libs/string/tasks/12_task/getLastWordFromFirstStringIsInSecondString.c.obj: ../Libs/string/tasks/12\ task/getLastWordFromFirstStringIsInSecondString.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/str.dir/Libs/string/tasks/12_task/getLastWordFromFirstStringIsInSecondString.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\str.dir\Libs\string\tasks\12_task\getLastWordFromFirstStringIsInSecondString.c.obj -c "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\12 task\getLastWordFromFirstStringIsInSecondString.c"
+CMakeFiles/str.dir/Libs/string/tasks/17_task/deleteWordsEqualLast.c.obj: CMakeFiles/str.dir/flags.make
+CMakeFiles/str.dir/Libs/string/tasks/17_task/deleteWordsEqualLast.c.obj: ../Libs/string/tasks/17\ task/deleteWordsEqualLast.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/str.dir/Libs/string/tasks/17_task/deleteWordsEqualLast.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\str.dir\Libs\string\tasks\17_task\deleteWordsEqualLast.c.obj -c "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\17 task\deleteWordsEqualLast.c"
 
-CMakeFiles/str.dir/Libs/string/tasks/12_task/getLastWordFromFirstStringIsInSecondString.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/str.dir/Libs/string/tasks/12_task/getLastWordFromFirstStringIsInSecondString.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\12 task\getLastWordFromFirstStringIsInSecondString.c" > CMakeFiles\str.dir\Libs\string\tasks\12_task\getLastWordFromFirstStringIsInSecondString.c.i
+CMakeFiles/str.dir/Libs/string/tasks/17_task/deleteWordsEqualLast.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/str.dir/Libs/string/tasks/17_task/deleteWordsEqualLast.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\17 task\deleteWordsEqualLast.c" > CMakeFiles\str.dir\Libs\string\tasks\17_task\deleteWordsEqualLast.c.i
 
-CMakeFiles/str.dir/Libs/string/tasks/12_task/getLastWordFromFirstStringIsInSecondString.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/str.dir/Libs/string/tasks/12_task/getLastWordFromFirstStringIsInSecondString.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\12 task\getLastWordFromFirstStringIsInSecondString.c" -o CMakeFiles\str.dir\Libs\string\tasks\12_task\getLastWordFromFirstStringIsInSecondString.c.s
+CMakeFiles/str.dir/Libs/string/tasks/17_task/deleteWordsEqualLast.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/str.dir/Libs/string/tasks/17_task/deleteWordsEqualLast.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\17 task\deleteWordsEqualLast.c" -o CMakeFiles\str.dir\Libs\string\tasks\17_task\deleteWordsEqualLast.c.s
+
+CMakeFiles/str.dir/Libs/string/tasks/19_task/isEveryLetterInString.c.obj: CMakeFiles/str.dir/flags.make
+CMakeFiles/str.dir/Libs/string/tasks/19_task/isEveryLetterInString.c.obj: ../Libs/string/tasks/19\ task/isEveryLetterInString.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/str.dir/Libs/string/tasks/19_task/isEveryLetterInString.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\str.dir\Libs\string\tasks\19_task\isEveryLetterInString.c.obj -c "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\19 task\isEveryLetterInString.c"
+
+CMakeFiles/str.dir/Libs/string/tasks/19_task/isEveryLetterInString.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/str.dir/Libs/string/tasks/19_task/isEveryLetterInString.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\19 task\isEveryLetterInString.c" > CMakeFiles\str.dir\Libs\string\tasks\19_task\isEveryLetterInString.c.i
+
+CMakeFiles/str.dir/Libs/string/tasks/19_task/isEveryLetterInString.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/str.dir/Libs/string/tasks/19_task/isEveryLetterInString.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\19 task\isEveryLetterInString.c" -o CMakeFiles\str.dir\Libs\string\tasks\19_task\isEveryLetterInString.c.s
 
 # Object files for target str
 str_OBJECTS = \
@@ -313,12 +326,13 @@ str_OBJECTS = \
 "CMakeFiles/str.dir/Libs/string/tasks/9_task/mergeTwoStrings.c.obj" \
 "CMakeFiles/str.dir/Libs/string/tasks/10_task/reverseWordsInString.c.obj" \
 "CMakeFiles/str.dir/Libs/string/tasks/11_task/printWordBeforeFirstWordWithA.c.obj" \
+"CMakeFiles/str.dir/Libs/string/tasks/12_task/getLastWordFromFirstStringIsInSecondString.c.obj" \
 "CMakeFiles/str.dir/Libs/string/tasks/13_task/isStringHaveEqualWords.c.obj" \
+"CMakeFiles/str.dir/Libs/string/tasks/14_task/isWordsContainsSameLetters.c.obj" \
 "CMakeFiles/str.dir/Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.obj" \
-"CMakeFiles/str.dir/Libs/string/tasks/17_task/deleteWordsEqualLast.c.obj" \
-"CMakeFiles/str.dir/Libs/string/tasks/19_task/isEveryLetterInString.c.obj" \
 "CMakeFiles/str.dir/Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecondString.c.obj" \
-"CMakeFiles/str.dir/Libs/string/tasks/12_task/getLastWordFromFirstStringIsInSecondString.c.obj"
+"CMakeFiles/str.dir/Libs/string/tasks/17_task/deleteWordsEqualLast.c.obj" \
+"CMakeFiles/str.dir/Libs/string/tasks/19_task/isEveryLetterInString.c.obj"
 
 # External object files for target str
 str_EXTERNAL_OBJECTS =
@@ -335,15 +349,16 @@ libstr.a: CMakeFiles/str.dir/Libs/string/tasks/8_task/countWordsPalindromes.c.ob
 libstr.a: CMakeFiles/str.dir/Libs/string/tasks/9_task/mergeTwoStrings.c.obj
 libstr.a: CMakeFiles/str.dir/Libs/string/tasks/10_task/reverseWordsInString.c.obj
 libstr.a: CMakeFiles/str.dir/Libs/string/tasks/11_task/printWordBeforeFirstWordWithA.c.obj
+libstr.a: CMakeFiles/str.dir/Libs/string/tasks/12_task/getLastWordFromFirstStringIsInSecondString.c.obj
 libstr.a: CMakeFiles/str.dir/Libs/string/tasks/13_task/isStringHaveEqualWords.c.obj
+libstr.a: CMakeFiles/str.dir/Libs/string/tasks/14_task/isWordsContainsSameLetters.c.obj
 libstr.a: CMakeFiles/str.dir/Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.obj
+libstr.a: CMakeFiles/str.dir/Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecondString.c.obj
 libstr.a: CMakeFiles/str.dir/Libs/string/tasks/17_task/deleteWordsEqualLast.c.obj
 libstr.a: CMakeFiles/str.dir/Libs/string/tasks/19_task/isEveryLetterInString.c.obj
-libstr.a: CMakeFiles/str.dir/Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecondString.c.obj
-libstr.a: CMakeFiles/str.dir/Libs/string/tasks/12_task/getLastWordFromFirstStringIsInSecondString.c.obj
 libstr.a: CMakeFiles/str.dir/build.make
 libstr.a: CMakeFiles/str.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking C static library libstr.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking C static library libstr.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\str.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\str.dir\link.txt --verbose=$(VERBOSE)
 

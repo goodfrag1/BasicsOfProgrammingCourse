@@ -20,6 +20,10 @@ CMakeFiles/str.dir/Libs/string/tasks/13_task/isStringHaveEqualWords.c.obj: \
  ../Libs/string/string_.h \
  ../Libs/string/tasks/13\ task/isStringHaveEqualWords.c \
  ../Libs/string/tasks/13\ task/isStringHaveEqualWords.h
+CMakeFiles/str.dir/Libs/string/tasks/14_task/isWordsContainsSameLetters.c.obj: \
+ ../Libs/string/string_.h \
+ ../Libs/string/tasks/14\ task/isWordsContainsSameLetters.c \
+ ../Libs/string/tasks/14\ task/isWordsContainsSameLetters.h
 CMakeFiles/str.dir/Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.obj: \
  ../Libs/string/string_.h \
  ../Libs/string/tasks/15\ task/getStringOfWordsDiffOfLastWord.c \

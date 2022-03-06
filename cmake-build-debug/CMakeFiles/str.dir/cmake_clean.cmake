@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/str.dir/Libs/string/tasks/11_task/printWordBeforeFirstWordWithA.c.obj"
   "CMakeFiles/str.dir/Libs/string/tasks/13_task/isStringHaveEqualWords.c.obj"
   "CMakeFiles/str.dir/Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.obj"
+  "CMakeFiles/str.dir/Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecondString.c.obj"
   "CMakeFiles/str.dir/Libs/string/tasks/17_task/deleteWordsEqualLast.c.obj"
   "CMakeFiles/str.dir/Libs/string/tasks/19_task/isEveryLetterInString.c.obj"
   "CMakeFiles/str.dir/Libs/string/tasks/1_task/removeNonLetters.c.obj"

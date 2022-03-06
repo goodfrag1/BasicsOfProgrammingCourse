@@ -3,5 +3,5 @@
 
 CMakeFiles/project.dir/main.c.obj: \
  ../Libs/string/string_.h \
- ../Libs/string/tasks/19\ task/isEveryLetterInString.h \
+ ../Libs/string/tasks/16\ task/getLastWordFromFirstStringIsInSecondString.h \
  ../main.c

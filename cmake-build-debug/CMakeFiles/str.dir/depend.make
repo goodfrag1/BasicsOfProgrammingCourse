@@ -20,6 +20,10 @@ CMakeFiles/str.dir/Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.ob
  ../Libs/string/string_.h \
  ../Libs/string/tasks/15\ task/getStringOfWordsDiffOfLastWord.c \
  ../Libs/string/tasks/15\ task/getStringOfWordsDiffOfLastWord.h
+CMakeFiles/str.dir/Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecondString.c.obj: \
+ ../Libs/string/string_.h \
+ ../Libs/string/tasks/16\ task/getLastWordFromFirstStringIsInSecondString.c \
+ ../Libs/string/tasks/16\ task/getLastWordFromFirstStringIsInSecondString.h
 CMakeFiles/str.dir/Libs/string/tasks/17_task/deleteWordsEqualLast.c.obj: \
  ../Libs/string/string_.h \
  ../Libs/string/tasks/17\ task/deleteWordsEqualLast.c \

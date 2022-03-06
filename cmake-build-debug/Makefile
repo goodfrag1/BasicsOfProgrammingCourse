@@ -261,6 +261,30 @@ Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.s
 .PHONY : Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.s
 
+Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecondString.obj: Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecondString.c.obj
+.PHONY : Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecondString.obj
+
+# target to build an object file
+Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecondString.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecondString.c.obj
+.PHONY : Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecondString.c.obj
+
+Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecondString.i: Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecondString.c.i
+.PHONY : Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecondString.i
+
+# target to preprocess a source file
+Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecondString.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecondString.c.i
+.PHONY : Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecondString.c.i
+
+Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecondString.s: Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecondString.c.s
+.PHONY : Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecondString.s
+
+# target to generate assembly for a file
+Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecondString.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecondString.c.s
+.PHONY : Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecondString.c.s
+
 Libs/string/tasks/17_task/deleteWordsEqualLast.obj: Libs/string/tasks/17_task/deleteWordsEqualLast.c.obj
 .PHONY : Libs/string/tasks/17_task/deleteWordsEqualLast.obj
 
@@ -574,6 +598,9 @@ help:
 	@echo ... Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.obj
 	@echo ... Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.i
 	@echo ... Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.s
+	@echo ... Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecondString.obj
+	@echo ... Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecondString.i
+	@echo ... Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecondString.s
 	@echo ... Libs/string/tasks/17_task/deleteWordsEqualLast.obj
 	@echo ... Libs/string/tasks/17_task/deleteWordsEqualLast.i
 	@echo ... Libs/string/tasks/17_task/deleteWordsEqualLast.s

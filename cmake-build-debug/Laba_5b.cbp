@@ -146,6 +146,12 @@
 		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/15 task/getStringOfWordsDiffOfLastWord.h">
 			<Option target="str"/>
 		</Unit>
+		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/16 task/getLastWordFromFirstStringIsInSecondString.c">
+			<Option target="str"/>
+		</Unit>
+		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/16 task/getLastWordFromFirstStringIsInSecondString.h">
+			<Option target="str"/>
+		</Unit>
 		<Unit filename="C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/17 task/deleteWordsEqualLast.c">
 			<Option target="str"/>
 		</Unit>

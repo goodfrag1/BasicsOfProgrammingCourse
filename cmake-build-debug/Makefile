@@ -357,6 +357,30 @@ Libs/string/tasks/17_task/deleteWordsEqualLast.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/17_task/deleteWordsEqualLast.c.s
 .PHONY : Libs/string/tasks/17_task/deleteWordsEqualLast.c.s
 
+Libs/string/tasks/18_task/completeStringWithLessWords.obj: Libs/string/tasks/18_task/completeStringWithLessWords.c.obj
+.PHONY : Libs/string/tasks/18_task/completeStringWithLessWords.obj
+
+# target to build an object file
+Libs/string/tasks/18_task/completeStringWithLessWords.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/18_task/completeStringWithLessWords.c.obj
+.PHONY : Libs/string/tasks/18_task/completeStringWithLessWords.c.obj
+
+Libs/string/tasks/18_task/completeStringWithLessWords.i: Libs/string/tasks/18_task/completeStringWithLessWords.c.i
+.PHONY : Libs/string/tasks/18_task/completeStringWithLessWords.i
+
+# target to preprocess a source file
+Libs/string/tasks/18_task/completeStringWithLessWords.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/18_task/completeStringWithLessWords.c.i
+.PHONY : Libs/string/tasks/18_task/completeStringWithLessWords.c.i
+
+Libs/string/tasks/18_task/completeStringWithLessWords.s: Libs/string/tasks/18_task/completeStringWithLessWords.c.s
+.PHONY : Libs/string/tasks/18_task/completeStringWithLessWords.s
+
+# target to generate assembly for a file
+Libs/string/tasks/18_task/completeStringWithLessWords.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\str.dir\build.make CMakeFiles/str.dir/Libs/string/tasks/18_task/completeStringWithLessWords.c.s
+.PHONY : Libs/string/tasks/18_task/completeStringWithLessWords.c.s
+
 Libs/string/tasks/19_task/isEveryLetterInString.obj: Libs/string/tasks/19_task/isEveryLetterInString.c.obj
 .PHONY : Libs/string/tasks/19_task/isEveryLetterInString.obj
 
@@ -658,6 +682,9 @@ help:
 	@echo ... Libs/string/tasks/17_task/deleteWordsEqualLast.obj
 	@echo ... Libs/string/tasks/17_task/deleteWordsEqualLast.i
 	@echo ... Libs/string/tasks/17_task/deleteWordsEqualLast.s
+	@echo ... Libs/string/tasks/18_task/completeStringWithLessWords.obj
+	@echo ... Libs/string/tasks/18_task/completeStringWithLessWords.i
+	@echo ... Libs/string/tasks/18_task/completeStringWithLessWords.s
 	@echo ... Libs/string/tasks/19_task/isEveryLetterInString.obj
 	@echo ... Libs/string/tasks/19_task/isEveryLetterInString.i
 	@echo ... Libs/string/tasks/19_task/isEveryLetterInString.s

@@ -3,5 +3,5 @@
 
 CMakeFiles/project.dir/main.c.obj: \
  ../Libs/string/string_.h \
- ../Libs/string/tasks/14\ task/isWordsContainsSameLetters.h \
+ ../Libs/string/tasks/18\ task/completeStringWithLessWords.h \
  ../main.c

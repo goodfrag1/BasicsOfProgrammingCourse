@@ -312,6 +312,19 @@ CMakeFiles/str.dir/Libs/string/tasks/19_task/isEveryLetterInString.c.s: cmake_fo
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/str.dir/Libs/string/tasks/19_task/isEveryLetterInString.c.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\19 task\isEveryLetterInString.c" -o CMakeFiles\str.dir\Libs\string\tasks\19_task\isEveryLetterInString.c.s
 
+CMakeFiles/str.dir/Libs/string/tasks/18_task/completeStringWithLessWords.c.obj: CMakeFiles/str.dir/flags.make
+CMakeFiles/str.dir/Libs/string/tasks/18_task/completeStringWithLessWords.c.obj: ../Libs/string/tasks/18\ task/completeStringWithLessWords.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/str.dir/Libs/string/tasks/18_task/completeStringWithLessWords.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\str.dir\Libs\string\tasks\18_task\completeStringWithLessWords.c.obj -c "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\18 task\completeStringWithLessWords.c"
+
+CMakeFiles/str.dir/Libs/string/tasks/18_task/completeStringWithLessWords.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/str.dir/Libs/string/tasks/18_task/completeStringWithLessWords.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\18 task\completeStringWithLessWords.c" > CMakeFiles\str.dir\Libs\string\tasks\18_task\completeStringWithLessWords.c.i
+
+CMakeFiles/str.dir/Libs/string/tasks/18_task/completeStringWithLessWords.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/str.dir/Libs/string/tasks/18_task/completeStringWithLessWords.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\User-GDFG\CLionProjects\Laba_5b\Libs\string\tasks\18 task\completeStringWithLessWords.c" -o CMakeFiles\str.dir\Libs\string\tasks\18_task\completeStringWithLessWords.c.s
+
 # Object files for target str
 str_OBJECTS = \
 "CMakeFiles/str.dir/Libs/string/string_.c.obj" \
@@ -332,7 +345,8 @@ str_OBJECTS = \
 "CMakeFiles/str.dir/Libs/string/tasks/15_task/getStringOfWordsDiffOfLastWord.c.obj" \
 "CMakeFiles/str.dir/Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecondString.c.obj" \
 "CMakeFiles/str.dir/Libs/string/tasks/17_task/deleteWordsEqualLast.c.obj" \
-"CMakeFiles/str.dir/Libs/string/tasks/19_task/isEveryLetterInString.c.obj"
+"CMakeFiles/str.dir/Libs/string/tasks/19_task/isEveryLetterInString.c.obj" \
+"CMakeFiles/str.dir/Libs/string/tasks/18_task/completeStringWithLessWords.c.obj"
 
 # External object files for target str
 str_EXTERNAL_OBJECTS =
@@ -356,9 +370,10 @@ libstr.a: CMakeFiles/str.dir/Libs/string/tasks/15_task/getStringOfWordsDiffOfLas
 libstr.a: CMakeFiles/str.dir/Libs/string/tasks/16_task/getLastWordFromFirstStringIsInSecondString.c.obj
 libstr.a: CMakeFiles/str.dir/Libs/string/tasks/17_task/deleteWordsEqualLast.c.obj
 libstr.a: CMakeFiles/str.dir/Libs/string/tasks/19_task/isEveryLetterInString.c.obj
+libstr.a: CMakeFiles/str.dir/Libs/string/tasks/18_task/completeStringWithLessWords.c.obj
 libstr.a: CMakeFiles/str.dir/build.make
 libstr.a: CMakeFiles/str.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking C static library libstr.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\User-GDFG\CLionProjects\Laba_5b\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking C static library libstr.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\str.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\str.dir\link.txt --verbose=$(VERBOSE)
 

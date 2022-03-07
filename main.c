@@ -1,8 +1,8 @@
-#include "Libs/string/tasks/14 task/isWordsContainsSameLetters.h"
+#include "Libs/string/tasks/18 task/completeStringWithLessWords.h"
 
 int main() {
 
-    test_14Task();
+    test_18Task();
 
     return 0;
 }

@@ -36,6 +36,10 @@ CMakeFiles/str.dir/Libs/string/tasks/17_task/deleteWordsEqualLast.c.obj: \
  ../Libs/string/string_.h \
  ../Libs/string/tasks/17\ task/deleteWordsEqualLast.c \
  ../Libs/string/tasks/17\ task/deleteWordsEqualLast.h
+CMakeFiles/str.dir/Libs/string/tasks/18_task/completeStringWithLessWords.c.obj: \
+ ../Libs/string/string_.h \
+ ../Libs/string/tasks/18\ task/completeStringWithLessWords.c \
+ ../Libs/string/tasks/18\ task/completeStringWithLessWords.h
 CMakeFiles/str.dir/Libs/string/tasks/19_task/isEveryLetterInString.c.obj: \
  ../Libs/string/string_.h \
  ../Libs/string/tasks/19\ task/isEveryLetterInString.c \

@@ -1,8 +1,8 @@
-#include "Libs/string/tasks/18 task/completeStringWithLessWords.h"
+#include "Libs/string/tasks/5 task/replace.h"
 
 int main() {
 
-    test_18Task();
+    test_5Task();
 
     return 0;
 }

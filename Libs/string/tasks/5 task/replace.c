@@ -7,59 +7,70 @@ char *getEndOfString(char *s) {
     return s;
 }
 
-//char *findWordInString(char *s, char *w) {
-//    while (*s != '\0')
-//        if (*s == *w) {
-//            bool isFound = true;
-//            char *wordSearchStart = w;
-//            char *sSearchStart = s;
-//            while (*wordSearchStart && isFound)
-//                isFound = *wordSearchStart++ == *sSearchStart;
-//            if (isFound)
-//                return s;
-//        }
-//    s++;
-//
-//    return s;
-//}
+char *findWordInString(char *s, char *w) {
+    s = findNonSpace(s);
+    char *readPtr = w;
+    while (*s != '\0' && *readPtr != '\0') {
+        if (*s == *readPtr) {
+            s++;
+            readPtr++;
+        } else {
+            readPtr = w;
+            s = findSpace(s);
+            s = findNonSpace(s);
+        }
+    }
 
-//void replace(char *source, char *w1, char *w2) {
-//    size_t w1Size = strlen_(w1);
-//    size_t w2Size = strlen_(w2);
-//    WordDescriptor word1 = {w1, w1 + w1Size};
-//    WordDescriptor word2 = {w2, w2 + w2Size};
-//
-//    char *readPtr, *recPtr;
-//    if (w1Size >= w2Size) {
-//        readPtr = source;
-//        recPtr = source;
-//    } else {
-//        char *endOfStringBuffer = copy(source, getEndOfString(source), stringBuffer);
-//        *endOfStringBuffer = '\0';
-//        readPtr = stringBuffer;
-//        recPtr = source;
-//    }
-//    while (*readPtr != '\0') {
-//        char *beginWord = findWordInString(readPtr, word1.begin);
-//        recPtr = copy(readPtr, beginWord, recPtr);
-//        readPtr = beginWord + w1Size;
-//
-//        if (*beginWord == '\0') {
-//            *recPtr = '\0';
-//            return;
-//        }
-//        memcpy(recPtr, word2.begin, w2Size);
-//        recPtr += w2Size;
-//    }
-//    *recPtr = '\0';
-//}
+    if (*readPtr == '\0')
+        return s - strlen_(w);
+    else
+        return s;
+}
+
+void replace(char *source, char *w1, char *w2) {
+    size_t w1Size = strlen_(w1);
+    size_t w2Size = strlen_(w2);
+    WordDescriptor word2 = {w2, w2 + w2Size};
+
+    char *readPtr, *recPtr;
+    if (w1Size >= w2Size) {
+        readPtr = source;
+        recPtr = source;
+    } else {
+        copy(source, getEndOfString(source), stringBuffer);
+        readPtr = stringBuffer;
+        recPtr = source;
+    }
+
+    char *newReadPtr = findWordInString(readPtr, w1);
+    recPtr += newReadPtr - readPtr;
+    readPtr = newReadPtr;
+    while (*readPtr != '\0') {
+        readPtr += strlen_(w1);
+        recPtr = copy(word2.begin, word2.end, recPtr);
+        newReadPtr = findWordInString(readPtr, w1);
+        if (*newReadPtr == '\0')
+            recPtr = copy(readPtr, getEndOfString(readPtr), recPtr);
+        else
+            recPtr = copy(readPtr, newReadPtr, recPtr);
+        readPtr = newReadPtr;
+    }
+    *recPtr = '\0';
+}
 
 void test_replace_oneWord() {
     char s[] = "Hello";
     replace(s, "Hello", "Hi");
-    assertString("Hi", s, __FILE__, __FUNCTION__, __LINE__);
+    ASSERT_STRING("Hi", s);
+}
+
+void test_replace_notOneWord() {
+    char s[] = "Hi Hi Hi Hi";
+    replace(s, "Hi", "Hello");
+    ASSERT_STRING("Hello Hello Hello Hello", s);
 }
 
 void test_5Task() {
     test_replace_oneWord();
+    test_replace_notOneWord();
 }

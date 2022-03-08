@@ -3,5 +3,5 @@
 
 CMakeFiles/project.dir/main.c.obj: \
  ../Libs/string/string_.h \
- ../Libs/string/tasks/18\ task/completeStringWithLessWords.h \
+ ../Libs/string/tasks/5\ task/replace.h \
  ../main.c

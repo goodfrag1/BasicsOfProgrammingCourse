@@ -3,6 +3,8 @@
 
 # include <stddef.h>
 
+void swap(int *a, int *b);
+
 // ввод массива data размера n
 void inputArray_(int *a, size_t n);
 

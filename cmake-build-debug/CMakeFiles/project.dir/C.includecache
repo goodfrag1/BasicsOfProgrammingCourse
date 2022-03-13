@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/string_.h
-string.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/string.h
-stdbool.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/stdbool.h
-ctype.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/ctype.h
-
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/5 task/replace.h
-../../string_.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/string_.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/algorithms/functions/function.h
+stddef.h
+-
 
 C:/Users/User-GDFG/CLionProjects/Laba_5b/main.c
-Libs/string/tasks/5 task/replace.h
-C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/string/tasks/5 task/replace.h
+stdlib.h
+-
+stdio.h
+-
+stdbool.h
+-
+time.h
+-
+Libs/algorithms/functions/function.h
+C:/Users/User-GDFG/CLionProjects/Laba_5b/Libs/algorithms/functions/function.h
 

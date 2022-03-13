@@ -4,6 +4,7 @@
 #include "function.h"
 
 
+
 void inputArray_(int *const a, const size_t n) {
     for (size_t i = 0; i < n; i++)
         scanf("%d", &a[i]);
@@ -34,6 +35,12 @@ void insert_(int *const a, size_t *const n, const size_t pos,
         (*n)++;
         a[pos] = value;
     }
+}
+
+void swap(int *a, int *b) {
+    int t = *a;
+    *a = *b;
+    *b = t;
 }
 
 void deleteByPosSaveOrder_(int *a, size_t *n, const size_t pos) {
